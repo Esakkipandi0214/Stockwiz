@@ -10,6 +10,7 @@ import DataDisplay from '@/Components/mainPages/DataContent';
 import Testimonial2 from '@/Components/mainPages/Testimonial2';
 import DataDisplay2 from '@/Components/mainPages/DataContent2';
 import TopFeauture from '@/Components/mainPages/TopFeature'
+import Performmance from '../Components/mainPages/Performance'
 
 const HeroSection: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const HeroSection: React.FC = () => {
     <Testimonial2/>
     <DataDisplay2/>
     <TopFeauture/>
+    <Performmance/>
     </>
   );
 };
