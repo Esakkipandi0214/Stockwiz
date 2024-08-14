@@ -11,6 +11,8 @@ import Testimonial2 from '@/Components/mainPages/Testimonial2';
 import DataDisplay2 from '@/Components/mainPages/DataContent2';
 import TopFeauture from '@/Components/mainPages/TopFeature'
 import Performmance from '../Components/mainPages/Performance'
+import TradeInvester from "../Components/mainPages/TradeInester"
+import Membership from "../Components/mainPages/Membership"
 
 const HeroSection: React.FC = () => {
   return (
@@ -23,6 +25,8 @@ const HeroSection: React.FC = () => {
     <DataDisplay2/>
     <TopFeauture/>
     <Performmance/>
+    <TradeInvester/>
+    <Membership/>
     </>
   );
 };
