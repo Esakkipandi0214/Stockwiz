@@ -56,8 +56,8 @@ const Testimonial: React.FC = () => {
       <Image
         src={DisplayImage}
         alt=""
-        width={600} // Aspect ratio width
-        height={600} // Aspect ratio height
+        width={500} // Aspect ratio width
+        height={500} // Aspect ratio height
         
       />
     </div>
