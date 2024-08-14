@@ -31,7 +31,7 @@ const Testimonial: React.FC = () => {
           className="px-6 text-2xl font-semibold flex text-center sm:font-bold sm:text-3xl md:text-8xl lg:max-w-2xl xl:max-w-4xl text-white"
         >
            Membership 
-           <motion.h3
+           <motion.span
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={controls}
@@ -39,7 +39,7 @@ const Testimonial: React.FC = () => {
           className="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-8xl lg:max-w-2xl xl:max-w-4xl"
         >
          Plans
-        </motion.h3>
+        </motion.span>
         </motion.h4>
         
         <motion.p
@@ -56,8 +56,8 @@ const Testimonial: React.FC = () => {
       <Image
         src={DisplayImage}
         alt=""
-        width={500} // Aspect ratio width
-        height={500} // Aspect ratio height
+        width={600} // Aspect ratio width
+        height={600} // Aspect ratio height
         
       />
     </div>
