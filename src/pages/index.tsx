@@ -13,6 +13,8 @@ import TopFeauture from '@/Components/mainPages/TopFeature'
 import Performmance from '../Components/mainPages/Performance'
 import TradeInvester from "../Components/mainPages/TradeInester"
 import Membership from "../Components/mainPages/Membership"
+import Pricing from '@/Components/mainPages/Pricing';
+import Whystackwiz from '../Components/mainPages/WhyStackwiz'
 
 const HeroSection: React.FC = () => {
   return (
@@ -27,6 +29,8 @@ const HeroSection: React.FC = () => {
     <Performmance/>
     <TradeInvester/>
     <Membership/>
+    <Pricing/>
+    <Whystackwiz/>
     </>
   );
 };
