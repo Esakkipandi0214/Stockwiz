@@ -20,6 +20,9 @@ const config = {
     },
     extend: {
       colors: {
+        rotate: {
+          '180y': 'rotateY(180deg)', // Custom class for 180 degree rotation on Y axis
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -73,6 +76,11 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+    },
+  },
+  variants: {
+    extend: {
+      rotate: ['hover', 'focus'], // Enables hover and focus variants for rotate
     },
   },
   plugins: [require("tailwindcss-animate"), require("flowbite/plugin")],

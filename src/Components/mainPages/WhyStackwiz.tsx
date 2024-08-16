@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
@@ -19,6 +19,8 @@ const cardsData = [
 ];
 
 const Testimonial: React.FC = () => {
+    const [hoveredCardIndex, setHoveredCardIndex] = useState<number | null>(null);
+
   const { ref, inView } = useInView({
     threshold: 0.2,
     rootMargin: '0px 0px -20% 0px',
@@ -77,11 +79,13 @@ const Testimonial: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                onMouseEnter={() => setHoveredCardIndex(index)}
+              onMouseLeave={() => setHoveredCardIndex(null)}
               >
                 <Image
                   src={card.image}
                   alt={`AI Engine Card ${index + 1}`}
-                  className="w-20 h-20 object-cover hover:skew-y-12"
+                  className={`w-20 h-20 object-cover transition-all duration-500 ${hoveredCardIndex == index && '[transform-style:preserve-3d] [transform:rotateY(180deg)]'}`}
                 />
                 <h5 className="text-4xl flex font-bold  text-left pt-4 text-[#56e842]">{card.title}</h5>
                 <p className=" text-white text-left flex text-2xl -mr-6 font-bold pt-3">{card.description}</p>
