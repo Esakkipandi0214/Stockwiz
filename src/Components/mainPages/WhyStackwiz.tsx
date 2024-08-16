@@ -17,7 +17,7 @@ const cardsData = [
   { title: 'Verified P&L', description: 'Shared everyday with verified trade executions', image: Card5 },
   { title: '125+ Crores', description: 'Daily community wide trading turnover', image: Card6 },
 ];
-
+// cardsData[0].title
 const Testimonial: React.FC = () => {
     const [hoveredCardIndex, setHoveredCardIndex] = useState<number | null>(null);
 
