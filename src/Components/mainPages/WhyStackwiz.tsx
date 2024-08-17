@@ -37,7 +37,7 @@ const Testimonial: React.FC = () => {
   }, [controls, inView]);
 
   return (
-    <section className="bg-black pt-11 pb-20">
+    <section className="bg-black pt-11">
       <div className="container flex flex-col items-center mb-10 mx-auto space-y-6 md:p-2">
         <motion.h4
           ref={ref}
