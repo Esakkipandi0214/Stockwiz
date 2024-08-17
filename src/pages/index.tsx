@@ -17,6 +17,7 @@ import Pricing from '@/Components/mainPages/Pricing';
 import Whystackwiz from '../Components/mainPages/WhyStackwiz'
 import MeetYourMetor from '../Components/mainPages/MeetYourMentor'
 import  CustomerTestimonial from '../Components/mainPages/CustomerTestimonial'
+import WitnessRetail from '../Components/mainPages/WitnessRetail'
 
 const HeroSection: React.FC = () => {
   return (
@@ -35,6 +36,7 @@ const HeroSection: React.FC = () => {
     <Whystackwiz/>
     <MeetYourMetor/>
     <CustomerTestimonial/>
+    <WitnessRetail/>
     </>
   );
 };
