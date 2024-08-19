@@ -11,8 +11,8 @@ const Footer: React.FC = () => {
         <nav className="flex-1 flex-col w-full">
         <Link href="#" aria-label="Back to homepage" className="flex items-center pt-14 pb-4">
         {/* Stylized text or logo */}
-    <span className="font-bold text-4xl text-[#16FF00]">Z</span>
-    <span className="font-light text-3xl text-white ml-1">ENTRA</span>
+    <span className="font-bold text-4xl text-[#16FF00]">Zentra</span>
+    <span className="font-light text-3xl text-white ml-1">Wealth</span>
           </Link>
           <p className=' text-white'>Welcome to India&apos;s largest SEBI <br/>registered trading & investing<br/>platform. We offer educatoin,
           <br/>advisory & research services </p>

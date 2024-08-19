@@ -15,8 +15,8 @@ const Testimonial: React.FC = () => {
     <span className=' grid justify-start'>
     <Link href="#" aria-label="Back to homepage" className="flex items-center pt-14 pb-4">
         {/* Stylized text or logo */}
-    <span className="font-bold text-4xl text-[#16FF00]">Z</span>
-    <span className="font-light text-3xl text-white ml-1">ENTRA</span>
+    <span className="font-bold text-4xl text-[#16FF00]">Zentra</span>
+    <span className="font-light text-3xl text-white ml-1">Wealth</span>
           </Link>
     <p className="text-lg lg:text-lg w-[600px] text-white/50 font-normal">
     Launching Diwali 2024. Pre Register Now To Grab Lifetime Access.
