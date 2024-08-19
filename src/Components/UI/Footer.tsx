@@ -1,9 +1,10 @@
 // components/Footer.tsx
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 
 const Footer: React.FC = () => {
+  const [HoverEffect,setHoverEffect]=useState<boolean>(false);
   return (
     <>
       <footer className="footer bg-base-200 text-base-content bg-[#000000]/90 grid grid-cols-1 lg:pl-24 lg:pr-14 sm:grid-cols-1 p- lg:grid-cols-3 gap-5">
@@ -208,7 +209,7 @@ const Footer: React.FC = () => {
 </defs>
 </svg>
             </a>
-            <a href="#" aria-label="Facebook">
+            <a href="#" aria-label="Facebook" >
             <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_f_7225_7381)">
 <circle cx="40" cy="40" r="17" fill="url(#paint0_radial_7225_7381)"/>
@@ -240,10 +241,10 @@ const Footer: React.FC = () => {
 </defs>
 </svg>
             </a>
-            <a href="#" aria-label="YouTube">
+            <a href="#" aria-label="YouTube" onMouseOver={()=>setHoverEffect(true)} onMouseLeave={()=>setHoverEffect(false)}>
             <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_f_7225_7384)">
-<circle cx="40" cy="40" r="17" fill="#FF0000"/>
+<circle cx="40" cy="40" r="17" fill={HoverEffect ?"#FF0000":"#021526"}/>
 </g>
 <g clip-path="url(#clip0_7225_7384)">
 <mask id="mask0_7225_7384"   style={{ maskType: 'luminance' }} maskUnits="userSpaceOnUse" x="28" y="28" width="24" height="24">
