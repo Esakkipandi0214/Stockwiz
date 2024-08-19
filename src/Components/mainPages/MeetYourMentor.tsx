@@ -128,7 +128,7 @@ const Testimonial: React.FC = () => {
           </Link>
           <span className=' flex flex-col justify-center'>
             <p className=' text-white text-3xl'>SEBI Registered Research Analyst</p>
-            <p className=' text-white text-2xl font-bold'> INHOOOO13925</p>
+            {/* <p className=' text-white text-2xl font-bold'> INHOOOO13925</p> */}
           </span>
           </span>
   </div>

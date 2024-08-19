@@ -103,7 +103,8 @@ const Testimonial: React.FC = () => {
 </video>
 </div>
 <div className="flex flex-col gap-4 lg:gap-6 lg:items-start h-full p-8 lg:justify-start">
-    <h2 className="text-xl lg:text-5xl font-semibold">Realtime Trading<br/>Signals & Alerts</h2>
+    <h2 className="text-xl lg:text-5xl font-semibold">Realtime Trading<br/>Signals & Alerts Indian Market
+    </h2>
     <p className="text-lg lg:text-lg text-white/30 font-normal">
     Get lightning fast trading & investing signals and callouts from SEBI registered trading experts</p>
     <ul className="list-disc grid gap-3 pl-5">

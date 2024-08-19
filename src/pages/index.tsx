@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Profile from '../../public/admin.jpg'
 import Hero from '../Components/mainPages/hero'
 import Marquee from '@/Components/mainPages/marque';
+import Marquee2 from '@/Components/mainPages/marque2';
 import Testimonial from '@/Components/mainPages/Testimonial';
 import DataDisplay from '@/Components/mainPages/DataContent';
 import Testimonial2 from '@/Components/mainPages/Testimonial2';
@@ -31,6 +32,7 @@ const HeroSection: React.FC = () => {
     <DataDisplay2/>
     <TopFeauture/>
     <Performmance/>
+    <Marquee2/>
     <TradeInvester/>
     <Membership/>
     <Pricing/>

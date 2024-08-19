@@ -52,7 +52,8 @@ const Testimonial: React.FC = () => {
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="px-6 py-2 text-2xl font-semibold text-center sm:font-normal sm:text-3xl md:text-xl lg:max-w-2xl xl:max-w-4xl text-white"
         >
-            We have pioneered and disrupted community based trading & investing format where you trade, learn and collaborate with traders across India.
+        &quot;We&apos;ve transformed trading and investing into a community experience. Join us to trade, learn, and connect with traders across India.&quot;
+
         </motion.p>
       </div>
 {/* ------------------------------------------------------------------------==================================-------------------- */}

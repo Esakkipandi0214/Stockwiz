@@ -55,16 +55,16 @@ const Testimonial: React.FC = () => {
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-7xl lg:max-w-2xl xl:max-w-4xl text-white"
         >
-          Catch Institutional
+          Catch Everyday profit
         </motion.h4>
         <motion.h3
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={controls}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-7xl lg:max-w-2xl xl:max-w-4xl"
+          className="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-4xl lg:max-w-2xl xl:max-w-4xl"
         >
-          Moves EveryDay
+          Using Different  Services & Become Richer
         </motion.h3>
         <motion.p
           ref={ref}
@@ -73,37 +73,37 @@ const Testimonial: React.FC = () => {
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="px-6 py-2 text-2xl font-semibold text-center sm:font-normal sm:text-3xl md:text-xl lg:max-w-2xl xl:max-w-4xl text-white"
         >
-          Experience the power of order flow trading with world class trading & investing ecosystem designed to beat the market.
+          Experience the power of order flow trading with world class trading & investing ecosystem designed to beat the Classes of the chain.
         </motion.p>
       </div>
       <div className="min-h-[100px] md:row-span-3 md:col-span-7 md:flex hidden items-center justify-center text-center text-white">
-        <div className="relative w-full flex justify-center items-center md:ml-20">
-          <motion.div
-            className="absolute z-10"
-            initial={{ x: 0, rotate: 0 }}
-            animate={scrollY > 0 ? { x: -200, rotate: -40 } : { x: 0, rotate: 0 }}
-            transition={{ type: 'tween', duration: 0.6 }}
-          >
-            <Image src={Mobiles1} alt="Left Image" width={300} height={200} />
-          </motion.div>
-          <motion.div
-            className="relative z-20"
-            initial={{ x: 0, rotate: 0 }}
-            animate={scrollY > 0 ? { x: 0, rotate: 0 } : { x: 0, rotate: 0 }}
-            transition={{ type: 'tween', duration: 0.6 }}
-          >
-            <Image src={Mobiles1} alt="Center Image" width={300} height={200} />
-          </motion.div>
-          <motion.div
-            className="absolute z-10"
-            initial={{ x: 0, rotate: 0 }}
-            animate={scrollY > 0 ? { x: 200, rotate: 40 } : { x: 0, rotate: 0 }}
-            transition={{ type: 'tween', duration: 0.6 }}
-          >
-            <Image src={Mobiles1} alt="Right Image" width={300} height={200} />
-          </motion.div>
-        </div>
-      </div>
+  <div className="relative w-full flex justify-center items-center md:ml-20">
+    <motion.div
+      className="absolute z-10"
+      initial={{ x: 0, rotate: 0 }}
+      animate={scrollY > 0 ? { x: -200, rotate: -40 } : { x: 0, rotate: 0 }}
+      transition={{ type: 'tween', duration: 1 }}
+    >
+      <Image src={Mobiles1} alt="Left Image" layout="responsive" width={400} height={300} className="w-full h-auto" />
+    </motion.div>
+    <motion.div
+      className="relative z-20"
+      initial={{ x: 0, rotate: 0 }}
+      animate={scrollY > 0 ? { x: 0, rotate: 0 } : { x: 0, rotate: 0 }}
+      transition={{ type: 'tween', duration: 0.6 }}
+    >
+      <Image src={Mobiles1} alt="Center Image" layout="responsive" width={400} height={300} className="w-full h-auto" />
+    </motion.div>
+    <motion.div
+      className="absolute z-10"
+      initial={{ x: 0, rotate: 0 }}
+      animate={scrollY > 0 ? { x: 200, rotate: 40 } : { x: 0, rotate: 0 }}
+      transition={{ type: 'tween', duration: 1 }}
+    >
+      <Image src={Mobiles1} alt="Right Image" layout="responsive" width={400} height={300} className="w-full h-auto" />
+    </motion.div>
+  </div>
+</div>
     </section>
   );
 };

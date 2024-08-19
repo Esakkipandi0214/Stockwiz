@@ -13,9 +13,9 @@ const cardsData = [
   { title: 'We are SEBI', description: 'Registered Experts', image: Card1 },
   { title: 'AI-Engine', description: 'Powered by the most powerful A.I trading tools', image: Card2 },
   { title: '10,000+', description: 'Active Pro Traders & Investors', image: Card3 },
-  { title: 'Daily LiveTrading ', description: 'Stream live with pro traders, everyday', image: Card4 },
-  { title: 'Verified P&L', description: 'Shared everyday with verified trade executions', image: Card5 },
-  { title: '125+ Crores', description: 'Daily community wide trading turnover', image: Card6 },
+  { title: 'Expert & Focus', description: 'High Profit Ratio by proper guidance', image: Card4 },
+  { title: 'Profit Results', description: 'Weekly & Monthly statement', image: Card5 },
+  { title: '24/7 Trading', description: 'Without interventions of Humans', image: Card6 },
 ];
 // cardsData[0].title
 const Testimonial: React.FC = () => {
@@ -54,7 +54,7 @@ const Testimonial: React.FC = () => {
             transition={{ duration: 0.6, ease: 'easeOut' }}
             className="bg-gradient-to-r from-lime-500 to-blue-500 bg-clip-text text-transparent px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-7xl lg:max-w-2xl xl:max-w-4xl"
           >
-            Stockwiz?
+            Zentra Wealth ?
           </motion.span>
         </motion.h4>
         

@@ -2,17 +2,17 @@
 
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import Header from "@/Components/UI/Header";  // Adjust the path if necessary
-import Footer from "@/Components/UI/Footer";
+import Header from "../Components/UI/Header";  // Adjust the path if necessary
+import Footer from "../Components/UI/Footer";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div>
       <Header />
-      <main className=""> {/* Add padding or other layout styles here if needed */}
+      <main className="pt-16"> {/* Add padding-top to avoid content overlap */}
         <Component {...pageProps} />
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

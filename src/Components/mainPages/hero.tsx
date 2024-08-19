@@ -36,15 +36,15 @@ const hangingAnimationLeft = {
 const Hero: React.FC = () => {
   return (
     <div className="w-full p-4 md:p-12 lg:grid lg:gap-4 lg:grid-cols-12 grid-cols-1 bg-gradient-to-r from-black to-green-800">
-       <div className="lg:col-span-5 flex justify-center lg:justify-start items-center text-center lg:text-left text-white">
+       <div className="lg:col-span-5 ml-[40px] flex justify-center lg:justify-start items-center text-center lg:text-left text-white">
         <div className="flex flex-col gap-4 lg:gap-6">
-          <p className="p-3 mx-auto lg:mx-0 rounded-3xl bg-gradient-to-r from-teal-400/45 to-blue-500/50">
-            SEBI Registered - INH000013925
+          <p className="p-3 mx-auto lg:mx-0 rounded-3xl flex justify-start pl-10 bg-gradient-to-r from-teal-400/45 to-blue-500/50">
+            SEBI Registered
           </p>
           <div className="flex flex-col items-center lg:items-start gap-2 lg:gap-3">
-            <p className="text-3xl md:text-5xl lg:text-6xl font-semibold">Become A</p>
-            <p className="text-3xl md:text-5xl lg:text-6xl font-semibold">
-              Super <span className="text-green-400">Trader</span>
+            <p className="text-3xl md:text-5xl lg:text-3xl font-semibold">Welcome to Zentra Wealth :</p>
+            <p className="text-3xl md:text-5xl lg:text-2xl font-semibold">
+            Your gateway to smart <br /> Investing and Strong Returns
             </p>
           </div>
         </div>
@@ -79,9 +79,8 @@ const Hero: React.FC = () => {
       </div>
       <div className=" min-h-[100px] md:col-span-5 md:ml-9 flex-col gap-10  md:flex-col md:gap-3 flex justify-start text-white">
       <div className="flex flex-col gap-1 lg:gap-2 text-center lg:text-left">
-          <p className="text-lg">Unlock the secrets of the top 1% professional institutional</p>
-          <p className="text-lg">traders with Super Trader Program. Get unlimited access</p>
-          <p className="text-lg">to powerful institutional trading ideas</p>
+          <p className="text-lg">&quot;At Zentra Wealth, we turn your financial goals into real wealth. We use simple, smart strategies and offer personalized service to help you navigate the market and achieve the best results.&quot;
+          </p>
         </div>
         <div className=' flex md:flex-col flex-row md:p-1 md:gap-0 gap-8 md:ml-6 '>
          <span className=' flex text-center flex-col md:flex-row justify-center md:justify-start items-center md:items-center'>
@@ -105,7 +104,8 @@ const Hero: React.FC = () => {
 </defs>
 </svg> 
          </Link>
-         <p className=' text-lg font-semibold'>Trade Like Professional Traders</p>
+         <p className=' text-lg font-semibold'>Richer gets Richer !
+         </p>
          </span>
          <span className=' flex text-center flex-col justify-center md:flex-row md:justify-start items-center md:items-center'>
         <Link href="#" aria-label="Back to homepage" className="flex items-center">
@@ -130,7 +130,8 @@ const Hero: React.FC = () => {
 </defs>
 </svg>
          </Link>
-         <p className=' text-lg font-semibold'>75%+ Trade Accuracy</p>
+         <p className=' text-lg font-semibold'>85% + Profit Accuracy
+         </p>
          </span>
          <span className=' flex text-center flex-col justify-center items-center md:justify-start md:flex-row  md:items-center'>
         <Link href="#" aria-label="Back to homepage" className="flex items-center">
@@ -156,7 +157,8 @@ const Hero: React.FC = () => {
 </defs>
 </svg>
          </Link>
-         <p className=' text-lg font-semibold'>10+ Trading Stratagies</p>
+         <p className=' text-lg font-semibold'>5+ Strategies to get Rich
+         </p>
          </span>
         </div>
       </div>

@@ -8,42 +8,153 @@ import Wattsapp from '../../../public/whatsapp.png';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isServiceOpen, setIsSerivceOpen] = useState(false);
 
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+  const toggleServicedown = () => {
+    setIsSerivceOpen(!isServiceOpen);
+  };
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header className="p-1 bg-[#001219] relative ">
-      <div className="container flex justify-between h-16 mx-auto">
-      <div className="flex items-center text-lg">
-  <Link href="#" aria-label="Back to homepage" className="flex items-center p-2">
-    {/* Stylized text or logo */}
-    <span className="font-bold text-3xl text-[#16FF00]">Z</span>
-    <span className="font-light text-2xl text-white ml-1">ENTRA</span>
-  </Link>
-</div>
-        <div className="items-center hidden lg:flex gap-7">
-          <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
-            Home
+    <header className="fixed top-0 left-0 w-full p-1 bg-[#001219] z-50">  {/* Make header fixed */}
+      <div className="container flex justify-between h-[80px] mx-auto">
+        <div className="flex items-center text-lg">
+          <Link href="#" aria-label="Back to homepage" className="flex items-center p-2">
+            <span className="font-bold text-3xl text-[#16FF00]">Zentra</span>
+            <span className="font-light text-2xl text-white ml-1">Wealth</span>
           </Link>
-          <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
-            Features
-          </Link>
-          <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
-            Courses
-          </Link>
-          <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
-            Community
-          </Link>
-          <button className="text-sm font-semibold bg-transparent border-2 border-[#F9B208] rounded-[30px] hover:bg-[#060e15f1] hover:text-[#F9B208] py-1 px-4">
-            <p className='bg-[#F9B208] py-1 px-2 rounded-[25px] hover:bg-[#060e15f1]'>App Coming Soon</p>
-          </button>
         </div>
-        <div className="items-center hidden lg:flex">
-          <Image src={Wattsapp} alt="WhatsApp" width={30} height={30} className="filter invert-[1] grayscale mr-5 transition-all duration-300" />
+        <div className="items-center hidden lg:flex gap-7">
+      <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+        Home
+      </Link>
+      <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+        Features
+      </Link>
+      
+      <div className="relative inline-block text-left">
+        <button
+          onClick={toggleDropdown}
+          className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px] flex items-center"
+        >
+          Updates
+          <svg
+            className="w-2.5 h-2.5 ms-3"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="m1 1 4 4 4-4"
+            />
+          </svg>
+        </button>
+        {isDropdownOpen && (
+          <div className="z-10 absolute right-0 mt-2 w-44 bg-black divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600">
+            <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
+              <li>
+                <Link href="#" className="block px-4 py-2 hover:bg-lime-500  text-white hover:text-black">
+                Announcements
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="block px-4 py-2 hover:bg-lime-500  text-white hover:text-black">
+                Tutorial
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="block px-4 py-2 hover:bg-lime-500  text-white hover:text-black">
+                News & Research
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="block px-4 py-2 hover:bg-lime-500  text-white hover:text-black">
+                FAQ
+                </Link>
+              </li>
+              {/* Add more course items here as needed */}
+            </ul>
+          </div>
+        )}
+      </div>
+      <div className="relative inline-block text-left">
+        <button
+          onClick={toggleServicedown}
+          className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px] flex items-center"
+        >
+          Services
+          <svg
+            className="w-2.5 h-2.5 ms-3"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="m1 1 4 4 4-4"
+            />
+          </svg>
+        </button>
+        {isServiceOpen && (
+          <div className="z-10 absolute right-0 mt-2 w-44 bg-black divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600">
+            <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
+              <li>
+                <Link href="#" className="block px-4 py-2 hover:bg-lime-500  text-white hover:text-black">
+                Zentra AI BOT
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="block px-4 py-2 hover:bg-lime-500  text-white hover:text-black">
+                Zentra Indian Stocks
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="block px-4 py-2 hover:bg-lime-500  text-white hover:text-black">
+                Zentra US Stocks
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="block px-4 py-2 hover:bg-lime-500  text-white hover:text-black">
+                Tether Trade
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="block px-4 py-2 hover:bg-lime-500  text-white hover:text-black">
+                Zentra Crypto
+                </Link>
+              </li>
+              {/* Add more course items here as needed */}
+            </ul>
+          </div>
+        )}
+      </div>
+      <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+      About us
+      </Link>
+    </div>
+        <div className="items-center hidden  gap-4 lg:flex">
+          {/* <Image src={Wattsapp} alt="WhatsApp" width={30} height={30} className="filter invert-[1] grayscale mr-5 transition-all duration-300" /> */}
           <button className="px-6 py-2 text-lg font-medium text-[#f8f9fa] hover:text-[#16FF00] hover:border-[#16FF00]/50 rounded-[25px] border-2 backdrop-blur-lg hover:bg-white/10 border-[#f8f9fa]">
             Sign up
+          </button>
+          <button className="px-6 py-2 text-lg font-medium text-[#f8f9fa] hover:text-[#16FF00] hover:border-[#16FF00]/50 rounded-[25px] border-2 backdrop-blur-lg hover:bg-white/10 border-[#f8f9fa]">
+          Log In
           </button>
         </div>
         <div className="lg:hidden flex items-center">
@@ -57,7 +168,7 @@ const Header: React.FC = () => {
       </div>
       {isMenuOpen && (
         <div className="lg:hidden absolute left-0 top-16 w-full min-h-[700px] bg-black/80 z-50 flex flex-col items-start space-y-4 p-7 mt-2">
-               <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+          <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
             Home
           </Link>
           <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">

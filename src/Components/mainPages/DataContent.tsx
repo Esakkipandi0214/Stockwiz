@@ -6,9 +6,9 @@ type DataItem = {
 };
 
 const dataItems: DataItem[] = [
-  { label: 'Hours Of Content', value: '300 +' },
-  { label: 'Total Modules', value: '10 +' },
-  { label: 'Strategies', value: '12 +' },
+  { label: 'Clients', value: '33000 +' },
+  { label: 'Years results', value: '15 +' },
+  { label: 'Services', value: '5 +' },
   { label: 'Registered', value: 'SEBI' }, // Assuming this is an icon or text
 ];
 
