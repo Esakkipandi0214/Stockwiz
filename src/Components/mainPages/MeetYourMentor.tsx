@@ -56,7 +56,7 @@ const Testimonial: React.FC = () => {
               Founder & CEO, Stockwiz Technologies
             </p>
             <p className="text-lg lg:text-2xl leading-relaxed text-center lg:text-left text-white/50 font-medium">
-              Hello everyone! I'm Parang, a SEBI and NISM registered and certified research analyst. I have over 10 years of trading and investing experience, specializing in institutional stock trading. My educational background is rich in the finance domain, including an MBA in Finance, Financial Modelling and Valuation Analyst (FMVA) certification, and I am a CFA Level III candidate.
+              Hello everyone! I&apos;m Parang, a SEBI and NISM registered and certified research analyst. I have over 10 years of trading and investing experience, specializing in institutional stock trading. My educational background is rich in the finance domain, including an MBA in Finance, Financial Modelling and Valuation Analyst (FMVA) certification, and I am a CFA Level III candidate.
             </p>
             <div className="flex justify-center lg:justify-start">
               <span className="flex flex-row items-center gap-3 bg-gradient-to-r from-[#1A3636] via-black via-40% to-green-950 to-99% border-2 border-white rounded-3xl p-4 lg:p-6 w-full lg:w-auto">
