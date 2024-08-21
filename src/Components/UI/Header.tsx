@@ -34,11 +34,7 @@ const Header: React.FC = () => {
         <div className="items-center hidden lg:flex gap-7">
       <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
         Home
-      </Link>
-      <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
-        Features
-      </Link>
-      
+      </Link> 
       <div className="relative inline-block text-left">
         <button
           onClick={toggleDropdown}
@@ -170,9 +166,6 @@ const Header: React.FC = () => {
         <div className="lg:hidden absolute left-0 top-16 w-full min-h-[700px] bg-black/80 z-50 flex flex-col items-start space-y-4 p-7 mt-2">
           <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
             Home
-          </Link>
-          <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
-            Features
           </Link>
           <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
             Courses

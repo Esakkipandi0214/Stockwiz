@@ -84,41 +84,43 @@ const images = [
         </div>
         {/* =========================================cards carousal================================================= */}
 
-        <div className='flex-1 justify-center items-center md:mt-16  px-8'>
-      <div className='w-full min-h-[100px] px-16'>
-        <Carousel className="relative w-full px-8">
-          <CarouselPrevious className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10" />
-          <CarouselNext className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10" />
-          <CarouselContent className="flex justify-between space-x-4">
-            {images.map((image, index) => (
-              <CarouselItem key={index} className="flex-1 min-w-[300px]">
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  className="rounded-lg object-contain w-full h-full"
-                  width={image.width}
-                  height={image.height}
-                  layout="responsive"
-                />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel>
-      </div>
-    </div>
+        <div className="flex justify-center items-center md:mt-16 px-4 md:px-28">
+  <div className="w-full min-h-[100px]">
+    <Carousel className="relative w-full">
+      <CarouselPrevious className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10" />
+      <CarouselNext className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10" />
+      <CarouselContent className="flex justify-between space-x-4">
+        {images.map((image, index) => (
+          <CarouselItem key={index} className="flex-1 min-w-[250px] sm:min-w-[300px] md:min-w-[400px]">
+            <Image
+              src={image.src}
+              alt={image.alt}
+              className="rounded-lg object-contain w-full h-full"
+              width={image.width}
+              height={image.height}
+              layout="responsive"
+            />
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+    </Carousel>
+  </div>
+</div>
                
         {/* ================================================= End Cards Carousal =================================== */}
         {/* ==========================Button ================================================== */}
-        <div className=" min-h-[100px]  md:col-span-5 md:mt-8 flex justify-start items-center text-center text-white">
-        <div className=' w-full md:ml-20 ml-20 items-center justify-center flex'>
-        <button
-  type="button"
-  className=" p-4 w-2/6 rounded-2xl bg-gradient-to-r from-[rgb(157,255,101)] text-black hover:text-white to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
-><Link rel="stylesheet" className=' text-lg font-semibold text-black hover:text-white' href="#" >
-  Request Verified P&L</Link>
-</button>
-        </div>
-      </div>
+        <div className="min-h-[100px] flex justify-center items-center text-center text-white md:mt-8 md:col-span-5">
+  <div className="w-full px-4 md:px-8 flex justify-center">
+    <button
+      type="button"
+      className="p-4 w-full max-w-[300px] rounded-2xl bg-gradient-to-r from-[rgb(157,255,101)] text-black hover:text-white to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
+    >
+      <Link href="#" className="text-lg font-semibold text-black hover:text-white">
+        Request Verified P&L
+      </Link>
+    </button>
+  </div>
+</div>
       {/* ================================================================ */}
     </section>
   );
