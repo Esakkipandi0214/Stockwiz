@@ -170,7 +170,7 @@ const Footer: React.FC = () => {
           </span>
         </nav>
       </footer>
-      <footer className="footer bg-base-200 text-base-content border-base-300 bg-[#000000]/90 border-t px-10 py-4">
+      {/* <footer className="footer bg-base-200 text-base-content border-base-300 bg-[#000000]/90 border-t px-10 py-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <aside className="flex items-center mb-4 md:mb-0 md:ml-[80px]">
             <p className="text-center md:text-left md:text-base text-xs text-white/50">
@@ -283,7 +283,7 @@ const Footer: React.FC = () => {
             </a>
           </nav>
         </div>
-      </footer>
+      </footer> */}
     </>
   );
 };

@@ -14,16 +14,16 @@ const dataItems: DataItem[] = [
 
 const DataDisplay: React.FC = () => {
   return (
-    <div className="w-full grid sm:grid-cols-4 bg-black/95 grid-cols-2 gap-1 py-4 pl-32">
+    <div className="w-full grid grid-cols-1 gap-4 p-4 bg-black/95 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 sm:gap-6 md:gap-8 lg:gap-10">
       {dataItems.map((item, index) => (
         <div
           key={index}
-          className="min-h-[100px] flex flex-col gap-y-2 justify-start items-start text-white text-center p-2 relative"
+          className="flex flex-col gap-y-2 justify-center items-center text-white text-center p-4 relative"
         >
-          <div className="text-3xl sm:text-4xl font-bold">{item.value}</div>
-          <div className="text-base sm:text-lg">{item.label}</div>
+          <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">{item.value}</div>
+          <div className="text-sm sm:text-base md:text-lg lg:text-xl">{item.label}</div>
           {index < dataItems.length - 1 && (
-            <div className="absolute right-0 top-0 h-full w-[1px] mx-5 bg-slate-400"></div>
+            <div className="hidden lg:block absolute right-0 top-0 h-full w-[1px] bg-slate-400"></div>
           )}
         </div>
       ))}
