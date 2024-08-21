@@ -181,7 +181,7 @@ const ExampleComponent = () => {
         <p className="text-sm sm:text-base md:text-lg text-white/50">{item.label}</p>
         {/* Hide vertical line on small devices */}
         {index < dataItems.length - 1 && (
-          <div className={`absolute right-0 top-0 h-full w-[1px] bg-slate-400 ${index % 2 === 0 ? 'hidden lg:block' : ''}`}></div>
+          <div className={`absolute right-0 top-0 h-full w-[1px] bg-slate-400 ${index % 1 === 0 ? 'hidden lg:block' : ''}`}></div>
         )}
       </div>
     ))}

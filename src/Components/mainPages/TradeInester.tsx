@@ -51,7 +51,7 @@ const Testimonial: React.FC = () => {
     initial={{ opacity: 0, y: 50 }}
     animate={controls}
     transition={{ duration: 0.6, ease: 'easeOut' }}
-    className="text-xl font-semibold text-center sm:font-normal sm:text-xl md:text-xl lg:text-4xl xl:text-2xl lg:max-w-2xl xl:max-w-4xl px-4 sm:px-6 md:px-8 py-2 text-white"
+    className="text-base font-semibold text-center sm:font-normal sm:text-xl md:text-xl lg:text-4xl xl:text-2xl lg:max-w-2xl xl:max-w-4xl px-4 sm:px-6 md:px-8 py-2 text-white/80"
   >
     &quot;We&apos;ve transformed trading and investing into a community experience. Join us to trade, learn, and connect with traders across India.&quot;
   </motion.p>

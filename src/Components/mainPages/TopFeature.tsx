@@ -28,7 +28,7 @@ const Testimonial: React.FC = () => {
   }, [controls, inView]);
 
   return (
-    <section className="bg-black/95 md:pt-20 pb-20">
+    <section className="bg-black/95 md:pt-20 md:pb-20 pb-1 ">
       <div className="container flex flex-col items-center md:-mb-10  p-4 mx-auto space-y-6 md:p-2">
         <motion.div
           ref={ref}
