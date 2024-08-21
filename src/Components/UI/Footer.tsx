@@ -9,14 +9,20 @@ const Footer: React.FC = () => {
     <>
       <footer className="footer bg-base-200 text-base-content bg-[#000000]/90 grid grid-cols-1 lg:pl-24 lg:pr-14 sm:grid-cols-1 p- lg:grid-cols-3 gap-5">
         <nav className="flex-1 flex-col w-full">
-        <Link href="#" aria-label="Back to homepage" className="flex items-center pt-14 pb-4">
-        {/* Stylized text or logo */}
-    <span className="font-bold text-4xl text-[#16FF00]">Zentra</span>
-    <span className="font-light text-3xl text-white ml-1">Wealth</span>
-          </Link>
-          <p className=' text-white'>Welcome to India&apos;s largest SEBI <br/>registered trading & investing<br/>platform. We offer educatoin,
-          <br/>advisory & research services </p>
-          <span className=' flex flex-row md:my-5  md:gap-3 bg-white/5 rounded-3xl md:h-20 md:w-2/3'>
+        <Link href="#" aria-label="Back to homepage" className="flex items-center pt-14 pb-4 justify-center md:justify-start">
+  {/* Stylized text or logo */}
+  <span className="font-bold text-4xl text-[#16FF00]">Zentra</span>
+  <span className="font-light text-3xl text-white ml-1">Wealth</span>
+</Link>
+
+<p className="text-white text-center md:text-left mb-4">
+    Welcome to India&apos;s largest SEBI <br />
+    registered trading & investing<br />
+    platform. We offer education,
+    <br />
+    advisory & research services
+  </p>
+          <span className=' flex flex-row md:my-5 mx-10 md:mx-0 mb-5  md:gap-3 bg-white/5 rounded-3xl md:h-20 md:w-2/3'>
           <Link href="#" aria-label="Back to homepage" className="flex items-center p-2">
           <svg width="50" height="95" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M81.837 48.4499C83.815 46.1881 83.815 42.8119 81.837 40.5501L77.9374 36.0912C76.8555 34.8541 76.3284 33.2273 76.4792 31.5908L77.0213 25.7066C77.2975 22.7096 75.3106 19.9718 72.3757 19.3052L66.6387 18.002C65.029 17.6364 63.641 16.6237 62.8016 15.2024L59.792 10.1069C58.2573 7.50841 55.0314 6.45422 52.2584 7.64498L46.8671 9.96007C45.3555 10.6091 43.6438 10.6091 42.1322 9.96006L36.7342 7.6421C33.9641 6.45258 30.7415 7.50326 29.2048 10.0969L26.2031 15.1632C25.3604 16.5857 23.968 17.5973 22.3547 17.9593L16.6391 19.2417C13.6971 19.9018 11.702 22.6427 11.9779 25.6452L12.5215 31.5608C12.6715 33.1932 12.1471 34.8158 11.0701 36.0517L7.14922 40.5511C5.17784 42.8133 5.18082 46.1841 7.15621 48.4428L11.0625 52.9095C12.1441 54.1462 12.6712 55.7723 12.5209 57.4084L11.9766 63.3316C11.7012 66.3281 13.688 69.0651 16.6224 69.7316L22.3654 71.0361C23.9723 71.4011 25.3584 72.411 26.1984 73.8287L29.1981 78.8917C30.7376 81.4903 33.9688 82.5393 36.7412 81.3407L42.1267 79.0122C43.6414 78.3573 45.3589 78.3552 46.8752 79.0063L52.2651 81.3208C55.0352 82.5103 58.2579 81.4597 59.7945 78.866L62.801 73.7916C63.641 72.3739 65.027 71.3641 66.634 70.9991L72.3757 69.6948C75.3106 69.0282 77.2975 66.2904 77.0213 63.2934L76.4792 57.4092C76.3284 55.7727 76.8555 54.1459 77.9374 52.9088L81.837 48.4499Z" fill="url(#paint0_linear_4730_30251)"/>
@@ -70,14 +76,14 @@ const Footer: React.FC = () => {
             {/* <p className=' text-white font-bold'> INHOOOO13925</p> */}
           </span>
           </span>
-          <span className='mb-4 flex flex-col gap-2 bg-white/5 p-3 rounded-xl md:w-2/3'>
+          <span className='mb-4 flex flex-col gap-2 justify-center md:justify-start md:items-start items-center md:mx-0 mx-10 bg-white/5 p-3 rounded-xl md:w-2/3'>
             <p className=' text-white'>Compliance Info</p>
             <p className=' text-white/40'>Compilance Officer: <span className=' text-white'>Iyyappan</span></p>
             <p className=' text-white/40'>Number: <span className=' text-white'>+91 99623 23022</span></p>
             <p className=' text-white/40'>Email: <span className=' text-white'>Tethertrades10101@gmail.com</span></p>
           </span>
         </nav>
-        <nav className="flex flex-row md:gap-20 md:my-20">
+        <nav className="flex md:flex-row md:gap-20 justify-center items-center md:justify-start md:items-start gap-10 md:my-20">
           <span className=' flex flex-col md:gap-6'>
           <h6 className="footer-title mb-4 text-white font-bold text-lg">Quik Links</h6>
           <a className="link link-hover mb-2 text-white/50">About us</a>
@@ -99,7 +105,7 @@ const Footer: React.FC = () => {
           <a className="link link-hover text-white/50">Careers</a>
           </span>
         </nav>
-        <nav className="flex flex-col md:mt-20">
+        <nav className="flex flex-col md:mt-20 justify-center items-center md:justify-start md:items-start">
           <h6 className="footer-title mb-4 text-white font-bold text-lg">Contact</h6>
           <span className=' flex flex-col md:gap-5'>
             <p className=' text-white/30'>Call us:</p>
@@ -110,9 +116,9 @@ const Footer: React.FC = () => {
 <path d="M16.835 14.1796L15.1366 13.9856C14.9369 13.9622 14.7344 13.9843 14.5445 14.0503C14.3546 14.1163 14.1821 14.2245 14.0399 14.3668L12.8096 15.5972C10.9113 14.6317 9.36842 13.0888 8.403 11.1906L9.64005 9.95353C9.92758 9.666 10.068 9.26479 10.0212 8.8569L9.82728 7.17184C9.78937 6.84564 9.63283 6.54478 9.38745 6.32653C9.14208 6.10828 8.82501 5.98789 8.49662 5.98828H7.33981C6.5842 5.98828 5.95565 6.61684 6.00246 7.37244C6.35685 13.0829 10.9239 17.6433 16.6277 17.9977C17.3833 18.0445 18.0119 17.4159 18.0119 16.6603V15.5035C18.0186 14.8282 17.5104 14.2598 16.835 14.1796Z" fill="#28F2FF"/>
 </svg>
             </Link>
-            <p className=' text-white mt-2'>+91 99623 23022<span> | </span>  <span className=' text-white'>+91 81225 11997</span></p>
+            <p className=' text-white mt-2'>+91 99623 23022<span className=' md:inline-block hidden md:ml-2'> | </span>  <span className=' text-white md:inline-block flex md:mt-3'>+91 81225 11997</span></p>
             </span>
-            <hr className=' md:w-16 mt-0'/>
+            <hr className=' md:w-16 md:my-0  my-5'/>
             <span>
               <span>
                 <p className=' text-white/30'>Working Hours:</p>
@@ -126,7 +132,7 @@ const Footer: React.FC = () => {
             <p className=' text-white mt-2'>24/7 and All days</p>
                 </span>
               </span>
-              <hr className=' md:w-16 mt-2'/>
+              <hr className=' md:w-16 md:my-0  my-5'/>
             </span>
             <span>
               <span>
@@ -151,9 +157,9 @@ const Footer: React.FC = () => {
 </p>
                 </span>
               </span>
-              <hr className=' md:w-16 mt-2'/>
+              <hr className=' md:w-16 md:my-1 my-5'/>
             </span>
-            <span>
+            <span className=' md:mb-6 mb-0'>
               <span>
                 <p className=' text-white/30'>Email Us:</p>
                 <span className=' flex flex-row justify-start'>
@@ -165,6 +171,7 @@ const Footer: React.FC = () => {
             </Link>
             <p className=' text-white mt-2'>Tethertrades10101@gmail.com</p>
                 </span>
+                <hr className=' md:w-16 my-5 flex md:hidden md:my-0'/>
               </span>
             </span>
           </span>

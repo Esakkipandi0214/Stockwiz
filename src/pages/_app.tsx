@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div>
       <Header />
-      <main className="pt-16"> {/* Add padding-top to avoid content overlap */}
+      <main className="pt-20"> {/* Add padding-top to avoid content overlap */}
         <Component {...pageProps} />
       </main>
       <Footer />
