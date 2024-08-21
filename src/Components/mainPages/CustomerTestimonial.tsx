@@ -47,56 +47,58 @@ const Testimonial: React.FC = () => {
 
   return (
     <section className="bg-black/95 md:pt-20 pb-20">
-      <div className="container flex flex-col items-center md:-mb-10  p-4 mx-auto space-y-6 md:p-2">
-        <motion.h4
-          ref={ref}
-          initial={{ opacity: 0, y: 50 }}
-          animate={controls}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-7xl lg:max-w-2xl xl:max-w-4xl text-white"
-        >Customer
-        <motion.span
-          ref={ref}
-          initial={{ opacity: 0, y: 50 }}
-          animate={controls}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="bg-gradient-to-r from-green-500 to-teal-400 bg-clip-text text-transparent px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-7xl lg:max-w-2xl xl:max-w-4xl"
-        >
-         Testimonials
-        </motion.span> 
-        </motion.h4>
-        <motion.p
-          ref={ref}
-          initial={{ opacity: 0, y: 50 }}
-          animate={controls}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="content px-6 py-2 text-2xl font-semibold text-center sm:font-normal sm:text-3xl md:text-xl lg:max-w-2xl xl:max-w-4xl text-white"
-        >
-        </motion.p>
-        </div>
+      <div className="container flex flex-col items-center md:-mb-10 p-4 mx-auto space-y-6 md:p-2">
+  <motion.h4
+    ref={ref}
+    initial={{ opacity: 0, y: 50 }}
+    animate={controls}
+    transition={{ duration: 0.6, ease: 'easeOut' }}
+    className="px-4 md:px-6 text-xl font-semibold text-center sm:font-bold sm:text-2xl md:text-5xl lg:text-7xl lg:max-w-2xl xl:max-w-4xl text-white"
+  >
+    Customer
+    <motion.span
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={controls}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="bg-gradient-to-r from-green-500 to-teal-400 bg-clip-text text-transparent px-4 md:px-6 text-xl font-semibold text-center sm:font-bold sm:text-2xl md:text-5xl lg:text-7xl lg:max-w-2xl xl:max-w-4xl"
+    >
+      Testimonials
+    </motion.span>
+  </motion.h4>
+  <motion.p
+    ref={ref}
+    initial={{ opacity: 0, y: 50 }}
+    animate={controls}
+    transition={{ duration: 0.6, ease: 'easeOut' }}
+    className="px-4 md:px-6 py-2 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-center sm:font-normal lg:max-w-2xl xl:max-w-4xl text-white"
+  >
+    {/* Add your content here */}
+  </motion.p>
+</div>
         {/* =========================================cards carousal================================================= */}
-        <div className="flex flex-col items-center md:mt-16 px-8">
-  <div className="w-full min-h-[100px] px-16">
+        <div className="flex flex-col items-center md:mt-16 px-4 md:px-8">
+  <div className="w-full min-h-[100px] md:px-16">
     {/* Carousel Section */}
-    <Carousel className="relative w-full px-8">
-      <CarouselPrevious className="absolute left-0 top-1/2 transform translate-x-[420px] z-10" />
-      <CarouselNext className="absolute right-0 top-1/2 transform -translate-x-[430px] z-10" />
-      <CarouselContent className="flex justify-between space-x-4">
+    <Carousel className="relative w-full px-4 md:px-8">
+      <CarouselPrevious className="absolute left-0 top-1/2 transform translate-x-0 md:translate-x-[420px] z-10" />
+      <CarouselNext className="absolute right-0 top-1/2 transform translate-x-0 md:-translate-x-[430px] z-10" />
+      <CarouselContent className="flex justify-between space-x-2 md:space-x-4">
         {images.map((image, index) => (
-          <CarouselItem key={index} className="flex-1 min-w-[410px] ">
-            <div className="flex items-center border border-lime-500  space-x-10 bg-black h-[400px] px-6 rounded-3xl shadow-lg">
+          <CarouselItem key={index} className="flex-1 min-w-[280px] md:min-w-[410px]">
+            <div className="flex items-center border border-lime-500 space-x-4 md:space-x-10 bg-black h-auto md:h-[400px] p-4 md:px-6 rounded-3xl shadow-lg">
               <Image
                 src={image.src}
                 alt={image.alt}
-                className="rounded-full object-cover w-24 h-24"
+                className="rounded-full object-cover w-16 h-16 md:w-24 md:h-24"
                 width={image.width}
                 height={image.height}
                 layout="fixed"
               />
-            <div className=" grid gap-3">
-                <h2 className="text-xl text-white font-semibold">{image.title}</h2>
-                <p className=" text-white">{image.description}</p>
-                <p className=" text-white/50 h-[200px] text-ellipsis">{image.body}</p>
+              <div className="grid gap-2 md:gap-3">
+                <h2 className="text-base md:text-xl text-white font-semibold">{image.title}</h2>
+                <p className="text-sm md:text-base text-white">{image.description}</p>
+                <p className="text-xs md:text-sm text-white/50 h-[100px] md:h-[200px] text-ellipsis">{image.body}</p>
               </div>
             </div>
           </CarouselItem>

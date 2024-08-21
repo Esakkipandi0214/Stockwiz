@@ -36,19 +36,19 @@ const hangingAnimationLeft = {
 const Hero: React.FC = () => {
   return (
     <div className="w-full p-4 md:p-12 lg:grid lg:gap-4 lg:grid-cols-12 grid-cols-1 bg-gradient-to-r from-black to-green-800">
-       <div className="lg:col-span-5 ml-[40px] flex justify-center lg:justify-start items-center text-center lg:text-left text-white">
-        <div className="flex flex-col gap-4 lg:gap-6">
-          <p className="p-3 mx-auto lg:mx-0 rounded-3xl flex justify-start pl-10 bg-gradient-to-r from-teal-400/45 to-blue-500/50">
-            SEBI Registered
-          </p>
-          <div className="flex flex-col items-center lg:items-start gap-2 lg:gap-3">
-            <p className="text-3xl md:text-5xl lg:text-3xl font-semibold">Welcome to Zentra Wealth :</p>
-            <p className="text-3xl md:text-5xl lg:text-2xl font-semibold">
-            Your gateway to smart <br /> Investing and Strong Returns
-            </p>
-          </div>
-        </div>
-      </div>
+       <div className="lg:col-span-5 ml-4 md:ml-[40px] mb-4 flex justify-center lg:justify-start items-center text-center lg:text-left text-white">
+  <div className="flex flex-col gap-4 lg:gap-6">
+    <p className="p-3 mx-auto lg:mx-0 rounded-3xl flex justify-start pl-6 md:pl-10 bg-gradient-to-r from-teal-400/45 to-blue-500/50">
+      SEBI Registered
+    </p>
+    <div className="flex flex-col items-center lg:items-start gap-2 lg:gap-3">
+      <p className="text-2xl md:text-4xl lg:text-3xl font-semibold">Welcome to Zentra Wealth :</p>
+      <p className="text-2xl md:text-4xl lg:text-2xl font-semibold">
+        Your gateway to smart <br /> Investing and Strong Returns
+      </p>
+    </div>
+  </div>
+</div>
       <div className="min-h-[100px] md:row-span-3  md:col-span-7 md:flex hidden items-center justify-center text-center text-white">
     <div className="w-full md:ml-20 flex flex-col gap-2">
       <div className="relative md:-translate-x-16">
@@ -104,8 +104,10 @@ const Hero: React.FC = () => {
 </defs>
 </svg> 
          </Link>
-         <p className=' text-lg font-semibold'>Richer gets Richer !
-         </p>
+         <p className='text-sm md:text-xl lg:text-2xl font-semibold break-words'>
+  Richer gets Richer!
+</p>
+
          </span>
          <span className=' flex text-center flex-col justify-center md:flex-row md:justify-start items-center md:items-center'>
         <Link href="#" aria-label="Back to homepage" className="flex items-center">
@@ -130,7 +132,7 @@ const Hero: React.FC = () => {
 </defs>
 </svg>
          </Link>
-         <p className=' text-lg font-semibold'>85% + Profit Accuracy
+         <p className='text-sm sm:text-lg md:text-xl lg:text-2xl font-semibold'>85% + Profit Accuracy
          </p>
          </span>
          <span className=' flex text-center flex-col justify-center items-center md:justify-start md:flex-row  md:items-center'>
@@ -157,20 +159,20 @@ const Hero: React.FC = () => {
 </defs>
 </svg>
          </Link>
-         <p className=' text-lg font-semibold'>5+ Strategies to get Rich
+         <p className='text-sm sm:text-lg md:text-xl lg:text-2xl font-semibold'>5+ Strategies to get Rich
          </p>
          </span>
         </div>
       </div>
       <div className=" min-h-[100px]  md:col-span-5 flex justify-start items-start text-center text-white">
-        <div className=' w-full md:ml-20 ml-20 items-start flex'>
-        <button
-  type="button"
-  className=" p-4 w-2/4 rounded-2xl bg-gradient-to-r from-[rgb(157,255,101)] to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
->
-  Hover me
-</button>
-        </div>
+      <div className="w-full flex justify-center md:justify-start items-start p-4 md:ml-20 ml-4">
+  <button
+    type="button"
+    className="p-4 w-full md:w-2/4 rounded-2xl bg-gradient-to-r from-[rgb(157,255,101)] to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow text-center"
+  >
+    Hover me
+  </button>
+</div>
       </div>
     </div>
   );
