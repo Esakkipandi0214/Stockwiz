@@ -2,6 +2,12 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Facebook from '../../../public/facebook_hover.svg'
+import LinkedIn from '../../../public/linkdin_hover.svg'
+import Instagram from '../../../public/instagram_hover.svg'
+import Youtube from '../../../public/youtube_hover.svg' 
+import Twitter from '../../../public/tweet_hover.svg'
+import Image from 'next/image';
 
 const Footer: React.FC = () => {
   const [HoverEffect,setHoverEffect]=useState<boolean>(false);
@@ -177,7 +183,7 @@ const Footer: React.FC = () => {
           </span>
         </nav>
       </footer>
-      {/* <footer className="footer bg-base-200 text-base-content border-base-300 bg-[#000000]/90 border-t px-10 py-4">
+      <footer className="footer bg-base-200 text-base-content border-base-300 bg-[#000000]/90 border-t px-10 py-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <aside className="flex items-center mb-4 md:mb-0 md:ml-[80px]">
             <p className="text-center md:text-left md:text-base text-xs text-white/50">
@@ -187,110 +193,23 @@ const Footer: React.FC = () => {
           </aside>
           <nav className="flex space-x-4 mt-4 md:mt-0 md:pr-28">
             <a href="#" aria-label="Twitter">
-            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_f_7225_7375)">
-<circle cx="40" cy="40" r="17" fill="#1877F2"/>
-</g>
-<path d="M36.2266 53H41.6133V42.0389H46.4667L47 36.5926H41.6133V33.8421C41.6133 33.4792 41.7552 33.1311 42.0077 32.8745C42.2603 32.6179 42.6028 32.4737 42.96 32.4737H47V27H42.96C41.1742 27 39.4615 27.7209 38.1988 29.004C36.936 30.2871 36.2266 32.0275 36.2266 33.8421V36.5926H33.5333L33 42.0389H36.2266V53Z" fill="white"/>
-<defs>
-<filter id="filter0_f_7225_7375" x="0.6" y="0.6" width="78.8" height="78.8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="11.2" result="effect1_foregroundBlur_7225_7375"/>
-</filter>
-</defs>
-</svg>
+              <Image src={Facebook} width={60} height={70} alt="" />
             </a>
             <a href="#" aria-label="YouTube">
-            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_f_7225_7378)">
-<circle cx="40" cy="40" r="17" fill="#0A66C2"/>
-</g>
-<path d="M35.7006 48.9995H31.3469V34.9792H35.7006V48.9995ZM33.5214 33.0667C32.1292 33.0667 31 31.9136 31 30.5214C31 29.8527 31.2656 29.2114 31.7385 28.7385C32.2114 28.2656 32.8527 28 33.5214 28C34.1901 28 34.8315 28.2656 35.3043 28.7385C35.7772 29.2114 36.0428 29.8527 36.0428 30.5214C36.0428 31.9136 34.9131 33.0667 33.5214 33.0667ZM51.9953 48.9995H47.6509V42.1745C47.6509 40.548 47.6181 38.462 45.3873 38.462C43.1237 38.462 42.7769 40.2292 42.7769 42.0573V48.9995H38.4278V34.9792H42.6034V36.8917H42.6644C43.2456 35.7902 44.6655 34.6277 46.7838 34.6277C51.19 34.6277 52 37.5292 52 41.298V48.9995H51.9953Z" fill="white"/>
-<defs>
-<filter id="filter0_f_7225_7378" x="0.6" y="0.6" width="78.8" height="78.8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="11.2" result="effect1_foregroundBlur_7225_7378"/>
-</filter>
-</defs>
-</svg>
+            <Image src={LinkedIn} width={60} height={70} alt="" />
             </a>
             <a href="#" aria-label="Facebook" >
-            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_f_7225_7381)">
-<circle cx="40" cy="40" r="17" fill="url(#paint0_radial_7225_7381)"/>
-<circle cx="40" cy="40" r="17" fill="url(#paint1_radial_7225_7381)"/>
-</g>
-<g clip-path="url(#clip0_7225_7381)">
-<path d="M40 28C36.7435 28 36.334 28.015 35.0545 28.072C33.775 28.132 32.9035 28.333 32.14 28.63C31.3388 28.9305 30.6132 29.4031 30.0145 30.0145C29.4031 30.6132 28.9305 31.3388 28.63 32.14C28.333 32.902 28.1305 33.775 28.072 35.05C28.015 36.3325 28 36.7405 28 40.0015C28 43.2595 28.015 43.6675 28.072 44.947C28.132 46.225 28.333 47.0965 28.63 47.86C28.9375 48.649 29.347 49.318 30.0145 49.9855C30.6805 50.653 31.3495 51.064 32.1385 51.37C32.9035 51.667 33.7735 51.8695 35.0515 51.928C36.3325 51.985 36.7405 52 40 52C43.2595 52 43.666 51.985 44.947 51.928C46.2235 51.868 47.098 51.667 47.8615 51.37C48.6622 51.0693 49.3872 50.5967 49.9855 49.9855C50.653 49.318 51.0625 48.649 51.37 47.86C51.6655 47.0965 51.868 46.225 51.928 44.947C51.985 43.6675 52 43.2595 52 40C52 36.7405 51.985 36.3325 51.928 35.0515C51.868 33.775 51.6655 32.902 51.37 32.14C51.0695 31.3388 50.5969 30.6132 49.9855 30.0145C49.3868 29.4031 48.6612 28.9305 47.86 28.63C47.095 28.333 46.222 28.1305 44.9455 28.072C43.6645 28.015 43.258 28 39.997 28H40ZM38.9245 30.163H40.0015C43.2055 30.163 43.585 30.1735 44.8495 30.232C46.0195 30.2845 46.6555 30.481 47.0785 30.6445C47.638 30.862 48.0385 31.123 48.4585 31.543C48.8785 31.963 49.138 32.362 49.3555 32.923C49.5205 33.3445 49.7155 33.9805 49.768 35.1505C49.8265 36.415 49.8385 36.7945 49.8385 39.997C49.8385 43.1995 49.8265 43.5805 49.768 44.845C49.7155 46.015 49.519 46.6495 49.3555 47.0725C49.1617 47.5929 48.8549 48.0637 48.457 48.451C48.037 48.871 47.638 49.1305 47.077 49.348C46.657 49.513 46.021 49.708 44.8495 49.762C43.585 49.819 43.2055 49.8325 40.0015 49.8325C36.7975 49.8325 36.4165 49.819 35.152 49.762C33.982 49.708 33.3475 49.513 32.9245 49.348C32.4037 49.1549 31.9324 48.8485 31.5445 48.451C31.1459 48.0634 30.8385 47.592 30.6445 47.071C30.481 46.6495 30.2845 46.0135 30.232 44.8435C30.175 43.579 30.163 43.1995 30.163 39.994C30.163 36.7885 30.175 36.412 30.232 35.1475C30.286 33.9775 30.481 33.3415 30.646 32.9185C30.8635 32.359 31.1245 31.9585 31.5445 31.5385C31.9645 31.1185 32.3635 30.859 32.9245 30.6415C33.3475 30.4765 33.982 30.2815 35.152 30.2275C36.259 30.1765 36.688 30.1615 38.9245 30.16V30.163ZM46.4065 32.155C46.2174 32.155 46.0301 32.1922 45.8554 32.2646C45.6807 32.337 45.522 32.443 45.3883 32.5768C45.2545 32.7105 45.1485 32.8692 45.0761 33.0439C45.0037 33.2186 44.9665 33.4059 44.9665 33.595C44.9665 33.7841 45.0037 33.9714 45.0761 34.1461C45.1485 34.3208 45.2545 34.4795 45.3883 34.6132C45.522 34.747 45.6807 34.853 45.8554 34.9254C46.0301 34.9978 46.2174 35.035 46.4065 35.035C46.7884 35.035 47.1547 34.8833 47.4247 34.6132C47.6948 34.3432 47.8465 33.9769 47.8465 33.595C47.8465 33.2131 47.6948 32.8468 47.4247 32.5768C47.1547 32.3067 46.7884 32.155 46.4065 32.155ZM40.0015 33.838C39.1841 33.8252 38.3723 33.9752 37.6135 34.2792C36.8546 34.5832 36.1638 35.0351 35.5812 35.6086C34.9987 36.1822 34.536 36.8659 34.2203 37.6199C33.9045 38.3739 33.7419 39.1833 33.7419 40.0007C33.7419 40.8182 33.9045 41.6276 34.2203 42.3816C34.536 43.1356 34.9987 43.8193 35.5812 44.3929C36.1638 44.9664 36.8546 45.4183 37.6135 45.7223C38.3723 46.0263 39.1841 46.1763 40.0015 46.1635C41.6193 46.1383 43.1623 45.4779 44.2975 44.3249C45.4326 43.1719 46.0689 41.6188 46.0689 40.0007C46.0689 38.3827 45.4326 36.8296 44.2975 35.6766C43.1623 34.5236 41.6193 33.8632 40.0015 33.838ZM40.0015 35.9995C40.5269 35.9995 41.0471 36.103 41.5324 36.304C42.0178 36.5051 42.4588 36.7997 42.8303 37.1712C43.2018 37.5427 43.4964 37.9837 43.6975 38.4691C43.8985 38.9544 44.002 39.4746 44.002 40C44.002 40.5254 43.8985 41.0456 43.6975 41.5309C43.4964 42.0163 43.2018 42.4573 42.8303 42.8288C42.4588 43.2003 42.0178 43.4949 41.5324 43.696C41.0471 43.897 40.5269 44.0005 40.0015 44.0005C38.9405 44.0005 37.923 43.579 37.1727 42.8288C36.4225 42.0785 36.001 41.061 36.001 40C36.001 38.939 36.4225 37.9215 37.1727 37.1712C37.923 36.421 38.9405 35.9995 40.0015 35.9995Z" fill="white"/>
-</g>
-<defs>
-<filter id="filter0_f_7225_7381" x="0.6" y="0.6" width="78.8" height="78.8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="11.2" result="effect1_foregroundBlur_7225_7381"/>
-</filter>
-<radialGradient id="paint0_radial_7225_7381" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32.0312 59.6187) rotate(-90) scale(33.6965 31.3404)">
-<stop stop-color="#FFDD55"/>
-<stop offset="0.1" stop-color="#FFDD55"/>
-<stop offset="0.5" stop-color="#FF543E"/>
-<stop offset="1" stop-color="#C837AB"/>
-</radialGradient>
-<radialGradient id="paint1_radial_7225_7381" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(17.3049 25.4492) rotate(78.681) scale(15.0625 62.0882)">
-<stop stop-color="#3771C8"/>
-<stop offset="0.128" stop-color="#3771C8"/>
-<stop offset="1" stop-color="#6600FF" stop-opacity="0"/>
-</radialGradient>
-<clipPath id="clip0_7225_7381">
-<rect width="24" height="24" fill="white" transform="translate(28 28)"/>
-</clipPath>
-</defs>
-</svg>
-            </a>
-            <a href="#" aria-label="YouTube" onMouseOver={()=>setHoverEffect(true)} onMouseLeave={()=>setHoverEffect(false)}>
-            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_f_7225_7384)">
-<circle cx="40" cy="40" r="17" fill={HoverEffect ?"#FF0000":"#021526"}/>
-</g>
-<g clip-path="url(#clip0_7225_7384)">
-<mask id="mask0_7225_7384"   style={{ maskType: 'luminance' }} maskUnits="userSpaceOnUse" x="28" y="28" width="24" height="24">
-<path d="M28 28H52V52H28V28Z" fill="white"/>
-</mask>
-<g mask="url(#mask0_7225_7384)">
-<path d="M51.4996 34.5061C51.3637 34.0213 51.099 33.5824 50.7336 33.2361C50.3579 32.8791 49.8974 32.6237 49.3956 32.4941C47.5176 31.9991 39.9936 31.9991 39.9936 31.9991C36.857 31.9634 33.7211 32.1204 30.6036 32.4691C30.1018 32.6083 29.6422 32.8694 29.2656 33.2291C28.8956 33.5851 28.6276 34.0241 28.4876 34.5051C28.1513 36.3168 27.9879 38.1564 27.9996 39.9991C27.9876 41.8401 28.1506 43.6791 28.4876 45.4931C28.6246 45.9721 28.8916 46.4091 29.2626 46.7621C29.6336 47.1151 30.0956 47.3701 30.6036 47.5051C32.5066 47.9991 39.9936 47.9991 39.9936 47.9991C43.1343 48.0348 46.2742 47.8779 49.3956 47.5291C49.8974 47.3995 50.3579 47.1441 50.7336 46.7871C51.0989 46.4408 51.3633 46.0019 51.4986 45.5171C51.8437 43.7061 52.0115 41.8657 51.9996 40.0221C52.0256 38.1707 51.858 36.3227 51.4996 34.5061ZM37.6016 43.4231V36.5761L43.8616 40.0001L37.6016 43.4231Z" fill="white"/>
-</g>
-</g>
-<defs>
-<filter id="filter0_f_7225_7384" x="0.6" y="0.6" width="78.8" height="78.8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="11.2" result="effect1_foregroundBlur_7225_7384"/>
-</filter>
-<clipPath id="clip0_7225_7384">
-<rect width="24" height="24" fill="white" transform="translate(28 28)"/>
-</clipPath>
-</defs>
-</svg>
+            <Image src={Instagram} width={60} height={70} alt="" />
             </a>
             <a href="#" aria-label="YouTube">
-            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_f_7225_7387)">
-<circle cx="40" cy="40" r="17" fill="white" fill-opacity="0.46"/>
-</g>
-<path d="M46.901 29.1523H50.581L42.541 38.3423L52 50.8453H44.594L38.794 43.2613L32.156 50.8453H28.474L37.074 41.0153L28 29.1533H35.594L40.837 36.0853L46.901 29.1523ZM45.61 48.6433H47.649L34.486 31.2393H32.298L45.61 48.6433Z" fill="white"/>
-<defs>
-<filter id="filter0_f_7225_7387" x="0.6" y="0.6" width="78.8" height="78.8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="11.2" result="effect1_foregroundBlur_7225_7387"/>
-</filter>
-</defs>
-</svg>
+            <Image src={Youtube} width={60} height={70} alt="" />
+            </a>
+            <a href="#" aria-label="YouTube">
+            <Image src={Twitter} width={60} height={70} alt="" />
             </a>
           </nav>
         </div>
-      </footer> */}
+      </footer>
     </>
   );
 };
