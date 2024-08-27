@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
-import DisplayImage from '../../../public/plan-card.png'
+import DisplayImage from '../../../public/mock2.png'
 
 const Testimonial: React.FC = () => {
   const { ref, inView } = useInView({

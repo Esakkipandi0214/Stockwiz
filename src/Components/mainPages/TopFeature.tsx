@@ -109,7 +109,7 @@ const Testimonial: React.FC = () => {
   <div className="bg-black items-center rounded-3xl py-10 lg:py-14 border border-slate-600 hover:border-green-500 text-center lg:text-left px-6 lg:px-20 text-white lg:grid lg:grid-cols-2 lg:gap-6">
     <div className="relative flex justify-center lg:justify-start mt-6 lg:mt-0">
       <video width="100%" className="border border-slate-600 rounded-xl bg-black" autoPlay loop muted>
-        <source src="/vdoo.mp4" type="video/mp4" />
+        <source src="/vdo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
