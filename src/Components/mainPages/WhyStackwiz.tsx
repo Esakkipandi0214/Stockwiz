@@ -37,7 +37,7 @@ const Testimonial: React.FC = () => {
   }, [controls, inView]);
 
   return (
-    <section className="bg-black pt-11">
+    <section className="bg-gradient-to-r from-black to-teal-900  pt-11">
       <div className="container flex flex-col items-center mb-10 mx-auto space-y-6 md:p-2">
         <motion.h4
           ref={ref}
@@ -52,7 +52,7 @@ const Testimonial: React.FC = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={controls}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="bg-gradient-to-r from-lime-500 to-blue-500 bg-clip-text text-transparent px-2 sm:px-4"
+            className="bg-gradient-to-r from-green-500 to-teal-400 bg-clip-text text-transparent px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-7xl lg:max-w-2xl xl:max-w-4xl"
           >
             Zentra Wealth?
           </motion.span>

@@ -28,7 +28,7 @@ const Testimonial: React.FC = () => {
   }, [controls, inView]);
 
   return (
-    <section className="bg-black/95 md:pt-20 md:pb-20 pb-1 ">
+    <section className="bg-gradient-to-r from-teal-900 to-black md:pt-20 md:pb-20 pb-1 ">
       <div className="container flex flex-col items-center md:-mb-10  p-4 mx-auto space-y-6 md:p-2">
         <motion.div
           ref={ref}
@@ -49,7 +49,7 @@ const Testimonial: React.FC = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={controls}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-8xl lg:max-w-2xl xl:max-w-4xl"
+          className="bg-gradient-to-r from-green-500 to-teal-400 bg-clip-text text-transparent px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-8xl lg:max-w-2xl xl:max-w-4xl"
         >
          Features
         </motion.span> 
@@ -82,17 +82,20 @@ const Testimonial: React.FC = () => {
         <li className="text-base md:text-lg lg:text-lg">Course available in English & Hindi language.</li>
       </ul>
       <button
-        type="button"
-        className="p-3 md:p-4 w-full md:w-2/4 rounded-2xl bg-gradient-to-r from-[rgb(157,255,101)] text-black hover:text-white to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
+      type="button"
+      className="glitter-button p-3 md:p-4 w-full md:w-2/4 rounded-2xl text-black bg-gradient-to-r from-[rgb(157,255,101)] to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
+    >
+      <Link
+        className="text-lg font-semibold text-black hover:text-white"
+        href="#"
       >
-        <Link rel="stylesheet" className="text-lg font-semibold text-black hover:text-white" href="#">
-          Join Now
-        </Link>
-      </button>
+        Join Now
+      </Link>
+    </button>
     </div>
     <div className="relative flex justify-center lg:justify-start mt-6 lg:mt-0">
       <video width="100%" className="border border-slate-600 rounded-xl bg-black" autoPlay loop muted>
-        <source src="/featureVideo.mp4" type="video/mp4" />
+        <source src="/vd.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
@@ -106,7 +109,7 @@ const Testimonial: React.FC = () => {
   <div className="bg-black items-center rounded-3xl py-10 lg:py-14 border border-slate-600 hover:border-green-500 text-center lg:text-left px-6 lg:px-20 text-white lg:grid lg:grid-cols-2 lg:gap-6">
     <div className="relative flex justify-center lg:justify-start mt-6 lg:mt-0">
       <video width="100%" className="border border-slate-600 rounded-xl bg-black" autoPlay loop muted>
-        <source src="/RealTimeTrading.mp4" type="video/mp4" />
+        <source src="/vdo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
@@ -127,13 +130,16 @@ const Testimonial: React.FC = () => {
         Past performance is not indicative of future performance. Returns are not guaranteed; they can change with market conditions.
       </p>
       <button
-        type="button"
-        className="p-3 md:p-4 w-full md:w-2/4 rounded-2xl bg-gradient-to-r from-[rgb(157,255,101)] text-black hover:text-white to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow mt-4 lg:mt-6"
+      type="button"
+      className="glitter-button p-3 md:p-4 w-full md:w-2/4 rounded-2xl text-black bg-gradient-to-r from-[rgb(157,255,101)] to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
+    >
+      <Link
+        className="text-lg font-semibold text-black hover:text-white"
+        href="#"
       >
-        <Link rel="stylesheet" className="text-lg font-semibold text-black hover:text-white" href="#">
-          Join Now
-        </Link>
-      </button>
+        Join Now
+      </Link>
+    </button>
     </div>
   </div>
 </div>
@@ -155,17 +161,20 @@ const Testimonial: React.FC = () => {
         <li className="text-base md:text-lg lg:text-base">Daily live trading from 10am - 3pm.</li>
       </ul>
       <button
-        type="button"
-        className="p-3 md:p-4 w-full md:w-2/4 rounded-2xl bg-gradient-to-r from-[rgb(157,255,101)] text-black hover:text-white to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow mt-4 lg:mt-6"
+      type="button"
+      className="glitter-button p-3 md:p-4 w-full md:w-2/4 rounded-2xl text-black bg-gradient-to-r from-[rgb(157,255,101)] to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
+    >
+      <Link
+        className="text-lg font-semibold text-black hover:text-white"
+        href="#"
       >
-        <Link rel="stylesheet" className="text-lg font-semibold text-black hover:text-white" href="#">
-          Join Now
-        </Link>
-      </button>
+        Join Now
+      </Link>
+    </button>
     </div>
     <div className="relative flex justify-center lg:justify-start mt-6 lg:mt-0">
       <video width="100%" className="border border-slate-600 rounded-xl bg-black" autoPlay loop muted>
-        <source src="/LiveTrading.mp4" type="video/mp4" />
+        <source src="/v.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
@@ -178,7 +187,7 @@ const Testimonial: React.FC = () => {
   <div className="bg-black items-center rounded-3xl py-10 lg:py-14 border border-slate-600 hover:border-green-500 text-center lg:text-left px-6 lg:px-20 text-white lg:grid lg:grid-cols-2 lg:gap-6">
     <div className="relative flex justify-center lg:justify-start mb-6 lg:mb-0">
       <video className="w-full lg:w-auto border border-slate-600 rounded-xl bg-black" autoPlay loop muted>
-        <source src="/collaborate-la.mp4" type="video/mp4" />
+        <source src="/colb.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
@@ -196,13 +205,16 @@ const Testimonial: React.FC = () => {
         <li className="text-base md:text-lg lg:text-base">Interact with industry experts to improve your performance.</li>
       </ul>
       <button
-        type="button"
-        className="mt-4 md:mt-6 p-3 md:p-4 w-full md:w-2/4 rounded-2xl bg-gradient-to-r from-[rgb(157,255,101)] to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow text-black hover:text-white"
+      type="button"
+      className="glitter-button p-3 md:p-4 w-full md:w-2/4 rounded-2xl text-black bg-gradient-to-r from-[rgb(157,255,101)] to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
+    >
+      <Link
+        className="text-lg font-semibold text-black hover:text-white"
+        href="#"
       >
-        <Link rel="stylesheet" className="text-lg font-semibold text-black hover:text-white" href="#">
-          Join Now
-        </Link>
-      </button>
+        Join Now
+      </Link>
+    </button>
     </div>
   </div>
 </div>
@@ -226,13 +238,16 @@ const Testimonial: React.FC = () => {
         <li className="text-base md:text-lg lg:text-base">Powerful insights on trading & investing performance.</li>
       </ul>
       <button
-        type="button"
-        className="mt-4 md:mt-6 p-3 md:p-4 w-full md:w-2/4 rounded-2xl bg-gradient-to-r from-[rgb(157,255,101)] to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow text-black hover:text-white"
+      type="button"
+      className="glitter-button p-3 md:p-4 w-full md:w-2/4 rounded-2xl text-black bg-gradient-to-r from-[rgb(157,255,101)] to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
+    >
+      <Link
+        className="text-lg font-semibold text-black hover:text-white"
+        href="#"
       >
-        <Link className="text-lg font-semibold text-black hover:text-white" href="#">
-          Join Now
-        </Link>
-      </button>
+        Join Now
+      </Link>
+    </button>
     </div>
     <div className="relative flex justify-center lg:justify-start mt-6 lg:mt-0">
       <video className="w-full lg:w-auto border border-slate-600 rounded-xl bg-black" autoPlay loop muted>

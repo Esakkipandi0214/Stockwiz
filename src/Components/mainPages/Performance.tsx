@@ -47,7 +47,7 @@ const images = [
   }, [controls, inView]);
 
   return (
-    <section className="bg-black/95 md:pt-20 pb-20">
+    <section className="bg-gradient-to-r from-teal-900 to-black  md:pt-0 pb-20">
       <div className="container flex flex-col items-center md:-mb-10  p-4 mx-auto space-y-6 md:p-2">
         <motion.div
           ref={ref}
@@ -111,11 +111,14 @@ const images = [
         {/* ==========================Button ================================================== */}
         <div className="min-h-[100px] flex justify-center items-center text-center text-white md:mt-8 md:col-span-5">
   <div className="w-full px-4 md:px-8 flex justify-center">
-    <button
+  <button
       type="button"
-      className="p-4 w-full max-w-[300px] rounded-2xl bg-gradient-to-r from-[rgb(157,255,101)] text-black hover:text-white to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
+      className="glitter-button p-3 md:p-4 w-1/2 md:w-1/3 rounded-2xl text-black bg-gradient-to-r from-[rgb(157,255,101)] to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
     >
-      <Link href="#" className="text-lg font-semibold text-black hover:text-white">
+      <Link
+        className="text-lg font-semibold text-black hover:text-white"
+        href="#"
+      >
         Request Verified P&L
       </Link>
     </button>

@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const Testimonial: React.FC = () => {
   return (
-    <section className="bg-black/95 pb-10 pt-1">
+    <section className="bg-gradient-to-r from-teal-900 to-black pb-10 pt-1">
       <div className="z-20 mx-4 lg:mx-28 mt-11 py-2 bg-black rounded-[30px] border-2 border-green-500 text-center lg:text-left px-4 lg:px-10 text-white">
         <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-6 h-full">
           <div className="flex flex-col gap-4 lg:gap-20 items-center lg:items-start p-4 lg:p-8 lg:justify-start">

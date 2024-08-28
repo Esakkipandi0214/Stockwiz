@@ -9,12 +9,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext
 import { Card, CardContent } from "../../Components/UI/card";
 import Image from 'next/image';
 import Card1 from "../../../public/user1.png"
-import Card2 from "../../../public/user2.png"
-import Card3 from "../../../public/user3.png"
-import Card4 from "../../../public/user4.png"
-import Card5 from "../../../public/santosh-ravula.jpg"
-import Card6 from "../../../public/card6.png"
-import Card7 from "../../../public/card7.png"
+
 import Link from 'next/link';
 
 
@@ -26,10 +21,10 @@ const Testimonial: React.FC = () => {
 
   const images = [
     { src: Card1, alt: "Card Image 1", width: 600, height: 400, title: "Sharan Devendra Donthi", description: "Thank You Stockwiz For Making Me A Professional Trader!", body:"A successful trader is disciplined in risk, trade, emotion, and capital management. As Parang says, you are as good as the stocks you choose and the mentor you follow. Parang’s global market expertise and guidance have been invaluable. Highly recommended!" },
-    { src: Card2, alt: "Card Image 2", width: 600, height: 400, title: "Hardik Paliwal", description: "This Man Is An Inspiration! The Most Genuine Trader in India 🇮🇳",body:'Parang sir is an inspiration—his dedication to sharing knowledge has completely transformed my market approach. His understanding is incredible, and I’m grateful to have him as a mentor. Excited for a long, profitable journey ahead! 🔥🔥' },
-    { src: Card3, alt: "Card Image 3", width: 600, height: 400, title: "Snigdha", description: "He is the Google of Financial Markets! Brilliant Mentor, Super Helpful Community ❤️",body:'Parang is the best mentor with immense market knowledge and a genuine willingness to share it. With his guidance, I improve every day. Grateful for his incredible approach to trading since the start of my journey. 🙌' },
-    { src: Card4, alt: "Card Image 1", width: 600, height: 400, title: "Sharan Devendra Donthi", description: "Thank You Stockwiz For Making Me A Professional Trader!", body:"A successful trader is disciplined in risk, trade, emotion, and capital management. As Parang says, you are as good as the stocks you choose and the mentor you follow. Parang’s global market expertise and guidance have been invaluable. Highly recommended!" },
-    { src: Card5, alt: "Card Image 2", width: 600, height: 400, title: "Hardik Paliwal", description: "This Man Is An Inspiration! The Most Genuine Trader in India 🇮🇳",body:'Parang sir is an inspiration—his dedication to sharing knowledge has completely transformed my market approach. His understanding is incredible, and I’m grateful to have him as a mentor. Excited for a long, profitable journey ahead! 🔥🔥' },
+    { src: Card1, alt: "Card Image 2", width: 600, height: 400, title: "Hardik Paliwal", description: "This Man Is An Inspiration! The Most Genuine Trader in India 🇮🇳",body:'Parang sir is an inspiration—his dedication to sharing knowledge has completely transformed my market approach. His understanding is incredible, and I’m grateful to have him as a mentor. Excited for a long, profitable journey ahead! 🔥🔥' },
+    { src: Card1, alt: "Card Image 3", width: 600, height: 400, title: "Snigdha", description: "He is the Google of Financial Markets! Brilliant Mentor, Super Helpful Community ❤️",body:'Parang is the best mentor with immense market knowledge and a genuine willingness to share it. With his guidance, I improve every day. Grateful for his incredible approach to trading since the start of my journey. 🙌' },
+    { src: Card1, alt: "Card Image 1", width: 600, height: 400, title: "Sharan Devendra Donthi", description: "Thank You Stockwiz For Making Me A Professional Trader!", body:"A successful trader is disciplined in risk, trade, emotion, and capital management. As Parang says, you are as good as the stocks you choose and the mentor you follow. Parang’s global market expertise and guidance have been invaluable. Highly recommended!" },
+    { src: Card1, alt: "Card Image 2", width: 600, height: 400, title: "Hardik Paliwal", description: "This Man Is An Inspiration! The Most Genuine Trader in India 🇮🇳",body:'Parang sir is an inspiration—his dedication to sharing knowledge has completely transformed my market approach. His understanding is incredible, and I’m grateful to have him as a mentor. Excited for a long, profitable journey ahead! 🔥🔥' },
     { src: Card1, alt: "Card Image 3", width: 600, height: 400, title: "Snigdha", description: "He is the Google of Financial Markets! Brilliant Mentor, Super Helpful Community ❤️",body:'Parang is the best mentor with immense market knowledge and a genuine willingness to share it. With his guidance, I improve every day. Grateful for his incredible approach to trading since the start of my journey. 🙌' }
 
   ];
@@ -46,7 +41,7 @@ const Testimonial: React.FC = () => {
   }, [controls, inView]);
 
   return (
-    <section className="bg-black/95 md:pt-20 pb-20">
+    <section className="bg-gradient-to-r from-black to-teal-900 md:pt-20 pb-20">
       <div className="container flex flex-col items-center md:-mb-10 p-4 mx-auto space-y-6 md:p-2">
   <motion.h4
     ref={ref}

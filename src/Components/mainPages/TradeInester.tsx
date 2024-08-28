@@ -26,7 +26,7 @@ const Testimonial: React.FC = () => {
   }, [controls, inView]);
 
   return (
-    <section className="bg-black pr-6 pb-20">
+    <section className="bg-gradient-to-r from-black to-teal-900  pr-6 pb-20">
       <div className="container flex flex-col items-center p-4 mb-20 mx-auto space-y-6 sm:p-6 md:p-8 lg:p-10">
   <motion.h4
     ref={ref}
@@ -42,7 +42,7 @@ const Testimonial: React.FC = () => {
     initial={{ opacity: 0, y: 50 }}
     animate={controls}
     transition={{ duration: 0.6, ease: 'easeOut' }}
-    className="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl lg:max-w-2xl xl:max-w-4xl px-4 sm:px-6 md:px-8"
+    className="bg-gradient-to-r from-green-500 to-teal-400 bg-clip-text text-transparent px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-7xl lg:max-w-2xl xl:max-w-4xl"
   >
     Traders & Investors
   </motion.h3>
@@ -182,13 +182,14 @@ const Testimonial: React.FC = () => {
     We help everyone become Super Traders.
   </p>
   <button
-    type="button"
-    className="p-4 w-full max-w-md rounded-2xl mx-auto bg-gradient-to-r from-[rgb(157,255,101)] text-black hover:text-white to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
-  >
-    <Link className="text-lg font-semibold text-black hover:text-white" href="#">
-      Join Now
-    </Link>
-  </button>
+  type="button"
+  className="glitter-button p-4 w-full max-w-md rounded-2xl mx-auto bg-gradient-to-r from-[rgb(157,255,101)] text-black hover:text-white to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
+>
+  <Link className="text-lg font-semibold text-black hover:text-white" href="#">
+    Join Now
+  </Link>
+</button>
+
 </div>
 
 
