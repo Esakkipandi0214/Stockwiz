@@ -45,7 +45,7 @@ const dataItems: DataItem[] = [
 
 const DataDisplay: React.FC = () => {
   return (
-    <div className="w-full grid grid-cols-1 gap-4 p-4 sm:grid-cols-2 lg:grid-cols-4 bg-black/95">
+    <div className="w-full grid grid-cols-1 gap-4 p-4 sm:grid-cols-2 lg:grid-cols-4 bg-gradient-to-r from-black via-gray-900 to-black">
       {dataItems.map((item, index) => (
         <div
           key={item.id}

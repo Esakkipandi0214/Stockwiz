@@ -128,7 +128,7 @@ const ExampleComponent = () => {
   }, [controls, inView]);
 
   return (
-    <section className="bg-black px-4 py-6 md:px-6 md:py-12 lg:px-8 lg:py-16 h-auto">
+    <section className="bg-gradient-to-r from-black to-teal-900 px-4 py-6 md:px-6 md:py-12 lg:px-8 lg:py-16 h-auto">
       <div className="container flex flex-col items-center mx-auto space-y-6">
         <motion.h4
           ref={ref}
@@ -144,7 +144,7 @@ const ExampleComponent = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={controls}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="bg-gradient-to-r from-lime-500 to-teal-400 bg-clip-text text-transparent py-2 sm:py-3 sm:px-6 md:py-4 md:px-8 text-sm font-semibold text-center sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl flex items-center justify-center"
+          className="bg-gradient-to-r from-green-500 to-teal-400 bg-clip-text text-transparent py-2 sm:py-3 sm:px-6 md:py-4 md:px-8 text-sm font-semibold text-center sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl flex items-center justify-center"
         >
           <TypeAnimation
             sequence={[

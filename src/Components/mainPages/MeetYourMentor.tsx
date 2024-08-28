@@ -5,7 +5,7 @@ import Image from 'next/image';
 import DisplayImage from '../../../public/super-trade-banner.png'
 import VideoFeature from '../../../public/featureVideo.mp4'
 import BackFrame from "../../../public/videoframe_99.png"
-import CEO from '../../../public/banner-top.png'
+import CEO from '../../../public/admin.jpg'
 import Link from 'next/link';
 
 const Testimonial: React.FC = () => {
@@ -25,7 +25,7 @@ const Testimonial: React.FC = () => {
   }, [controls, inView]);
 
   return (
-    <section className="bg-black/95 pb-10">
+    <section className="bg-gradient-to-r from-teal-900 to-black pt-10">
       <div className="container flex flex-col items-center p-4 mx-auto space-y-6 md:p-2">
         <motion.h4
           ref={ref}
@@ -40,9 +40,9 @@ const Testimonial: React.FC = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={controls}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="bg-gradient-to-r from-lime-500 to-teal-400 bg-clip-text text-transparent"
+            className="bg-gradient-to-r from-green-500 to-teal-400 bg-clip-text text-transparent px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-7xl lg:max-w-2xl xl:max-w-4xl"
           >
-            Mentor
+             Mentor
           </motion.span> 
         </motion.h4>
       </div>
@@ -51,12 +51,12 @@ const Testimonial: React.FC = () => {
       <div className="z-20 mx-4 sm:mx-8 lg:mx-28 mt-11 py-2 bg-black rounded-[50px] border border-slate-600 hover:border-green-500 text-white">
         <div className="flex flex-col lg:flex-row items-center lg:items-start p-4 lg:p-8 gap-6">
           <div className="flex flex-col gap-4 lg:gap-6 w-full lg:w-1/2">
-            <h2 className="text-3xl lg:text-7xl font-semibold text-center lg:text-left">PARANG MEHTA</h2>
+            <h2 className="text-3xl lg:text-7xl font-semibold text-center lg:text-left">Essaki Pandian</h2>
             <p className="text-xl lg:text-3xl mb-4 lg:mb-7 text-white/50 font-medium text-center lg:text-left">
-              Founder & CEO, Stockwiz Technologies
+              Founder & CEO, Zendra Technologies
             </p>
             <p className="text-lg lg:text-2xl leading-relaxed text-center lg:text-left text-white/50 font-medium">
-              Hello everyone! I&apos;m Parang, a SEBI and NISM registered and certified research analyst. I have over 10 years of trading and investing experience, specializing in institutional stock trading. My educational background is rich in the finance domain, including an MBA in Finance, Financial Modelling and Valuation Analyst (FMVA) certification, and I am a CFA Level III candidate.
+              Hello everyone! I&apos;Essaki, a SEBI and NISM registered and certified research analyst. I have over 10 years of trading and investing experience, specializing in institutional stock trading. My educational background is rich in the finance domain, including an MBA in Finance, Financial Modelling and Valuation Analyst (FMVA) certification, and I am a CFA Level III candidate.
             </p>
             <div className="flex justify-center lg:justify-start">
               <span className="flex flex-row items-center gap-3 bg-gradient-to-r from-[#1A3636] via-black via-40% to-green-950 to-99% border-2 border-white rounded-3xl p-4 lg:p-6 w-full lg:w-auto">

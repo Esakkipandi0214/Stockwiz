@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import bgImage from '../../../public/pricingBg.jpg';
+import bgImage from '../../../public/pri.jpg';
 
 interface PlanFeature {
   feature: string;
