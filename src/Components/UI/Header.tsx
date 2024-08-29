@@ -1,3 +1,6 @@
+
+import React, { useState } from 'react';
+
 // components/Header.tsx
 
 import React from 'react';
@@ -138,6 +141,17 @@ const Header: React.FC = () => {
               {/* Add more course items here as needed */}
             </ul>
           </div>
+
+
+          <Link href="/About" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+            About Us
+          </Link>
+          <Link href="/Contact" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+            Contact Us
+          </Link>
+        </div>
+        <div className="items-center hidden gap-4 lg:flex">
+
         )}
       </div>
       <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
@@ -145,6 +159,7 @@ const Header: React.FC = () => {
       </Link>
     </div>
         <div className="items-center hidden  gap-4 lg:flex">
+
           <button className="px-6 py-2 text-lg font-medium text-[#f8f9fa] hover:text-[#16FF00] hover:border-[#16FF00]/50 rounded-[25px] border-2 backdrop-blur-lg hover:bg-white/10 border-[#f8f9fa]">
             Sign up
           </button>
@@ -231,6 +246,49 @@ const Header: React.FC = () => {
               fill="none"
               viewBox="0 0 10 6"
             >
+
+              Services
+            </button>
+            {isServiceOpen && (
+              <div id="service-menu-mobile" className="w-full bg-black divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600">
+                <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
+                  <li>
+                    <Link href="#" className="block px-4 py-2 hover:bg-lime-500 text-white hover:text-black">
+                      Zentra AI BOT
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" className="block px-4 py-2 hover:bg-lime-500 text-white hover:text-black">
+                      Zentra Indian Stocks
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" className="block px-4 py-2 hover:bg-lime-500 text-white hover:text-black">
+                      Zentra US Stocks
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" className="block px-4 py-2 hover:bg-lime-500 text-white hover:text-black">
+                      Tether Trade
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" className="block px-4 py-2 hover:bg-lime-500 text-white hover:text-black">
+                      Zentra Crypto
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            )}
+            <Link href="/About" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+              About Us
+            </Link>
+            <Link href="/Contact" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+              Contact Us
+            </Link>
+          </div>
+        </div>
+
               <path
                 stroke="currentColor"
                 strokeLinecap="round"
@@ -282,6 +340,7 @@ const Header: React.FC = () => {
           Sign up
         </button>
       </div>
+
       )}
     </header>
   );
