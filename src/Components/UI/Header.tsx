@@ -142,6 +142,7 @@ const Header: React.FC = () => {
               </div>
             )}
           </div>
+
           <Link href="/About" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
             About Us
           </Link>
@@ -150,6 +151,18 @@ const Header: React.FC = () => {
           </Link>
         </div>
         <div className="items-center hidden gap-4 lg:flex">
+
+        )}
+      </div>
+      <Link href="/about" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+      About us
+      </Link>
+      <Link href="/contact" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+      Contact
+      </Link>
+    </div>
+        <div className="items-center hidden  gap-4 lg:flex">
+
           {/* <Image src={Wattsapp} alt="WhatsApp" width={30} height={30} className="filter invert-[1] grayscale mr-5 transition-all duration-300" /> */}
           <button className="px-6 py-2 text-lg font-medium text-[#f8f9fa] hover:text-[#16FF00] hover:border-[#16FF00]/50 rounded-[25px] border-2 backdrop-blur-lg hover:bg-white/10 border-[#f8f9fa]">
             Sign up
@@ -257,6 +270,18 @@ const Header: React.FC = () => {
             </button>
           </div>
         </div>
+
+
+        <Link href="" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+          About Us
+        </Link>
+        <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+          Contact Us
+        </Link>
+        <button className="px-6 py-2 ml-4 text-lg font-medium text-[#16FF00] rounded-[25px] border-2 backdrop-blur-lg bg-[#16FF00]/5 border-[#16FF00]/5">
+          Sign up
+        </button>
+      </div>
       )}
     </header>
   );

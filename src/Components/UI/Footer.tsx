@@ -215,15 +215,9 @@ const Footer: React.FC = () => {
             <h6 className="footer-title mb-4 text-white font-bold text-lg">
               Company
             </h6>
-            <a className="link link-hover mb-2 text-white/50">Disclaimer</a>
-            <a className="link link-hover mb-2 text-white/50">
-              Greivance Policy
-            </a>
-            <a className="link link-hover mb-2 text-white/50">SEBI Scores</a>
-            <a className="link link-hover text-white/50">Terms & Conditions</a>
-            <a className="link link-hover text-white/50">Privacy Policy</a>
-            <a className="link link-hover text-white/50">Refund Policy</a>
-            <a className="link link-hover text-white/50">Careers</a>
+          <Link className="text-white hover:text-white/50 " href="/terms">Terms & Conditions</Link>
+          <Link className="text-white hover:text-white/50" href="/privacy">Privacy Policy</Link>
+          <Link className="text-white hover:text-white/50" href='/cookie'>Cookie Policy</Link>
           </span>
         </nav>
         <nav className="flex flex-col md:mt-20 justify-center items-center md:justify-start md:items-start">
