@@ -26,7 +26,7 @@ const Header: React.FC = () => {
     <header className="fixed top-0 left-0 w-full p-1 bg-[#001219] z-50">  {/* Make header fixed */}
       <div className="container flex justify-between h-[80px] mx-auto">
         <div className="flex items-center text-lg">
-          <Link href="#" aria-label="Back to homepage" className="flex items-center p-2">
+          <Link href="" aria-label="Back to homepage" className="flex items-center p-2">
             <span className="font-bold text-3xl text-[#16FF00]">Zentra</span>
             <span className="font-light text-2xl text-white ml-1">Wealth</span>
           </Link>

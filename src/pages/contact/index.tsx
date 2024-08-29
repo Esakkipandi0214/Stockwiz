@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaTwitter, FaInstagram, FaGamepad } from 'react-icons/fa';
+import { BackgroundBeams } from "../../Components/UI/background-beams";
+
 const ContactPage = () => {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -48,7 +50,9 @@ const ContactPage = () => {
         </div>
       </div>
       <form onSubmit={handleSubmit} className="w-2/3 bg-gray-900 p-10 rounded-lg ml-8">
-        <h2 className="text-3xl font-semibold mb-6">Contact Us</h2>
+      <h1 className="relative z-10 text-xl md:text-6xl  bg-clip-text text-transparent bg-gradient-to-b from-[#16FF00] to-black-400 font-sans font-bold mb-4">
+      Contact Us
+      </h1>
         <div className="grid grid-cols-2 gap-6 mb-6">
           <div>
             <label className="block text-lg mb-2">First Name</label>
@@ -58,7 +62,7 @@ const ContactPage = () => {
               value={formData.firstName}
               onChange={handleChange}
               required
-              className="w-full p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-green-500"/>
+              className="w-full p-3 rounded relative z-10 bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-green-500"/>
           </div>
           <div>
             <label className="block text-lg mb-2">Last Name</label>
@@ -68,7 +72,7 @@ const ContactPage = () => {
               value={formData.lastName}
               onChange={handleChange}
               required
-              className="w-full p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-green-500"/>
+              className="w-full p-3 rounded relative z-10 bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-green-500"/>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-6 mb-6">
@@ -80,7 +84,7 @@ const ContactPage = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-green-500"/>
+              className="w-full p-3 rounded relative z-10 bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-green-500"/>
           </div>
           <div>
             <label className="block text-lg mb-2">Phone Number</label>
@@ -90,10 +94,11 @@ const ContactPage = () => {
               value={formData.phoneNumber}
               onChange={handleChange}
               required
-              className="w-full p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-green-500"/>
+              className="w-full p-3 rounded relative z-10 bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-green-500"/>
           </div>
         </div>
-        <div className="mb-6">
+
+        <div className="mb-6"> 
           <label className="block text-lg mb-2">Select Subjects</label>
           <div className="flex justify-between">
             <label className="flex items-center">
@@ -103,7 +108,7 @@ const ContactPage = () => {
                 value="General enquiry"
                 checked={formData.subject === 'General enquiry'}
                 onChange={handleSubjectChange}
-                className="mr-2"/>
+                className="mr-2 relative z-10"/>
               General enquiry
             </label>
             <label className="flex items-center">
@@ -113,7 +118,7 @@ const ContactPage = () => {
                 value="Product enquiry"
                 checked={formData.subject === 'Product enquiry'}
                 onChange={handleSubjectChange}
-                className="mr-2"/>
+                className="mr-2 relative z-10"/>
               Product enquiry
             </label>
             <label className="flex items-center">
@@ -123,7 +128,7 @@ const ContactPage = () => {
                 value="Partner with us"
                 checked={formData.subject === 'Partner with us'}
                 onChange={handleSubjectChange}
-                className="mr-2"/>
+                className="mr-2 relative z-10"/>
               Partner with us
             </label>
           </div>
@@ -135,15 +140,18 @@ const ContactPage = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className="w-full p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-green-500 h-32 resize-none"/>
+            className="w-full p-3 rounded relative z-10 bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-green-500 h-32 resize-none"/>
         </div>
+     
         <button
           type="submit"
           className="w-full py-3 rounded bg-green-500 hover:bg-green-500 text-white font-semibold text-lg transition duration-300">
           Send Message
         </button>
       </form>
+      <BackgroundBeams className='' />
     </div>
   );
 };
 export default ContactPage;
+
