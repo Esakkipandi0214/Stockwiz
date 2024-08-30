@@ -7,6 +7,7 @@ import Image2 from '../../../public/build_strong_network_connections.jpg';
 import Image3 from '../../../public/explore_multi_assets_trading.png';
 import Image4 from '../../../public/aI_generated.png';
 import Link from 'next/link';
+import Typewriter from 'typewriter-effect';
 import TradeResponsive from './TradeInvesterResponsive'
 
 const Testimonial: React.FC = () => {
@@ -177,10 +178,15 @@ const Testimonial: React.FC = () => {
 
     {/* ====================================-------------------------------------------====================================== */}
     <div className="grid justify-center items-center gap-10 px-4 sm:px-6 md:px-8 lg:px-16">
-  <p className="text-lg sm:text-xl md:text-2xl lg:text-4xl text-center text-white font-medium">
-    We are India&apos;s Largest SEBI registered trading community.<br/>
-    We help everyone become Super Traders.
-  </p>
+  <span className="text-lg sm:text-xl md:text-2xl lg:text-4xl text-center text-white font-medium">
+  <Typewriter
+          options={{
+            strings: ['We are India`s Largest SEBI registered trading community. We help everyone become Super Traders.'],
+            autoStart: true,
+            loop: true,
+          }}
+        />
+  </span>
   <button
   type="button"
   className="glitter-button p-4 w-full max-w-md rounded-2xl mx-auto bg-gradient-to-r from-[rgb(157,255,101)] text-black hover:text-white to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"

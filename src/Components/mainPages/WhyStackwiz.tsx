@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
@@ -8,6 +8,7 @@ import Card3 from '../../../public/founded-by-hover.svg';
 import Card4 from '../../../public/unbase-imp-hover.svg';
 import Card5 from '../../../public/hit-target-hover.svg';
 import Card6 from '../../../public/crores-green.svg';
+import { HoverEffect } from '../UI/card-hover-effect'; // Update path if necessary
 
 const cardsData = [
   { title: 'We are SEBI', description: 'Registered Experts', image: Card1 },
@@ -19,8 +20,6 @@ const cardsData = [
 ];
 
 const Testimonial: React.FC = () => {
-  const [hoveredCardIndex, setHoveredCardIndex] = useState<number | null>(null);
-
   const { ref, inView } = useInView({
     threshold: 0.2,
     rootMargin: '0px 0px -20% 0px',
@@ -37,14 +36,14 @@ const Testimonial: React.FC = () => {
   }, [controls, inView]);
 
   return (
-    <section className="bg-gradient-to-r from-black to-teal-900  pt-11">
-      <div className="container flex flex-col items-center mb-10 mx-auto space-y-6 md:p-2">
+    <section className="bg-gradient-to-r from-black to-teal-900 pt-11">
+      <div className="container flex flex-col items-center mx-auto space-y-6 md:p-2">
         <motion.h4
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={controls}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="px-6 text-2xl font-semibold flex text-center sm:font-bold sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl text-white"
+          className="px-6 text-3xl font-semibold flex text-center sm:font-bold sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-green-500"
         >
           Why
           <motion.span
@@ -52,12 +51,12 @@ const Testimonial: React.FC = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={controls}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="bg-gradient-to-r from-green-500 to-teal-400 bg-clip-text text-transparent px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-7xl lg:max-w-2xl xl:max-w-4xl"
+            className="bg-gradient-to-r from-green-500 to-teal-400 bg-clip-text text-transparent px-6 text-3xl font-semibold text-center sm:font-bold sm:text-4xl md:text-8xl lg:max-w-2xl xl:max-w-4xl"
           >
             Zentra Wealth?
           </motion.span>
         </motion.h4>
-        
+
         <motion.p
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
@@ -69,32 +68,10 @@ const Testimonial: React.FC = () => {
         </motion.p>
       </div>
 
-      {/* AI-Engine Cards Section */}
-      <div className="py-16">
+      {/* HoverEffect Cards Section */}
+      <div className="">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12 sm:gap-y-16 md:gap-x-10 md:gap-y-20">
-            {cardsData.map((card, index) => (
-              <motion.div
-                key={index}
-                className="bg-slate-600/35 hover:border-[#56e842] w-full max-w-[350px] h-[350px] mx-auto border-white/5 border p-8 sm:p-10 rounded-[40px] shadow-lg flex flex-col text-center transition-transform transform hover:scale-105"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                onMouseEnter={() => setHoveredCardIndex(index)}
-                onMouseLeave={() => setHoveredCardIndex(null)}
-              >
-                <Image
-                  src={card.image}
-                  alt={`AI Engine Card ${index + 1}`}
-                  className={`w-20 h-20 object-cover mx-auto transition-all duration-500 ${
-                    hoveredCardIndex === index && '[transform-style:preserve-3d] [transform:rotateY(180deg)]'
-                  }`}
-                />
-                <h5 className="text-2xl sm:text-3xl md:text-4xl font-bold pt-4 text-[#56e842]">{card.title}</h5>
-                <p className="text-lg sm:text-xl md:text-2xl text-white font-semibold pt-3">{card.description}</p>
-              </motion.div>
-            ))}
-          </div>
+          <HoverEffect items={cardsData} />
         </div>
       </div>
     </section>
