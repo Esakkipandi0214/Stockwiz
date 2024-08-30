@@ -1,8 +1,12 @@
-import React from 'react';
-
+"use client";
+import React from "react";
+// import { calsans } from "@/fonts/calsans";
+import { TracingBeam } from "../../Components/UI/tracing-beam";
 const CookiesPolicy: React.FC = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-900 via-gray-800 to-black p-8 rounded-lg text-white">
+    <div className=" bg-gradient-to-b w-full from-gray-900 via-gray-700 to-black p-8 rounded-none text-white">
+
+    <TracingBeam className="px-2">
       <div className="flex items-center justify-center mb-12">
         <h2 className="text-3xl font-bold text-center">Cookies Policy</h2>
       </div>
@@ -56,8 +60,11 @@ const CookiesPolicy: React.FC = () => {
           If you are unhappy about having a cookie sent to you, you can set your browser to refuse cookies or choose to have your computer warn you each time a cookie is being sent. However, if you turn your cookies off, some of our services may not function properly.
         </p>
       </div>
-    </div>
+
+        </TracingBeam>
+      </div>
   );
-};
+}
+
 
 export default CookiesPolicy;

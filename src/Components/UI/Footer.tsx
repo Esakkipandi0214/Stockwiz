@@ -13,39 +13,50 @@ const Footer: React.FC = () => {
   const [HoverEffect, setHoverEffect] = useState<boolean>(false);
   return (
     <>
-      <footer className="footer bg-base-200 text-base-content bg-gradient-to-r from-black to-teal-900  grid grid-cols-1 lg:pl-24 lg:pr-14 sm:grid-cols-1 p- lg:grid-cols-3 gap-5">
+      <footer className="footer pt-4 bg-base-200 text-base-content bg-gradient-to-r from-black to-teal-800  grid grid-cols-1 lg:pl-24 lg:pr-14 sm:grid-cols-1 py-4 pb-4 lg:grid-cols-2 gap-5">
         <nav className="flex-1 flex-col w-full">
-          <Link
+           <Link
             href="#"
             aria-label="Back to homepage"
             className="flex items-center pt-14 pb-4 justify-center md:justify-start"
           >
-            {/* Stylized text or logo */}
-            <span className="font-bold text-4xl text-[#16FF00]">Zentra</span>
-            <span className="font-light text-3xl text-white ml-1">Wealth</span>
-          </Link>
+            {/* Stylized text or logo  */}
+            <span className="font-bold text-5xl text-[#16FF00]">Zentra</span>
+            <span className="font-light text-4xl text-white ml-1">Wealth</span>
+         </Link>
+         <nav className="flex space-x-4 mt-4 md:mt-0 md:pr-28">
+            <a href="#" aria-label="Twitter">
+              <Image src={Facebook} width={60} height={70} alt="" />
+            </a>
+            <a href="#" aria-label="YouTube">
+              <Image src={LinkedIn} width={60} height={70} alt="" />
+            </a>
+            <a href="#" aria-label="Facebook">
+              <Image src={Instagram} width={60} height={70} alt="" />
+            </a>
+            <a href="#" aria-label="YouTube">
+              <Image src={Youtube} width={60} height={70} alt="" />
+            </a>
+            <a href="#" aria-label="YouTube">
+              <Image src={Twitter} width={60} height={70} alt="" />
+            </a>
+          </nav>
 
-          <p className="text-white text-center md:text-left mb-4">
+          {/* <p className="text-white text-center md:text-left mb-4">
             Welcome to India&apos;s largest SEBI <br />
             registered trading & investing
             <br />
             platform. We offer education,
             <br />
             advisory & research services
-          </p>
-          <span className=" flex flex-row md:my-5 mx-10 md:mx-0 mb-5  md:gap-3 bg-white/5 rounded-3xl md:h-20 md:w-2/3">
-            <Link
+          </p> */}
+          {/* <span className=" flex flex-row md:my-5 mx-10 md:mx-0 mb-5  md:gap-3 bg-white/5 rounded-3xl md:h-20 md:w-2/3"> */}
+            {/* <Link
               href="#"
               aria-label="Back to homepage"
               className="flex items-center p-2"
             >
-              <svg
-                width="50"
-                height="95"
-                viewBox="0 0 89 89"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+             */}
                 <path
                   d="M81.837 48.4499C83.815 46.1881 83.815 42.8119 81.837 40.5501L77.9374 36.0912C76.8555 34.8541 76.3284 33.2273 76.4792 31.5908L77.0213 25.7066C77.2975 22.7096 75.3106 19.9718 72.3757 19.3052L66.6387 18.002C65.029 17.6364 63.641 16.6237 62.8016 15.2024L59.792 10.1069C58.2573 7.50841 55.0314 6.45422 52.2584 7.64498L46.8671 9.96007C45.3555 10.6091 43.6438 10.6091 42.1322 9.96006L36.7342 7.6421C33.9641 6.45258 30.7415 7.50326 29.2048 10.0969L26.2031 15.1632C25.3604 16.5857 23.968 17.5973 22.3547 17.9593L16.6391 19.2417C13.6971 19.9018 11.702 22.6427 11.9779 25.6452L12.5215 31.5608C12.6715 33.1932 12.1471 34.8158 11.0701 36.0517L7.14922 40.5511C5.17784 42.8133 5.18082 46.1841 7.15621 48.4428L11.0625 52.9095C12.1441 54.1462 12.6712 55.7723 12.5209 57.4084L11.9766 63.3316C11.7012 66.3281 13.688 69.0651 16.6224 69.7316L22.3654 71.0361C23.9723 71.4011 25.3584 72.411 26.1984 73.8287L29.1981 78.8917C30.7376 81.4903 33.9688 82.5393 36.7412 81.3407L42.1267 79.0122C43.6414 78.3573 45.3589 78.3552 46.8752 79.0063L52.2651 81.3208C55.0352 82.5103 58.2579 81.4597 59.7945 78.866L62.801 73.7916C63.641 72.3739 65.027 71.3641 66.634 70.9991L72.3757 69.6948C75.3106 69.0282 77.2975 66.2904 77.0213 63.2934L76.4792 57.4092C76.3284 55.7727 76.8555 54.1459 77.9374 52.9088L81.837 48.4499Z"
                   fill="url(#paint0_linear_4730_30251)"
@@ -177,14 +188,14 @@ const Footer: React.FC = () => {
                     />
                   </clipPath>
                 </defs>
-              </svg>
-            </Link>
-            <span className=" flex flex-col justify-center">
+              
+            {/* </Link> */}
+            {/* <span className=" flex flex-col justify-center">
               <p className=" text-white">SEBI Registered Research Analyst</p>
               {/* <p className=' text-white font-bold'> INHOOOO13925</p> */}
-            </span>
-          </span>
-          <span className="mb-4 flex flex-col gap-2 justify-center md:justify-start md:items-start items-center md:mx-0 mx-10 bg-white/5 p-3 rounded-xl md:w-2/3">
+            {/* </span>  */}
+          {/* </span> */}
+          {/* <span className="mb-4 flex flex-col gap-2 justify-center md:justify-start md:items-start items-center md:mx-0 mx-10 bg-white/5 p-3 rounded-xl md:w-2/3">
             <p className=" text-white">Compliance Info</p>
             <p className=" text-white/40">
               Compilance Officer: <span className=" text-white">Pandian</span>
@@ -196,215 +207,42 @@ const Footer: React.FC = () => {
               Email:{" "}
               <span className=" text-white">Zentra0101@gmail.com</span>
             </p>
-          </span>
+          </span> */}
         </nav>
-        <nav className="flex md:flex-row md:gap-20 justify-center items-center md:justify-start md:items-start gap-10 md:my-20">
+        <nav className="flex-1 flex-col w-full">
+          
           <span className=" flex flex-col md:gap-6">
             <h6 className="footer-title mb-4 text-white font-bold text-lg">
               Quik Links
             </h6>
-            <a className="link link-hover mb-2 text-white/50">About us</a>
-            <a className="link link-hover mb-2 text-white/50">Memership</a>
-            <a className="link link-hover mb-2 text-white/50">Features</a>
-            <a className="link link-hover text-white/50">FAQs</a>
-            <a className="link link-hover text-white/50">Contact Us</a>
-            <a className="link link-hover text-white/50">Invester Charter</a>
-            <a className="link link-hover text-white/50">Complaints</a>
+            <a  className="text-white hover:text-white/50 ">About us</a>
+            {/* <a className="link link-hover mb-2 text-white/50">Memership</a> */}
+            <a  className="text-white hover:text-white/50 ">Features</a>
+            {/* <a className="link link-hover text-white/50">FAQs</a> */}
+            <a  className="text-white hover:text-white/50 ">Contact Us</a>
+            {/* <a className="link link-hover text-white/50">Invester Charter</a>
+            <a className="link link-hover text-white/50">Complaints</a> */}
           </span>
-          <span className=" flex flex-col md:gap-6">
+        </nav>
+        {/* <nav className="flex-1 flex-col w-full"> */}
+          {/* <h6 className="footer-title mb-4 text-white font-bold text-lg">
+            Contact
+          </h6> */}
+          
+          {/* <span className=" flex flex-col md:gap-6">
             <h6 className="footer-title mb-4 text-white font-bold text-lg">
               Company
             </h6>
           <Link className="text-white hover:text-white/50 " href="/terms">Terms & Conditions</Link>
           <Link className="text-white hover:text-white/50" href="/privacy">Privacy Policy</Link>
           <Link className="text-white hover:text-white/50" href='/cookie'>Cookie Policy</Link>
-          </span>
-        </nav>
-        <nav className="flex flex-col md:mt-20 justify-center items-center md:justify-start md:items-start">
-          <h6 className="footer-title mb-4 text-white font-bold text-lg">
-            Contact
-          </h6>
-          <span className=" flex flex-col md:gap-5">
-            <p className=" text-white/30">Call us:</p>
-            <span className=" flex flex-row justify-start">
-              <Link
-                href="#"
-                aria-label="Back to homepage"
-                className="flex items-center p-2"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    width="24"
-                    height="24"
-                    rx="12"
-                    fill="#28F2FF"
-                    fill-opacity="0.1"
-                  />
-                  <path
-                    d="M16.835 14.1796L15.1366 13.9856C14.9369 13.9622 14.7344 13.9843 14.5445 14.0503C14.3546 14.1163 14.1821 14.2245 14.0399 14.3668L12.8096 15.5972C10.9113 14.6317 9.36842 13.0888 8.403 11.1906L9.64005 9.95353C9.92758 9.666 10.068 9.26479 10.0212 8.8569L9.82728 7.17184C9.78937 6.84564 9.63283 6.54478 9.38745 6.32653C9.14208 6.10828 8.82501 5.98789 8.49662 5.98828H7.33981C6.5842 5.98828 5.95565 6.61684 6.00246 7.37244C6.35685 13.0829 10.9239 17.6433 16.6277 17.9977C17.3833 18.0445 18.0119 17.4159 18.0119 16.6603V15.5035C18.0186 14.8282 17.5104 14.2598 16.835 14.1796Z"
-                    fill="#28F2FF"
-                  />
-                </svg>
-              </Link>
-              <p className=" text-white mt-2">
-                +91 8859565859
-                <span className=" md:inline-block hidden md:ml-2"> | </span>{" "}
-                <span className=" text-white md:inline-block flex md:mt-3">
-                  +91 884569852
-                </span>
-              </p>
-            </span>
-            <hr className=" md:w-16 md:my-0  my-5" />
-            <span>
-              <span>
-                <p className=" text-white/30">Working Hours:</p>
-                <span className=" flex flex-row justify-start">
-                  <Link
-                    href="#"
-                    aria-label="Back to homepage"
-                    className="flex items-center p-2"
-                  >
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        width="24"
-                        height="24"
-                        rx="12"
-                        fill="#FFAE81"
-                        fill-opacity="0.19"
-                      />
-                      <path
-                        d="M12 9.33333V12L14 14M18 12C18 12.7879 17.8448 13.5681 17.5433 14.2961C17.2417 15.0241 16.7998 15.6855 16.2426 16.2426C15.6855 16.7998 15.0241 17.2417 14.2961 17.5433C13.5681 17.8448 12.7879 18 12 18C11.2121 18 10.4319 17.8448 9.7039 17.5433C8.97595 17.2417 8.31451 16.7998 7.75736 16.2426C7.20021 15.6855 6.75825 15.0241 6.45672 14.2961C6.15519 13.5681 6 12.7879 6 12C6 10.4087 6.63214 8.88258 7.75736 7.75736C8.88258 6.63214 10.4087 6 12 6C13.5913 6 15.1174 6.63214 16.2426 7.75736C17.3679 8.88258 18 10.4087 18 12Z"
-                        stroke="#FF6B17"
-                        stroke-width="1.4"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </Link>
-                  <p className=" text-white mt-2">24/7 and All days</p>
-                </span>
-              </span>
-              <hr className=" md:w-16 md:my-0  my-5" />
-            </span>
-            <span>
-              <span>
-                <p className=" text-white/30">Whatsapp Us:</p>
-                <span className=" flex flex-row justify-start">
-                  <Link
-                    href="#"
-                    aria-label="Back to homepage"
-                    className="flex items-center p-2"
-                  >
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        width="24"
-                        height="24"
-                        rx="12"
-                        fill="#29E337"
-                        fill-opacity="0.1"
-                      />
-                      <path
-                        d="M8.67711 16.5458L9.18391 16.8419C10.0386 17.3403 11.0106 17.602 12 17.6C13.1076 17.6 14.1903 17.2716 15.1112 16.6562C16.0321 16.0409 16.7499 15.1663 17.1737 14.143C17.5976 13.1198 17.7085 11.9938 17.4924 10.9075C17.2763 9.8212 16.743 8.82337 15.9598 8.0402C15.1766 7.25703 14.1788 6.72368 13.0925 6.5076C12.0062 6.29152 10.8802 6.40242 9.85698 6.82627C8.83371 7.25012 7.95911 7.96789 7.34378 8.8888C6.72844 9.80972 6.40001 10.8924 6.40001 12C6.39797 12.9897 6.6599 13.962 7.15881 14.8168L7.45421 15.3236L6.99711 17.0043L8.67711 16.5458ZM5.00281 19L5.94921 15.5224C5.32557 14.4534 4.99794 13.2376 5.00001 12C5.00001 8.1339 8.13391 5 12 5C15.8661 5 19 8.1339 19 12C19 15.8661 15.8661 19 12 19C10.763 19.002 9.54767 18.6746 8.47901 18.0515L5.00281 19ZM9.47371 8.7156C9.56751 8.7086 9.66201 8.7086 9.75581 8.7128C9.79361 8.7156 9.83141 8.7198 9.86921 8.724C9.98051 8.7366 10.103 8.8045 10.1443 8.8983C10.3529 9.3715 10.5559 9.8482 10.7519 10.3263C10.7953 10.4327 10.7694 10.5692 10.6868 10.7022C10.6448 10.7701 10.579 10.8653 10.5027 10.9626C10.4236 11.0641 10.2535 11.2503 10.2535 11.2503C10.2535 11.2503 10.1842 11.3329 10.2108 11.4358C10.2206 11.475 10.2528 11.5317 10.2822 11.5793L10.3235 11.6458C10.5027 11.9447 10.7435 12.2478 11.0375 12.5334C11.1215 12.6146 11.2034 12.6979 11.2916 12.7756C11.6192 13.0647 11.9902 13.3006 12.3906 13.4756L12.3941 13.477C12.4536 13.5029 12.4837 13.5169 12.5705 13.554C12.6139 13.5722 12.6587 13.5876 12.7042 13.6002C12.7512 13.6122 12.8007 13.6099 12.8465 13.5937C12.8922 13.5775 12.9321 13.5481 12.9611 13.5092C13.4679 12.8953 13.5141 12.8554 13.5183 12.8554V12.8568C13.5535 12.824 13.5953 12.799 13.641 12.7837C13.6866 12.7684 13.735 12.763 13.7829 12.7679C13.8249 12.7707 13.8676 12.7784 13.9068 12.7959C14.2785 12.966 14.8868 13.2313 14.8868 13.2313L15.2942 13.414C15.3628 13.4469 15.4251 13.5246 15.4272 13.5995C15.43 13.6464 15.4342 13.722 15.4181 13.8606C15.3957 14.0419 15.3411 14.2596 15.2865 14.3737C15.2491 14.4515 15.1995 14.5229 15.1395 14.5851C15.0689 14.6592 14.9915 14.7267 14.9085 14.7867C14.8511 14.8301 14.821 14.8497 14.821 14.8497C14.7339 14.9049 14.6445 14.9563 14.5529 15.0037C14.3727 15.0994 14.1736 15.1544 13.9698 15.1647C13.8403 15.1717 13.7108 15.1815 13.5806 15.1745C13.575 15.1745 13.183 15.1136 13.183 15.1136C12.1878 14.8518 11.2674 14.3614 10.495 13.6814C10.3368 13.5421 10.1898 13.3923 10.04 13.2432C9.41841 12.6237 8.94731 11.9552 8.66101 11.3238C8.5152 11.014 8.43648 10.677 8.43001 10.3347C8.42738 9.90962 8.56655 9.4958 8.82551 9.1587C8.87661 9.0929 8.92491 9.0243 9.00821 8.9452C9.09641 8.8612 9.15311 8.8164 9.21401 8.7856C9.29498 8.74502 9.38331 8.72121 9.47371 8.7156Z"
-                        fill="#29E337"
-                      />
-                    </svg>
-                  </Link>
-                  <p className=" text-white mt-2">+91 8956453245</p>
-                </span>
-                <span className=" flex flex-row justify-start">
-                  <Link
-                    href="#"
-                    aria-label="Back to homepage"
-                    className="flex items-center p-2"
-                  >
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        width="24"
-                        height="24"
-                        rx="12"
-                        fill="#29E337"
-                        fill-opacity="0.1"
-                      />
-                      <path
-                        d="M8.67711 16.5458L9.18391 16.8419C10.0386 17.3403 11.0106 17.602 12 17.6C13.1076 17.6 14.1903 17.2716 15.1112 16.6562C16.0321 16.0409 16.7499 15.1663 17.1737 14.143C17.5976 13.1198 17.7085 11.9938 17.4924 10.9075C17.2763 9.8212 16.743 8.82337 15.9598 8.0402C15.1766 7.25703 14.1788 6.72368 13.0925 6.5076C12.0062 6.29152 10.8802 6.40242 9.85698 6.82627C8.83371 7.25012 7.95911 7.96789 7.34378 8.8888C6.72844 9.80972 6.40001 10.8924 6.40001 12C6.39797 12.9897 6.6599 13.962 7.15881 14.8168L7.45421 15.3236L6.99711 17.0043L8.67711 16.5458ZM5.00281 19L5.94921 15.5224C5.32557 14.4534 4.99794 13.2376 5.00001 12C5.00001 8.1339 8.13391 5 12 5C15.8661 5 19 8.1339 19 12C19 15.8661 15.8661 19 12 19C10.763 19.002 9.54767 18.6746 8.47901 18.0515L5.00281 19ZM9.47371 8.7156C9.56751 8.7086 9.66201 8.7086 9.75581 8.7128C9.79361 8.7156 9.83141 8.7198 9.86921 8.724C9.98051 8.7366 10.103 8.8045 10.1443 8.8983C10.3529 9.3715 10.5559 9.8482 10.7519 10.3263C10.7953 10.4327 10.7694 10.5692 10.6868 10.7022C10.6448 10.7701 10.579 10.8653 10.5027 10.9626C10.4236 11.0641 10.2535 11.2503 10.2535 11.2503C10.2535 11.2503 10.1842 11.3329 10.2108 11.4358C10.2206 11.475 10.2528 11.5317 10.2822 11.5793L10.3235 11.6458C10.5027 11.9447 10.7435 12.2478 11.0375 12.5334C11.1215 12.6146 11.2034 12.6979 11.2916 12.7756C11.6192 13.0647 11.9902 13.3006 12.3906 13.4756L12.3941 13.477C12.4536 13.5029 12.4837 13.5169 12.5705 13.554C12.6139 13.5722 12.6587 13.5876 12.7042 13.6002C12.7512 13.6122 12.8007 13.6099 12.8465 13.5937C12.8922 13.5775 12.9321 13.5481 12.9611 13.5092C13.4679 12.8953 13.5141 12.8554 13.5183 12.8554V12.8568C13.5535 12.824 13.5953 12.799 13.641 12.7837C13.6866 12.7684 13.735 12.763 13.7829 12.7679C13.8249 12.7707 13.8676 12.7784 13.9068 12.7959C14.2785 12.966 14.8868 13.2313 14.8868 13.2313L15.2942 13.414C15.3628 13.4469 15.4251 13.5246 15.4272 13.5995C15.43 13.6464 15.4342 13.722 15.4181 13.8606C15.3957 14.0419 15.3411 14.2596 15.2865 14.3737C15.2491 14.4515 15.1995 14.5229 15.1395 14.5851C15.0689 14.6592 14.9915 14.7267 14.9085 14.7867C14.8511 14.8301 14.821 14.8497 14.821 14.8497C14.7339 14.9049 14.6445 14.9563 14.5529 15.0037C14.3727 15.0994 14.1736 15.1544 13.9698 15.1647C13.8403 15.1717 13.7108 15.1815 13.5806 15.1745C13.575 15.1745 13.183 15.1136 13.183 15.1136C12.1878 14.8518 11.2674 14.3614 10.495 13.6814C10.3368 13.5421 10.1898 13.3923 10.04 13.2432C9.41841 12.6237 8.94731 11.9552 8.66101 11.3238C8.5152 11.014 8.43648 10.677 8.43001 10.3347C8.42738 9.90962 8.56655 9.4958 8.82551 9.1587C8.87661 9.0929 8.92491 9.0243 9.00821 8.9452C9.09641 8.8612 9.15311 8.8164 9.21401 8.7856C9.29498 8.74502 9.38331 8.72121 9.47371 8.7156Z"
-                        fill="#29E337"
-                      />
-                    </svg>
-                  </Link>
-                  <p className=" text-white mt-2">+91 8956453216</p>
-                </span>
-              </span>
-              <hr className=" md:w-16 md:my-1 my-5" />
-            </span>
-            <span className=" md:mb-6 mb-0">
-              <span>
-                <p className=" text-white/30">Email Us:</p>
-                <span className=" flex flex-row justify-start">
-                  <Link
-                    href="#"
-                    aria-label="Back to homepage"
-                    className="flex items-center p-2"
-                  >
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        width="24"
-                        height="24"
-                        rx="12"
-                        fill="#FDFF8B"
-                        fill-opacity="0.18"
-                      />
-                      <path
-                        d="M17.332 7H6.66536C5.93203 7 5.3387 7.5625 5.3387 8.25L5.33203 15.75C5.33203 16.4375 5.93203 17 6.66536 17H17.332C18.0654 17 18.6654 16.4375 18.6654 15.75V8.25C18.6654 7.5625 18.0654 7 17.332 7ZM17.0654 9.65625L12.352 12.4187C12.1387 12.5438 11.8587 12.5438 11.6454 12.4187L6.93203 9.65625C6.86518 9.62107 6.80664 9.57354 6.75996 9.51653C6.71327 9.45953 6.67941 9.39424 6.66041 9.32461C6.64142 9.25498 6.6377 9.18246 6.64947 9.11144C6.66124 9.04042 6.68826 8.97238 6.72889 8.91144C6.76952 8.85049 6.82291 8.79791 6.88585 8.75687C6.94878 8.71583 7.01995 8.68719 7.09503 8.67269C7.17011 8.65818 7.24755 8.6581 7.32267 8.67247C7.39778 8.68683 7.46901 8.71533 7.53203 8.75625L11.9987 11.375L16.4654 8.75625C16.5284 8.71533 16.5996 8.68683 16.6747 8.67247C16.7498 8.6581 16.8273 8.65818 16.9024 8.67269C16.9775 8.68719 17.0486 8.71583 17.1115 8.75687C17.1745 8.79791 17.2279 8.85049 17.2685 8.91144C17.3091 8.97238 17.3362 9.04042 17.3479 9.11144C17.3597 9.18246 17.356 9.25498 17.337 9.32461C17.318 9.39424 17.2841 9.45953 17.2374 9.51653C17.1908 9.57354 17.1322 9.62107 17.0654 9.65625Z"
-                        fill="#FDFF8B"
-                      />
-                    </svg>
-                  </Link>
-                  <p className=" text-white mt-2">Zentra0101@gmail.com</p>
-                </span>
-                <hr className=" md:w-16 my-5 flex md:hidden md:my-0" />
-              </span>
-            </span>
-          </span>
-        </nav>
+          </span> */}
+        {/* </nav> */}
       </footer>
-      <footer className="footer bg-base-200 text-base-content border-base-300 bg-gradient-to-r from-black to-teal-900 border-t px-10 py-4">
+      <footer className="footer bg-base-200 text-base-content border-base-300 bg-gradient-to-r from-black to-teal-700 border-t px-10 py-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <aside className="flex items-center mb-4 md:mb-0 md:ml-[80px]">
-            <p className="text-center md:text-left md:text-base text-xs text-white/50">
-              Copyright ©2024 Zentra Wealth. All rights reserved.
-            </p>
-          </aside>
-          <nav className="flex space-x-4 mt-4 md:mt-0 md:pr-28">
+          
+          {/* <nav className="flex space-x-4 mt-4 md:mt-0 md:pr-28">
             <a href="#" aria-label="Twitter">
               <Image src={Facebook} width={60} height={70} alt="" />
             </a>
@@ -419,8 +257,23 @@ const Footer: React.FC = () => {
             </a>
             <a href="#" aria-label="YouTube">
               <Image src={Twitter} width={60} height={70} alt="" />
-            </a>
-          </nav>
+            </a> 
+          </nav>*/}
+          <span className="flex flex-col md:gap-6">
+  
+  <div className="flex flex-col md:flex-row md:gap-6">
+    <Link className="text-white hover:text-white/50" href="/terms">Terms & Conditions</Link>
+    <Link className="text-white hover:text-white/50" href="/privacy">Privacy Policy</Link>
+    <Link className="text-white hover:text-white/50" href='/cookie'>Cookie Policy</Link>
+  </div>
+</span>
+
+<aside className="flex items-center mb-4 md:mb-0 md:ml-[80px]">
+            <p className="text-center md:text-left md:text-base text-xs text-white/50">
+              Copyright ©2024 Zentra Wealth. All rights reserved.
+            </p>
+          </aside>
+
         </div>
       </footer>
     </>
