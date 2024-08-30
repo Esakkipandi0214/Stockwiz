@@ -35,56 +35,7 @@ const Header: React.FC = () => {
       <Link href="/" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
         Home
       </Link> 
-      <div className="relative inline-block text-left">
-        <button
-          onClick={toggleDropdown}
-          className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px] flex items-center"
-        >
-          Updates
-          <svg
-            className="w-2.5 h-2.5 ms-3"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 10 6"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="m1 1 4 4 4-4"
-            />
-          </svg>
-        </button>
-        {isDropdownOpen && (
-          <div className="z-10 absolute right-0 mt-2 w-44 bg-black divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600">
-            <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
-              <li>
-                <Link href="#" className="block px-4 py-2 hover:bg-lime-500  text-white hover:text-black">
-                Announcements
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="block px-4 py-2 hover:bg-lime-500  text-white hover:text-black">
-                Tutorial
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="block px-4 py-2 hover:bg-lime-500  text-white hover:text-black">
-                News & Research
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="block px-4 py-2 hover:bg-lime-500  text-white hover:text-black">
-                FAQ
-                </Link>
-              </li>
-              {/* Add more course items here as needed */}
-            </ul>
-          </div>
-        )}
-      </div>
+      
       <div className="relative inline-block text-left">
         <button
           onClick={toggleServicedown}
@@ -140,7 +91,7 @@ const Header: React.FC = () => {
           </div>
         )}
       </div>
-      <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+      <Link href="/about" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
       About us
       </Link>
       <Link href="/contact" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">

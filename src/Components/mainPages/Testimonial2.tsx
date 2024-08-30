@@ -23,7 +23,7 @@ const Testimonial: React.FC = () => {
 
   return (
     <section
-      className="bg-gradient-to-r from-black to-teal-900 pb-12 sm:pb-16 md:pb-20" // Apply the background gradient
+      className="bg-gradient-to-r from-black to-blue-900 pb-12 sm:pb-16 md:pb-20" // Apply the background gradient
     >
       <div className="container flex flex-col items-center px-4 py-12 space-y-6 mx-auto md:py-16 md:space-y-10">
         <motion.h4

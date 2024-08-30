@@ -128,7 +128,7 @@ const ExampleComponent = () => {
   }, [controls, inView]);
 
   return (
-    <section className="bg-gradient-to-r from-black to-teal-900 px-4 py-6 md:px-6 md:py-12 lg:px-8 lg:py-16 h-auto">
+    <section className="bg-gradient-to-r from-black to-blue-900 px-4 py-6 md:px-6 md:py-12 lg:px-8 lg:py-16 h-auto">
       <div className="container flex flex-col items-center mx-auto space-y-6">
         <motion.h4
           ref={ref}

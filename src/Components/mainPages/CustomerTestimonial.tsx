@@ -41,7 +41,7 @@ const Testimonial: React.FC = () => {
   }, [controls, inView]);
 
   return (
-    <section className="bg-gradient-to-r from-black to-teal-900 md:pt-20 pb-20">
+    <section className="bg-gradient-to-r from-black to-blue-900 md:pt-20 pb-20">
       <div className="container flex flex-col items-center md:-mb-10 p-4 mx-auto space-y-6 md:p-2">
   <motion.h4
     ref={ref}

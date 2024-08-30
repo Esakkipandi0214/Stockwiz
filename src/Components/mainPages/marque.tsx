@@ -6,8 +6,8 @@ import { GiBank } from 'react-icons/gi'; // BankNIFTY Icon
 
 const Marquee: React.FC = () => {
   return (
-    <div className="relative w-full overflow-hidden bg-gradient-to-r from-black via-gray-900 to-black text-white py-3 pb-5 ">
-      <motion.div
+    <div className="relative w-full overflow-hidden bg-gradient-to-r from-black via-gray-900 to-black text-white py-5 pb-5 h-8 ">
+      <motion.div 
         className="flex absolute left-0 top-0"
         animate={{ x: ['0%', '-100%'] }}
         transition={{
