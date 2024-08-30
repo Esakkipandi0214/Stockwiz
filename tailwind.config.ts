@@ -1,4 +1,9 @@
 import type { Config } from "tailwindcss"
+const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
 
 const config = {
   darkMode: ["class"],
@@ -57,6 +62,7 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        'beam-green': '#00ff00',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -72,10 +78,18 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        'tracing-beam': {
+          '0%': { clipPath: 'inset(0 100% 100% 0)' },
+          '25%': { clipPath: 'inset(0 0 100% 0)' },
+          '50%': { clipPath: 'inset(0 0 0 0)' },
+          '75%': { clipPath: 'inset(0 0 0 100%)' },
+          '100%': { clipPath: 'inset(0 100% 100% 100%)' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        'tracing-beam': 'tracing-beam 2s infinite linear',
       },
     },
   },
@@ -84,7 +98,18 @@ const config = {
       rotate: ['hover', 'focus'], // Enables hover and focus variants for rotate
     },
   },
-  plugins: [require("tailwindcss-animate"), require("flowbite/plugin")],
+  plugins: [require("tailwindcss-animate"), require("flowbite/plugin"), addVariablesForColors,],
 } satisfies Config
+
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+  
+  addBase({
+    ":root": newVars,
+  });
+}
 
 export default config

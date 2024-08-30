@@ -1,19 +1,17 @@
-import React from 'react';
-
+"use client";
+import React from "react";
+// import { calsans } from "@/fonts/calsans";
+import { TracingBeam } from "../../Components/UI/tracing-beam";
 const Privacy: React.FC = () => {
   return (
-    <div className=" bg-gradient-to-b from-gray-900 via-gray-700 to-black p-8 rounded-lg text-white">
-      <div className="flex items-center justify-center mb-12">
+    <div className=" bg-gradient-to-b w-full from-gray-900 via-gray-700 to-black p-8 rounded-none text-white">
+
+    <TracingBeam className="px-2">
+    <div>      <div className="flex items-center justify-center mb-12">
         <h2 className="mb-9 text-3xl font-bold text-center">Privacy Policy</h2>
       </div>
       <div className="relative pl-10">
-        {/* Vertical line */}
-        <div className="absolute left-0.5 top-0 bottom-0 w-0.5 bg-slate-300">
 
-          <div className="absolute left-[-0.85rem] top-[-0.5rem] w-4 h-4 bg-slate-300 rounded-full"></div>
-
-          <div className="absolute left-[-0.75rem] bottom-[-0.5rem] w-4 h-4 bg-slate-300 rounded-full"></div>
-        </div>
         <ul className="pl-16 space-y-6">
           <li className="flex items-start">
             <p className="text-lg font-semibold">
@@ -80,8 +78,12 @@ const Privacy: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+
+
+        </TracingBeam>
+      </div>
   );
-};
+}
 
 export default Privacy;
