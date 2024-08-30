@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-full p-4 md:p-12 lg:grid lg:gap-4 lg:grid-cols-12 grid-cols-1 bg-gradient-to-r from-black to-teal-900">
+    <div className="w-full p-4 md:p-12 lg:grid lg:gap-4 lg:grid-cols-12 grid-cols-1 bg-gradient-to-r from-black to-violet-950">
        <div className="lg:col-span-5 ml-4 md:ml-[40px] mb-4 flex justify-center lg:justify-start items-center text-center lg:text-left text-white">
   <div className="flex flex-col gap-4 lg:gap-6">
   <p className="p-3 mx-auto lg:mx-0 rounded-3xl flex justify-start pl-6 md:pl-10 max-w-xs bg-gradient-to-r from-teal-400/45 to-blue-500/500">
@@ -104,10 +104,6 @@ const Hero: React.FC = () => {
         </div>
       </div> */}
       <div className=" min-h-[100px] md:col-span-5 md:ml-9 flex-col gap-10  md:flex-col md:gap-3 flex justify-start text-white">
-      <div className="flex flex-col gap-1 lg:gap-2 text-center lg:text-left">
-          <p className="text-lg">At Zentra Wealth, we turn your financial goals into real wealth. We use simple, smart strategies and offer personalized service to help you navigate the market and achieve the best results.&quot;
-          </p>
-        </div>
         <div className=' flex md:flex-col flex-row md:p-1 md:gap-0 gap-8 md:ml-6 '>
          <span className=' flex text-center flex-col md:flex-row justify-center md:justify-start items-center md:items-center'>
         <Link href="#" aria-label="Back to homepage" className="flex items-center">

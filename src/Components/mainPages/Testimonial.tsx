@@ -31,7 +31,7 @@ const Testimonial: React.FC = () => {
   }, [controls, inView]);
 
   return (
-    <section className="bg-gradient-to-r from-teal-900 to-black pb-20 relative overflow-hidden">
+    <section className="bg-gradient-to-r from-black to-blue-950 pb-20 relative overflow-hidden">
       <div className="container mx-auto px-4 py-8 md:py-12 lg:py-16 relative z-10">
         <div className="flex flex-col items-center space-y-6 text-center">
           <motion.h2

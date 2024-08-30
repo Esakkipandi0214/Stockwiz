@@ -30,7 +30,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="flex justify-between p-12 bg-gradient-to-r from-black to-teal-900  text-white">
+    <div className="flex justify-between p-12 bg-gradient-to-r from-black to-blue-900  text-white">
       <div className="w-1/3 bg-gray-800 p-10 rounded-lg">
         <h2 className="text-3xl font-semibold mb-6">Contact Information</h2>
         <p className="mb-6">Say something to start a live chat!</p>

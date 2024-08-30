@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
     <MeetYourMetor/>
     <CustomerTestimonial/>
     <WitnessRetail/>
-    <PlayStore/>
+   
     </>
   );
 };

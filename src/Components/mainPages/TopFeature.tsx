@@ -1,5 +1,3 @@
-
-
 // export default Testimonial;
 
 import React, { useEffect } from 'react';
@@ -28,7 +26,7 @@ const Testimonial: React.FC = () => {
   }, [controls, inView]);
 
   return (
-    <section className="bg-gradient-to-r from-teal-900 to-black md:pt-20 md:pb-20 pb-1 ">
+    <section className="bg-gradient-to-r  from-black to-blue-950 md:pt-20 md:pb-20 pb-1 ">
       <div className="container flex flex-col items-center md:-mb-10  p-4 mx-auto space-y-6 md:p-2">
         <motion.div
           ref={ref}
