@@ -26,13 +26,13 @@ const Header: React.FC = () => {
     <header className="fixed top-0 left-0 w-full p-1 bg-[#001219] z-50">  {/* Make header fixed */}
       <div className="container flex justify-between h-[80px] mx-auto">
         <div className="flex items-center text-lg">
-          <Link href="#" aria-label="Back to homepage" className="flex items-center p-2">
+          <Link href="/" aria-label="Back to homepage" className="flex items-center p-2">
             <span className="font-bold text-3xl text-[#16FF00]">Zentra</span>
             <span className="font-light text-2xl text-white ml-1">Wealth</span>
           </Link>
         </div>
         <div className="items-center hidden lg:flex gap-7">
-      <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+      <Link href="/" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
         Home
       </Link> 
       <div className="relative inline-block text-left">
@@ -140,15 +140,13 @@ const Header: React.FC = () => {
           </div>
         )}
       </div>
-      <Link href="/about" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+      <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
       About us
       </Link>
       <Link href="/contact" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
-      Contact
-      </Link>
+      Contact </Link>
     </div>
         <div className="items-center hidden  gap-4 lg:flex">
-          {/* <Image src={Wattsapp} alt="WhatsApp" width={30} height={30} className="filter invert-[1] grayscale mr-5 transition-all duration-300" /> */}
           <button className="px-6 py-2 text-lg font-medium text-[#f8f9fa] hover:text-[#16FF00] hover:border-[#16FF00]/50 rounded-[25px] border-2 backdrop-blur-lg hover:bg-white/10 border-[#f8f9fa]">
             Sign up
           </button>
@@ -276,7 +274,7 @@ const Header: React.FC = () => {
             </div>
           )}
         </div>
-        <Link href="" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+        <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
           About Us
         </Link>
         <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">

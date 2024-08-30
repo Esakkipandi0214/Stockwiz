@@ -25,6 +25,7 @@ const config = {
     },
     extend: {
       colors: {
+        customPurple: "#5B4CE3",
         rotate: {
           '180y': 'rotateY(180deg)', // Custom class for 180 degree rotation on Y axis
         },
