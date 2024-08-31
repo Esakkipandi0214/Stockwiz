@@ -116,60 +116,9 @@ const Header: React.FC = () => {
       </div>
       {isMenuOpen && (
         <div className="lg:hidden absolute left-0 top-16 w-full min-h-[700px] bg-black/80 z-50 flex flex-col items-start space-y-4 p-7 mt-2">
-        <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+        <Link href="/" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
           Home
         </Link> 
-        {/* Updates Section */}
-        <div className="flex flex-col w-full">
-          <button
-            onClick={toggleDropdown}
-            className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px] flex items-center w-full text-left"
-          >
-            Updates
-            <svg
-              className="w-2.5 h-2.5 ms-3"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 10 6"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="m1 1 4 4 4-4"
-              />
-            </svg>
-          </button>
-          {isDropdownOpen && (
-            <div className="bg-black/80 w-full divide-y divide-gray-100 rounded-lg shadow mt-2">
-              <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
-                <li>
-                  <Link href="#" className="block px-4 py-2 hover:border hover:rounded-2xl text-base text-[#adb5bd] hover:bg-lime-500 hover:text-black">
-                    Announcements
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="block px-4 py-2 text-base hover:border hover:rounded-2xl text-[#adb5bd] hover:bg-lime-500 hover:text-black">
-                    Tutorial
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="block px-4 py-2 hover:border hover:rounded-2xl text-base text-[#adb5bd] hover:bg-lime-500 hover:text-black">
-                    News & Research
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="block px-4 py-2 hover:border hover:rounded-2xl text-base text-[#adb5bd] hover:bg-lime-500 hover:text-black">
-                    FAQ
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          )}
-        </div>
-    
         {/* Services Section */}
         <div className="flex flex-col w-full">
           <button
@@ -225,10 +174,10 @@ const Header: React.FC = () => {
             </div>
           )}
         </div>
-        <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+        <Link href="/about" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
           About Us
         </Link>
-        <Link href="#" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+        <Link href="/contact" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
           Contact Us
         </Link>
         <button className="px-6 py-2 ml-4 text-lg font-medium text-[#16FF00] rounded-[25px] border-2 backdrop-blur-lg bg-[#16FF00]/5 border-[#16FF00]/5">
@@ -239,5 +188,4 @@ const Header: React.FC = () => {
     </header>
   );
 };
-
 export default Header;

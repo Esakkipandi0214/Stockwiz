@@ -69,7 +69,7 @@ const AboutUs = () => {
          Our smart AI trading robots and expert signals for Crypto, US stocks, and Indian stocks  guide you to better decisions.
          Plus, our fast and secure USDT transactions, with easy options like face-to-face deals and bank deposits.`;
   return (
-    <div className="bg-gradient-to-r  from-black to-blue-950 text-white p-4 md:p-8">
+    <div className="bg-gradient-to-r  from-black to-blue-900 text-white p-4 md:p-8">
       <div className="text-center mb-10 md:mb-20 pt-12 pr-12 pl-12">
         <h1><span className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-green-500 mb-8">
           About </span><span className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">Us</span>
