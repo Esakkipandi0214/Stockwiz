@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import bgImage from '../../../public/pri.jpg';
+import { BackgroundBeams } from "../../Components/UI/background-beams";
 
 interface PlanFeature {
   feature: string;
@@ -126,15 +126,11 @@ const Pricing: React.FC = () => {
   }
 
   return (
-    <section
-      className="py-20 opacity-95"
-      style={{
-        backgroundImage: `url(${bgImage.src})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}
-    >
+ 
+    <section className="py-20 opacity-95 bg-gradient-to-r from-black to-blue-950 relative">
+    {/* Background Beams */}
+    <BackgroundBeams className="absolute inset-0 w-full h-full z-0 "/>
+  
       <div className="container px-4 mx-auto">
         <div className="relative flex flex-col items-center mb-12">
           <div className="relative mx-auto grid w-full max-w-lg my-6 grid-cols-2 rounded-full border p-2 sm:w-8/12 lg:w-6/12">
