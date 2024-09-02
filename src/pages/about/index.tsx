@@ -5,6 +5,10 @@ import { FaLightbulb, FaHandshake, FaChartLine, FaShieldAlt } from "react-icons/
 import { FaRobot, FaSignal, FaCoins } from 'react-icons/fa';
 import Image from 'next/image';
 import { TextGenerateEffect } from "../../Components/UI/text-generate-effect";
+import { HeroHighlight, Highlight } from "../../Components/UI/hero-highlight";
+import { Meteors } from "../../Components/UI/meteors";
+
+
  
 
 import { GradientCard } from "../../Components/GradientCard";
@@ -65,9 +69,9 @@ const AboutUs = () => {
       transition: { duration: 1 },
     });
   }
-  const words = ` Welcome to Zentra Wealth,
-         Our smart AI trading robots and expert signals for Crypto, US stocks, and Indian stocks  guide you to better decisions.
-         Plus, our fast and secure USDT transactions, with easy options like face-to-face deals and bank deposits.`;
+  // const words = ` Welcome to Zentra Wealth,
+  //        Our smart AI trading robots and expert signals for Crypto, US stocks, and Indian stocks  guide you to better decisions.
+  //        Plus, our fast and secure USDT transactions, with easy options like face-to-face deals and bank deposits.`;
   return (
     <div className="bg-gradient-to-r  from-black to-blue-900 text-white p-4 md:p-8">
       <div className="text-center mb-10 md:mb-20 pt-12 pr-12 pl-12">
@@ -75,10 +79,33 @@ const AboutUs = () => {
           About </span><span className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">Us</span>
         </h1>
         <span>
-        <TextGenerateEffect className="text-lg md:text-3xl mt-4 md:mt-7 mx-auto max-w-prose text-justify" words={words} />
+        {/* <TextGenerateEffect className="text-lg md:text-3xl mt-4 md:mt-7 mx-auto max-w-prose text-justify" words={words} /> */}
         </span>
 
       </div>
+      <HeroHighlight className="mb-2 md:mb-16 pt-8 pr-8 pl-4">
+      <motion.h1
+        initial={{
+          opacity: 0,
+          y: 20,
+        }}
+        animate={{
+          opacity: 1,
+          y: [20, -5, 0],
+        }}
+        transition={{
+          duration: 0.5,
+          ease: [0.4, 0.0, 0.2, 1],
+        }}
+        className=" text-lg px-4 md:text-xl lg:text-2xl font-semibold  dark:text-white max-w-5xl leading-relaxed lg:leading-snug text-center mx-auto "
+      >
+        Welcome to Zentra Wealth,
+         Our smart AI trading robots and  {" "}  
+        <Highlight className="text-black dark:text-white">
+        expert signals for Crypto, US stocks, and Indian stocks  guide you to better decisions Plus, our fast and secure USDT transactions, with easy options like face-to-face deals and bank deposits.   </Highlight>
+      </motion.h1>
+    </HeroHighlight>
+      
 
 {/* Disrupting Section */}
       <section ref={disruptingRef}>
@@ -310,37 +337,157 @@ const AboutUs = () => {
       <div className="flex justify-center items-start space-x-8">
         
         {/* Card 1 */}
-        <GradientCard className="w-80 transform hover:scale-105 transition-transform">
+        {/* <GradientCard className="w-80 transform hover:scale-105 transition-transform">
           <div className="flex justify-center mb-4">
-            <FaRobot className="h-16 w-16 text-blue-950" /> {/* Green icon color */}
+            <FaRobot className="h-16 w-16 text-blue-950" /> 
           </div>
           <h3 className="text-lg font-bold text-center text-blue-950 mb-4">Zentra AI Bot</h3>
           <p className="text-center text-gray-300">
             Experience effortless trading with our AI-powered robots that analyze the market and make smart trades for you, maximizing your profits while you relax.
           </p>
-        </GradientCard>
+        </GradientCard> */}
+      <div className=" w-full relative max-w-xs">
+        <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+        <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+          {/* <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500"> */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="h-2 w-2 text-gray-300"
+            >
+              {/* <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+              /> */}
+            </svg>
+          {/* </div> */}
+          <div className="flex justify-center mb-4">
+            <FaRobot className="h-16 w-16 text-blue-950" /> 
+          </div>
+ 
+          <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+          Zentra AI Bot
+          </h1>
+ 
+          <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
+          Experience effortless trading with our AI-powered robots that analyze the market and make smart trades for you, maximizing your profits while you relax.
+
+          </p>
+ 
+          <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+            Explore
+          </button>
+ 
+          {/* Meaty part - Meteor effect */}
+          <Meteors number={20} />
+        </div>
+      </div>
 
         {/* Card 2 (lowered) */}
-        <GradientCard className="w-80 transform hover:scale-105 transition-transform mt-12">
+        {/* <GradientCard className="w-80 transform hover:scale-105 transition-transform mt-12">
           <div className="flex justify-center mb-4">
-            <FaSignal className="h-16 w-16 text-blue-950" /> {/* Green icon color */}
+            <FaSignal className="h-16 w-16 text-blue-950" />
           </div>
           <h3 className="text-lg font-bold text-center text-blue-950 mb-4">Zentra Crypto / Stock (US & Indian) Signals</h3>
           <p className="text-center text-gray-300">
             We provide expert trading signals for crypto, US stocks, and Indian stocks, helping you make informed decisions and boost your profits.
           </p>
-        </GradientCard>
+        </GradientCard> */}
+
+        <div className=" w-full relative max-w-xs">
+        <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+        <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+          {/* <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500"> */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="h-2 w-2 text-gray-300"
+            >
+              {/* <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+              /> */}
+            </svg>
+          {/* </div> */}
+          <div className="flex items-center mb-8">
+            <FaSignal className="h-16 w-16 text-blue-950" />
+          </div>
+ 
+          <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+          Zentra Crypto / Stock (US & Indian) Signals
+          </h1>
+ 
+          <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
+          We provide expert trading signals for crypto, US stocks, and Indian stocks, helping you make informed decisions and boost your profits.
+          </p>
+ 
+          <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+            Explore
+          </button>
+ 
+          {/* Meaty part - Meteor effect */}
+          <Meteors number={20} />
+        </div>
+      </div>
 
         {/* Card 3 */}
-        <GradientCard className="w-80 transform hover:scale-105 transition-transform">
+        {/* <GradientCard className="w-80 transform hover:scale-105 transition-transform">
           <div className="flex justify-center mb-4">
-            <FaCoins className="h-16 w-16 text-blue-950" /> {/* Green icon color */}
+            <FaCoins className="h-16 w-16 text-blue-950" /> 
           </div>
           <h3 className="text-lg font-bold text-center text-blue-950 mb-4">Zentraa Tether Trades</h3>
           <p className="text-center text-gray-300">
             We offer fast and secure USDT transactions. Whether you want to buy or sell, we provide face-to-face deals and convenient bank deposit options.
           </p>
-        </GradientCard>
+        </GradientCard> */}
+          <div className=" w-full relative max-w-xs">
+        <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+        <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+          {/* <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500"> */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="h-2 w-2 text-gray-300"
+            >
+              {/* <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+              /> */}
+            </svg>
+          {/* </div> */}
+          <div className="flex justify-center mb-4">
+            <FaCoins className="h-16 w-16 text-blue-950" /> 
+          </div>
+ 
+          <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+          Zentraa Tether Trades
+          </h1>
+ 
+          <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
+          We offer fast and secure USDT transactions. Whether you want to buy or sell, we provide face-to-face deals and convenient bank deposit options.
+
+          </p>
+ 
+          <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+            Explore
+          </button>
+ 
+          {/* Meaty part - Meteor effect */}
+          <Meteors number={20} />
+        </div>
+      </div>
         
       </div>
     </div>

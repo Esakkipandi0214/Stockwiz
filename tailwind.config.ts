@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss"
 const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
+const svgToDataUri = require("mini-svg-data-uri");
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
@@ -85,11 +86,21 @@ const config = {
           '75%': { clipPath: 'inset(0 0 0 100%)' },
           '100%': { clipPath: 'inset(0 100% 100% 100%)' },
         },
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: "0",
+          },
+        },
+      
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         'tracing-beam': 'tracing-beam 2s infinite linear',
+        "meteor-effect": "meteor 5s linear infinite"
       },
     },
   },
@@ -98,6 +109,7 @@ const config = {
       rotate: ['hover', 'focus'], // Enables hover and focus variants for rotate
     },
   },
+  
   plugins: [require("tailwindcss-animate"), require("flowbite/plugin"), addVariablesForColors,],
 } satisfies Config
 

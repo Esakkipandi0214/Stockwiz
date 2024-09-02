@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
+import { TracingBeam } from "../../Components/UI/tracing-beam";
+
 
 
 const TermsAndConditions: React.FC = () => {
@@ -8,6 +10,7 @@ const TermsAndConditions: React.FC = () => {
   return (
     <div className="bg-black text-white min-h-screen">
       {/* Header */}
+      <TracingBeam className="px-2">
       <div className="text-center py-16">
         <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">
           Terms & Conditions
@@ -335,7 +338,9 @@ const TermsAndConditions: React.FC = () => {
       </div>
       </div>
       </div>
-    </div>
+    
+      </TracingBeam>
+      </div>
   );
 };
 
