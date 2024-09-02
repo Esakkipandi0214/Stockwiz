@@ -62,9 +62,9 @@ const Footer: React.FC = () => {
             <h6 className="footer-title mb-4 text-white font-bold text-lg">
               Quick Links
             </h6>
-            <Link className="link link-hover text-white mb-2 text-white/50" href="/about">About us</Link>
-            <Link className="link link-hover text-white mb-2 text-white/50" href="">Features</Link>
-            <Link className="link link-hover text-white text-white/50" href="">FAQs</Link>
+            <Link className="text-white mb-2 hover:text-white/50" href="/about">About us</Link>
+            <Link className="text-white mb-2 hover:text-white/50" href="/contact">Contact</Link>
+            {/* <Link className="text-white mb-2 hover:text-white/50" href="">FAQs</Link> */}
           </span>
           <span className=" flex flex-col md:gap-6">
             <h6 className="footer-title mb-4 text-white font-bold text-lg">
