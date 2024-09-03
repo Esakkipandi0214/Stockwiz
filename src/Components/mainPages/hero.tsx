@@ -47,33 +47,33 @@ const Hero: React.FC = () => {
 
   return (
     <div className="w-full p-4 md:p-12 lg:grid lg:gap-4 lg:grid-cols-12 grid-cols-1 bg-gradient-to-r from-black to-violet-950 ">
-       <div className="lg:col-span-5 ml-4 md:ml-[40px]  flex justify-center lg:justify-start items-center text-center lg:text-left text-white">
-        <div className='mt-20'>
-        <div className="flex flex-col gap-4 lg:gap-6">
-  <p className="px-2  rounded-3xl flex justify-center max-w-max bg-transparent border border-purple-500 text-blue-300  font-small mb-7">
-    SEBI Registered-978657464
-  </p>
-</div>
-  <div className="flex flex-col items-center lg:items-start gap-2 lg:gap-3 mb-7">
-  <p className="text-white text-4xl md:text-6xl lg:text-6xl font-bold leading-tight">
-    Your gateway to <br />
-    {isClient && (
-      <span className=" text-red-400"> {/* Replace with your desired color */}
-        <Typewriter
-          options={{
-            strings: ['Smart Investing', 'Strong Returns'],
-            autoStart: true,
-            loop: true,
-            
-          }}
-        />
-      </span>
-    )}
-  </p>
-</div>
-
+ <div className="lg:col-span-5 ml-4 md:ml-[40px] flex justify-center lg:justify-start items-center text-center lg:text-left text-white">
+  <div className='mt-20'>
+    <div className="flex flex-col gap-4 lg:gap-6 items-start">
+      <p className="px-2 rounded-3xl flex justify-start max-w-max bg-transparent border border-purple-500 text-blue-300 font-small mb-7">
+        SEBI Registered-978657464
+      </p>
+    </div>
+    <div className="flex flex-col items-start gap-2 lg:gap-3 mb-7">
+      <p className="text-white text-4xl md:text-6xl lg:text-6xl font-bold leading-tight text-left">
+        Your gateway to <br />
+        {isClient && (
+          <span className="text-red-400">
+            <Typewriter
+              options={{
+                strings: ['Smart Investing', 'Strong Returns'],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </span>
+        )}
+      </p>
+    </div>
   </div>
 </div>
+
+
       <div className="min-h-[100px] md:row-span-3  md:col-span-7 md:flex hidden items-center justify-center text-center text-white">
     <div className="w-full md:ml-20 flex flex-col gap-2">
       <div className="relative md:-translate-x-16">
@@ -104,25 +104,28 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div> */}
-      <div className=" min-h-[100px] md:col-span-5 md:ml-9 flex-col gap-10  md:flex-col md:gap-3 flex justify-start text-white">
-      <div className="flex flex-col gap-1 lg:gap-2 text-center lg:text-left">
-          <p className="text-lg">At Zentra Wealth, we turn your financial goals into real wealth. We use simple, smart strategies and offer personalized service to help you navigate the market and achieve the best results.&quot;
-          </p>
-        </div>
-        <div className=' flex md:flex-col flex-row md:p-1 md:gap-0 gap-8 md:ml-6 '>
-       
-        </div>
-      </div>
-      <div className=" min-h-[100px]  md:col-span-5 flex justify-start items-start text-center text-white">
-      <div className="w-full flex justify-center md:justify-start items-start p-4 md:ml-20 ml-4">
-      <button className="glitter-button p-4 w-full md:w-2/4 rounded-2xl text-black bg-gradient-to-r from-[rgb(157,255,101)] to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow text-center font-bold relative overflow-hidden">
+ <div className="min-h-[100px] md:col-span-5 md:ml-9 flex flex-col gap-10 md:gap-3 justify-start text-white items-start text-left">
+  <div className="flex flex-col gap-1 lg:gap-2 text-left">
+    <p className="text-lg">
+      Zentra Wealth transforms your financial goals into real wealth with smart strategies and personalized service for optimal results.
+    </p>
+  </div>
+  <div className="flex md:flex-col flex-row md:p-1 md:gap-0 gap-8 md:ml-6 justify-start">
+    {/* Additional content goes here if needed */}
+  </div>
+</div>
+
+<div className="min-h-[100px] md:col-span-5 flex justify-start items-start text-left text-white">
+  <div className="w-full flex justify-start items-start p-4 ml-4">
+  <button className="glitter-button p-4 w-full md:w-2/4 rounded-2xl text-white  bg-[length:200%_300%] bg-right animate-gradient-flow text-center font-bold relative overflow-hidden">
   <span>Hover me</span>
-</button>
+    </button>
+  </div>
+</div>
 
 
 </div>
-      </div>
-    </div>
+
   );
 };
 

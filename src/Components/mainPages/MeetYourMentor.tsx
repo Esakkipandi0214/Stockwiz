@@ -48,8 +48,8 @@ const Testimonial: React.FC = () => {
       </div>
 
       {/* First section */}
-      <div className="z-20 mx-4 sm:mx-8 lg:mx-28 mt-11 py-2 bg-black rounded-[50px] border border-slate-600 hover:border-green-500 text-white">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start p-4 lg:p-8 gap-6">
+      <div className="z-20 mx-4 sm:mx-8 lg:mx-28 mt-11 py-5 bg-black rounded-[50px] border border-slate-600 hover:border-green-500 text-white">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start p-4 lg:p-8 gap-10">
           <div className="flex flex-col gap-4 lg:gap-6 w-full lg:w-1/2">
             <h2 className="text-3xl lg:text-7xl font-semibold text-center lg:text-left">Essaki Pandian</h2>
             <p className="text-xl lg:text-3xl mb-4 lg:mb-7 text-white/50 font-medium text-center lg:text-left">

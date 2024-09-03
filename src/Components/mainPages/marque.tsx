@@ -18,7 +18,7 @@ const Marquee: React.FC = () => {
         }}
       >
         {/* Container for looping effect */}
-        <div className="flex whitespace-nowrap">
+        <div className="flex whitespace-nowrap mt-1 mb-1">
           <span className="flex items-center mr-10 text-lg font-semibold">
             <FaBitcoin className="mr-2" color="#f7931a" /> BTCUSDT 54,000$ -6%
           </span>
