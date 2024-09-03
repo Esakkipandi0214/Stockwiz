@@ -118,12 +118,13 @@ const AboutUs = () => {
           animate={disruptingControls}
         >
           <div className="container mx-auto">
-            <h2 className="text-5xl font-bold mb-7 ">
-              <span className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500"> We Are Disrupting</span>
+            <h2 className="text-center text-5xl font-bold mb-7 ">
+              <span className=" text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500"> We Are Disrupting</span>
             </h2>
             {/* Financial Market Education */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
               <div className="lg:order-1">
+                
                 <CardSpotlight className="h-52 w-full">
                   <h3 className="text-2xl md:text-3xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">
                   <span className="text-white">1.</span> Financial Market Education
@@ -163,7 +164,8 @@ const AboutUs = () => {
               <div className="lg:order-1">
                 <CardSpotlight className="h-60 w-full">
                   <h3 className="text-2xl md:text-3xl font-bold mb-2 ">
-                  <span className="text-white">3.</span> <span className="text-2xl md:text-3xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">Technology</span>
+                  <span className="text-white">3.</span> <span className="text-2xl md:text-3xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">
+                    Technology</span>
                   </h3>
                   <p className="text-gray-300">
                     We strive to be the fastest trading platform in the country powered by partnerships with India top brokers,
