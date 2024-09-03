@@ -21,7 +21,7 @@ const Testimonial: React.FC = () => {
   }, [controls, inView]);
 
   return (
-    <section className="bg-gradient-to-r  from-violet-950 to-black pb-20">
+    <section className="bg-gradient-to-r  from-violet-950 to-black pb-20 pt-10">
       <div className="container flex flex-col items-center mb-10 mx-auto space-y-6 md:p-2">
   <motion.h4
     ref={ref}
@@ -55,7 +55,7 @@ const Testimonial: React.FC = () => {
 
 </div>
 
-      <div className=" flex justify-center items-center w-full">
+      {/* <div className=" flex justify-center items-center w-full">
       <Image
         src={DisplayImage}
         alt=""
@@ -63,7 +63,7 @@ const Testimonial: React.FC = () => {
         height={600} // Aspect ratio height
         
       />
-    </div>
+    </div>  */}
     </section>
   );
 };

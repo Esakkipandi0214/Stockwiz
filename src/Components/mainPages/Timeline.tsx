@@ -17,12 +17,32 @@ export function TimelineDemo() {
               <li className="text-base md:text-lg lg:text-lg">Attend weekly live webinars and interactive Q&A sessions.</li>
               <li className="text-base md:text-lg lg:text-lg">Course available in English & Hindi language.</li>
             </ul>
-            <div className="relative flex justify-center lg:justify-start mt-6 lg:mt-0 lg:w-1/2">
+            <div className="grid grid-cols-2 gap-4 pt-5">
+            <div className="relative flex justify-center lg:justify-start mt-6 lg:mt-0 lg:w-full pb-1 pt-1 w-auto">
             <video width="100%" className="border border-slate-600 rounded-xl bg-black" autoPlay loop muted>
               <source src="/vd.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
+          <div className="relative flex justify-center lg:justify-start  lg:mt-0 lg:w-full w-auto">
+            <video width="100%" className="border border-slate-600 rounded-xl bg-black" autoPlay loop muted>
+              <source src="/vd.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div className="relative flex justify-center lg:justify-start mt-6 lg:mt-0 lg:w-full pb-1 pt-1 w-auto">
+            <video width="100%" className="border border-slate-600 rounded-xl bg-black" autoPlay loop muted>
+              <source src="/vd.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div className="relative flex justify-center lg:justify-start  lg:mt-0 lg:w-full w-auto">
+            <video width="100%" className="border border-slate-600 rounded-xl bg-black" autoPlay loop muted>
+              <source src="/vd.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
         </div>
       ),
     },
@@ -42,7 +62,7 @@ export function TimelineDemo() {
             <p className="text-base md:text-lg lg:text-lg text-white/70 font-normal mt-4 lg:mt-6 mb-5">
               Past performance is not indicative of future performance. Returns are not guaranteed; they can change with market conditions.
             </p>
-            <div className="relative flex justify-center lg:justify-start mt-6 lg:mt-0 lg:w-1/2">
+            <div className="relative flex justify-center lg:justify-start mt-6 lg:mt-0 lg:w-1/2 pb-20 pt-10">
             <video width="100%" className="border border-slate-600 rounded-xl bg-black" autoPlay loop muted>
               <source src="/vdo.mp4" type="video/mp4" />
               Your browser does not support the video tag.
@@ -64,7 +84,7 @@ export function TimelineDemo() {
               <li className="text-base md:text-lg lg:text-base">Apply institutional trading strategies LIVE with SEBI Registered Experts.</li>
               <li className="text-base md:text-lg lg:text-base">Daily live trading from 10am - 3pm.</li>
             </ul>
-            <div className="relative flex justify-center lg:justify-start mt-6 lg:mt-0 lg:w-1/2">
+            <div className="relative flex justify-center lg:justify-start mt-6 lg:mt-0 lg:w-1/2 pb-20 pt-10">
             <video width="100%" className="border border-slate-600 rounded-xl bg-black" autoPlay loop muted>
               <source src="/v.mp4" type="video/mp4" />
               Your browser does not support the video tag.
@@ -85,7 +105,7 @@ export function TimelineDemo() {
               <li className="text-base md:text-lg lg:text-base">Access daily watchlist, screeners, and scanners.</li>
               <li className="text-base md:text-lg lg:text-base">Interact with industry experts to improve your performance.</li>
             </ul>
-            <div className="relative flex justify-center lg:justify-start mt-6 lg:mt-0 lg:w-1/2">
+            <div className="relative flex justify-center lg:justify-start mt-6 lg:mt-0 lg:w-1/2 pb-20 pt-10">
             <video width="100%" className="border border-slate-600 rounded-xl bg-black" autoPlay loop muted>
               <source src="/colb.mp4" type="video/mp4" />
               Your browser does not support the video tag.
@@ -106,7 +126,7 @@ export function TimelineDemo() {
               <li className="text-base md:text-lg lg:text-base">Fully automated trading.</li>
               <li className="text-base md:text-lg lg:text-base">Powerful insights on trading & investing performance.</li>
             </ul>
-            <div className="relative flex justify-center lg:justify-start mt-6 lg:mt-0 lg:w-1/2">
+            <div className="relative flex justify-center lg:justify-start mt-6 lg:mt-0 lg:w-1/2 pb-20 pt-10">
             <video width="100%" className="border border-slate-600 rounded-xl bg-black" autoPlay loop muted>
               <source src="/ai_powered.mp4" type="video/mp4" />
               Your browser does not support the video tag.

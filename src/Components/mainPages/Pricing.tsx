@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { BackgroundBeamsWithCollision } from "../UI/background-beams-with-collision";
+import { AuroraBackground } from "../UI/aurora-background";
 
 interface PlanFeature {
   feature: string;
@@ -129,7 +129,7 @@ const Pricing: React.FC = () => {
  
     <section className="py-20 opacity-95 bg-gradient-to-r from-black to-blue-950 relative">
     {/* Background Beams */}
-    <BackgroundBeamsWithCollision className="absolute inset-0 w-full h-full z-0 "/>
+    <AuroraBackground className="absolute inset-0 w-full h-full z-0 "/>
   
       <div className="container px-4 mx-auto">
         <div className="relative flex flex-col items-center mb-12">
