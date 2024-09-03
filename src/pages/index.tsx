@@ -20,7 +20,7 @@ import MeetYourMetor from '../Components/mainPages/MeetYourMentor'
 import  CustomerTestimonial from '../Components/mainPages/CustomerTestimonial'
 import WitnessRetail from '../Components/mainPages/WitnessRetail'
 import PlayStore from '../Components/mainPages/PlayStore'
-
+import { TimelineDemo } from '@/Components/mainPages/Timeline';
 const HeroSection: React.FC = () => {
   return (
     <>
@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
     <DataDisplay/>
     <Testimonial2/>
     <DataDisplay2/>
-    <TopFeauture/>
+    <TimelineDemo />  
     <Performmance/>
     <Marquee2/>
     <TradeInvester/>
@@ -40,7 +40,6 @@ const HeroSection: React.FC = () => {
     <MeetYourMetor/>
     <CustomerTestimonial/>
     <WitnessRetail/>
-   
     </>
   );
 };

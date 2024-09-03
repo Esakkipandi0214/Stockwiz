@@ -8,10 +8,10 @@ type DataItem = {
 };
 
 const dataItems: DataItem[] = [
-  { label: 'Hours Of Content', value: '300 +', icon: <FaRegClock className="text-green-400" /> },
-  { label: 'Total Modules', value: '10 +', icon: <FaBook className="text-green-400" /> },
-  { label: 'Strategies', value: '12 +', icon: <FaStar className="text-green-400" /> },
-  { label: 'Registered', value: 'SEBI', icon: <FaCertificate className="text-green-400" /> },
+  { label: 'Hours Of Content', value: '300 +', icon: <FaRegClock className="text-blue-500" /> },
+  { label: 'Total Modules', value: '10 +', icon: <FaBook className="text-blue-500" /> },
+  { label: 'Strategies', value: '12 +', icon: <FaStar className="text-blue-500" /> },
+  { label: 'Registered', value: 'SEBI', icon: <FaCertificate className="text-blue-500" /> },
 ];
 
 const DataDisplay: React.FC = () => {
