@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
        <div className="lg:col-span-5 ml-4 md:ml-[40px]  flex justify-center lg:justify-start items-center text-center lg:text-left text-white">
         <div className='mt-20'>
         <div className="flex flex-col gap-4 lg:gap-6">
-  <p className="px-6 py-3  rounded-3xl flex justify-center max-w-max bg-transparent border border-purple-500 text-blue-300  font-small mb-7">
+  <p className="px-2  rounded-3xl flex justify-center max-w-max bg-transparent border border-purple-500 text-blue-300  font-small mb-7">
     SEBI Registered-978657464
   </p>
 </div>
@@ -58,12 +58,13 @@ const Hero: React.FC = () => {
   <p className="text-white text-4xl md:text-6xl lg:text-6xl font-bold leading-tight">
     Your gateway to <br />
     {isClient && (
-      <span className="text-violet-950"> {/* Replace with your desired color */}
+      <span className=" text-red-400"> {/* Replace with your desired color */}
         <Typewriter
           options={{
             strings: ['Smart Investing', 'Strong Returns'],
             autoStart: true,
             loop: true,
+            
           }}
         />
       </span>

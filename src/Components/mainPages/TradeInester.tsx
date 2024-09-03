@@ -43,7 +43,7 @@ const Testimonial: React.FC = () => {
     initial={{ opacity: 0, y: 50 }}
     animate={controls}
     transition={{ duration: 0.6, ease: 'easeOut' }}
-    className="bg-gradient-to-r from-green-500 to-teal-400 bg-clip-text text-transparent px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-7xl lg:max-w-2xl xl:max-w-4xl"
+    className="bg-gradient-to-r  from-blue-500 via-violet-500 to-pink-500 bg-clip-text text-transparent px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-7xl lg:max-w-2xl xl:max-w-4xl"
   >
     Traders & Investors
   </motion.h3>

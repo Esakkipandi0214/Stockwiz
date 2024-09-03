@@ -38,7 +38,7 @@ const Testimonial: React.FC = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={controls}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="bg-gradient-to-r from-green-500 to-teal-400 bg-clip-text text-transparent px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-8xl lg:max-w-2xl xl:max-w-4xl"
+            className="bg-gradient-to-r  from-blue-500 via-violet-500 to-pink-500 bg-clip-text text-transparent px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-8xl lg:max-w-2xl xl:max-w-4xl"
           >
             Features
           </motion.span>
@@ -148,30 +148,29 @@ const Testimonial: React.FC = () => {
           </div>
           <div className="relative flex justify-center lg:justify-start mt-6 lg:mt-0 lg:w-1/2">
             <video width="100%" className="border border-slate-600 rounded-xl bg-black" autoPlay loop muted>
-              <source src="/video.mp4" type="video/mp4" />
+              <source src="/v.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
         </div>
 
         {/* ====================================Fourth Section (Timeline Effect)============================================== */}
-        <div className="timeline-item flex flex-col lg:flex-row items-center my-10">
+        <div className="timeline-item flex flex-col items-center my-10 lg:flex-row-reverse">
           <div className="timeline-content bg-black rounded-3xl py-10 lg:py-14 border border-slate-600 hover:border-green-500 text-center lg:text-left px-6 lg:px-20 text-white lg:w-1/2">
-            <h2 className="text-2xl md:text-3xl lg:text-5xl mb-6 font-semibold">
-              Collaborate & Network<br />With India&apos;s Top Traders
-            </h2>
-            <p className="text-base md:text-lg lg:text-lg text-white/70 font-normal md:mb-3">
-              Become a part of India&apos;s Largest SEBI Registered Trading Community with 5,000+ Professional Traders.
-            </p>
+            <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold mb-6">
+            Collaborate & Network<br />With India&apos;s Top Traders            </h2>
+            <p className="text-base md:text-lg lg:text-lg text-white/70 font-normal">
+            Become a part of India&apos;s Largest SEBI Registered Trading Community with 5,000+ Professional Traders.            </p>
             <ul className="list-disc grid gap-2 md:gap-3 pl-5 text-left">
-              <li className="text-base md:text-lg lg:text-base">Network with the top 1% traders & investors in India.</li>
+            <li className="text-base md:text-lg lg:text-base">Network with the top 1% traders & investors in India.</li>
               <li className="text-base md:text-lg lg:text-base">Explore new and innovative trading styles.</li>
               <li className="text-base md:text-lg lg:text-base">Access daily watchlist, screeners, and scanners.</li>
               <li className="text-base md:text-lg lg:text-base">Interact with industry experts to improve your performance.</li>
             </ul>
+            
             <button
               type="button"
-              className="glitter-button p-3 md:p-4 w-full mt-4 md:w-2/4 rounded-2xl text-black bg-gradient-to-r from-[rgb(157,255,101)] to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
+              className="glitter-button p-3 md:p-4 w-full md:w-2/4 mt-4 rounded-2xl text-black bg-gradient-to-r from-[rgb(157,255,101)] to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
             >
               <Link
                 className="text-lg font-semibold text-black hover:text-white"
@@ -190,14 +189,12 @@ const Testimonial: React.FC = () => {
         </div>
 
         {/* ====================================Fifth Section (Timeline Effect)============================================== */}
-        <div className="timeline-item flex flex-col lg:flex-row-reverse items-center my-10">
-          <div className="timeline-content bg-black rounded-3xl py-10 lg:py-14 border border-slate-600 hover:border-green-500 text-center lg:text-left px-6 lg:px-20 text-white lg:w-1/2">
-            <h2 className="text-2xl mb-6 md:text-3xl lg:text-5xl font-semibold">
-              A.I Powered Fully<br />Automatic Trading
+        <div className="timeline-item flex flex-col lg:flex-row items-center my-10">
+          <div className="timeline-content bg-black rounded-3xl py-10 lg:py-14 border border-slate-600 hover:border-green-500 text-center lg:text-left px-6 lg:px-10 text-white lg:w-1/2">
+            <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold mb-6">              A.I Powered Fully<br />Automatic Trading
             </h2>
-            <p className="text-base md:text-lg lg:text-xl text-white/70 font-normal md:mb-4">
-              Unleash the power of artificial intelligence in stock trading & investing.
-            </p>
+            <p className="text-base md:text-lg lg:text-xl text-white/70 font-normal">
+            Unleash the power of artificial intelligence in stock trading & investing.            </p>
             <ul className="list-disc grid gap-2 md:gap-3 pl-5 text-left">
               <li className="text-base md:text-lg lg:text-base">Smart position size calculator.</li>
               <li className="text-base md:text-lg lg:text-base">AI powered news & market updates.</li>
@@ -206,7 +203,7 @@ const Testimonial: React.FC = () => {
             </ul>
             <button
               type="button"
-              className="glitter-button p-3 md:p-4 w-full mt-4 md:w-2/4 rounded-2xl text-black bg-gradient-to-r from-[rgb(157,255,101)] to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
+              className="glitter-button p-3 md:p-4 w-full md:w-2/4 rounded-2xl text-black bg-gradient-to-r from-[rgb(157,255,101)] to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow mt-4"
             >
               <Link
                 className="text-lg font-semibold text-black hover:text-white"
@@ -223,7 +220,7 @@ const Testimonial: React.FC = () => {
             </video>
           </div>
         </div>
-      </div>
+   </div>
     </section>
   );
 };

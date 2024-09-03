@@ -49,7 +49,7 @@ const Testimonial: React.FC = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={controls}
             transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-            className="text-4xl font-bold bg-gradient-to-r from-green-500 to-teal-400 bg-clip-text text-transparent sm:text-5xl md:text-6xl lg:text-6xl"
+            className="text-4xl font-bold bg-gradient-to-r  from-blue-500 via-violet-500 to-pink-500 bg-clip-text text-transparent sm:text-5xl md:text-6xl lg:text-6xl"
           >
             Moves Everyday
           </motion.h3>
