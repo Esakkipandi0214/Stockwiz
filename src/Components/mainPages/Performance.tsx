@@ -113,7 +113,7 @@ const images = [
   <div className="w-full px-4 md:px-8 flex justify-center">
   <button
       type="button"
-      className="glitter-button p-3 md:p-4 w-1/2 md:w-1/3 rounded-2xl text-black bg-gradient-to-r from-[rgb(157,255,101)] to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
+      className="glitter-button p-3 md:p-4 w-1/2 md:w-1/3 rounded-2xl text-black  bg-[length:200%_300%] bg-right animate-gradient-flow"
     >
       <Link
         className="text-lg font-semibold text-black hover:text-white"
