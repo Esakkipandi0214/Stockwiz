@@ -27,8 +27,8 @@ const Header: React.FC = () => {
       <div className="container flex justify-between h-[80px] mx-auto">
         <div className="flex items-center text-lg">
           <Link href="/" aria-label="Back to homepage" className="flex items-center p-2">
-            <span className="font-bold text-3xl text-[#16FF00]">Zentra</span>
-            <span className="font-light text-2xl text-white ml-1">Wealth</span>
+          <span className="bg-gradient-to-r from-blue-500 via-violet-500 to-pink-500 text-transparent bg-clip-text font-bold text-3xl">Zentra</span>
+          <span className="font-light text-2xl text-white ml-1">Wealth</span>
           </Link>
         </div>
         <div className="items-center hidden lg:flex gap-7">

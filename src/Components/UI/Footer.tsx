@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
     className="flex items-center pt-14 pb-4 justify-center md:justify-start mt-0"
   >
     {/* Stylized text or logo */}
-    <span className="font-bold text-4xl text-[#16FF00]">Zentra</span>
+    <span className="bg-gradient-to-r from-blue-500 via-violet-500 to-pink-500 text-transparent bg-clip-text font-bold text-3xl">Zentra</span>
     <span className="font-light text-3xl text-white ml-1">Wealth</span>
   </Link>
   <span className="mb-4 flex flex-col gap-2 justify-center md:justify-start md:items-start items-center md:mx-0 mx-10 bg-white/5 p-3 rounded-xl md:w-2/3">
