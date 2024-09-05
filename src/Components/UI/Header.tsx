@@ -32,14 +32,14 @@ const Header: React.FC = () => {
           </Link>
         </div>
         <div className="items-center hidden lg:flex gap-7">
-      <Link href="/" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#00d9ff] py-2 px-4 font-semibold text-lg rounded-[25px]">
+      <Link href="/" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#009dff] py-2 px-4 font-semibold text-lg rounded-[25px]">
         Home
       </Link> 
       
       <div className="relative inline-block text-left">
         <button
           onClick={toggleServicedown}
-          className="text-[#adb5bd] hover:bg-white/10 hover:text-[#00d9ff] py-2 px-4 font-semibold text-lg rounded-[25px] flex items-center"
+          className="text-[#adb5bd] hover:bg-white/10 hover:text-[#009dff] py-2 px-4 font-semibold text-lg rounded-[25px] flex items-center"
         >
           Services
           <svg
@@ -91,17 +91,17 @@ const Header: React.FC = () => {
           </div>
         )}
       </div>
-      <Link href="/about" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#00d9ff] py-2 px-4 font-semibold text-lg rounded-[25px]">
+      <Link href="/about" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#009dff] py-2 px-4 font-semibold text-lg rounded-[25px]">
       About us
       </Link>
-      <Link href="/contact" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#00d9ff] py-2 px-4 font-semibold text-lg rounded-[25px]">
+      <Link href="/contact" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#009dff] py-2 px-4 font-semibold text-lg rounded-[25px]">
       Contact </Link>
     </div>
         <div className="items-center hidden  gap-4 lg:flex">
-          <button className="px-6 py-2 text-lg font-medium text-[#f8f9fa] hover:text-[#00d9ff] hover:border-[#5d00ff]/50 rounded-[25px] border-2 backdrop-blur-lg hover:bg-white/10 border-[#f8f9fa]">
+          <button className="px-6 py-2 text-lg font-medium text-[#f8f9fa] hover:text-[#009dff] hover:border-[#5d00ff]/50 rounded-[25px] border-2 backdrop-blur-lg hover:bg-white/10 border-[#f8f9fa]">
             Sign up
           </button>
-          <button className="px-6 py-2 text-lg font-medium text-[#f8f9fa] hover:text-[#00d9ff] hover:border-[#5d00ff]/50 rounded-[25px] border-2 backdrop-blur-lg hover:bg-white/10 border-[#f8f9fa]">
+          <button className="px-6 py-2 text-lg font-medium text-[#f8f9fa] hover:text-[#009dff] hover:border-[#5d00ff]/50 rounded-[25px] border-2 backdrop-blur-lg hover:bg-white/10 border-[#f8f9fa]">
           Log In
           </button>
         </div>
