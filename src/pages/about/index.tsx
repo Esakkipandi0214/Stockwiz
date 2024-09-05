@@ -44,7 +44,7 @@ const content = [
     description: (
       <div className="flex items-center text-justify">
 
-        <p className="mt-4 text-gray-400 ">
+        <p className="text-xl mt-4 text-gray-400 ">
           We are committed to revolutionize the financial markets by creating and developing innovative products and services to empower retail traders.
           Technology & research are two building blocks of our innovation efforts and we aim to develop, implement and execute every possible solution to stay ahead of the curve and empower our users to achieve their financial goals.
         </p>
@@ -55,7 +55,7 @@ const content = [
       <div className="h-full w-full  flex items-center justify-center bg-gradient-to-r  from-pink-500 via-purple-500 to-blue-500">
         <IconWithGlow Icon={FaLightbulb} color="#ffffff" />
 
-        <p className="p-3">Innovation</p>
+        <p className="p-5">Innovation</p>
       </div>
     ),
   },
@@ -69,7 +69,7 @@ const content = [
       </div>
     ),
     description: (
-      <div className="flex items-center text-justify">
+      <div className="text-xl flex items-center text-justify">
 
         <p className="mt-4 text-gray-400">
           We are a platform built for traders, by traders and hence, traders mean everything to us. We proactively listen and take feedback from our clients to build a better product every day by collaborating with the finest partners in the world, ensuring a world-class experience. Your success is our success, and we are proud to be your trusted wealth partner in your journey to achieve financial freedom.
@@ -78,7 +78,7 @@ const content = [
     ), content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <IconWithGlow Icon={FaHandshake} color="#ffffff" />
-        <p className="p-3">Partnership</p>
+        <p className="p-5">Partnership</p>
       </div>
     ),
   },
@@ -94,7 +94,7 @@ const content = [
     description: (
       <div className="flex items-center text-justify">
 
-        <p className="mt-4 text-gray-400">
+        <p className="text-xl mt-4 text-gray-400">
           We place trust as the fundamental value of all our relationships, and at Stockwiz we are committed to delivering the highest levels of transparency in all our operations, ensuring that our clients are well informed about our services, fees, policies and past performance.
         </p>
       </div>
@@ -103,7 +103,7 @@ const content = [
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
 
         <IconWithGlow Icon={FaShieldAlt} color="#ffffff" />
-        <p className="p-3">Transparency</p>
+        <p className="p-5">Transparency</p>
       </div>
     ),
   },
@@ -119,14 +119,14 @@ const content = [
     description: (
       <div className="flex items-center text-justify">
 
-        <p className="mt-4 text-gray-400">
+        <p className="text-xl mt-4 text-gray-400">
           We are disruptors and we are here to create, build and start the biggest retail trading revolution in the history of financial markets. Stockwiz is and will be synonymous with growth for our clients, partners, investors, and all our community members. We believe in fast-paced sustainable growth, inculcating a culture of trust, reliability, and consistency in our entire ecosystem.
         </p>
       </div>
     ), content: (
       <div className="h-full w-full bg-gradient-to-r  from-pink-500 via-purple-500 to-blue-500 flex items-center justify-center text-white">
         <IconWithGlow Icon={FaChartLine} color="#ffffff" />
-      <p className="p-4">Growth</p> 
+      <p className="p-5">Growth</p> 
       </div>
     ),
   },
@@ -216,7 +216,7 @@ const AboutUs = () => {
           animate={disruptingControls}
         >
           <div className="container mx-auto">
-            <h2 className="text-center text-5xl font-bold mb-7 ">
+            <h2 className="p-20 text-center text-5xl font-bold mb-7 ">
               <span className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text text-white mb-8"> We Are</span><span className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r  from-pink-500 via-purple-500 to-blue-500 mb-8"> Disrupting</span>
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
@@ -342,16 +342,17 @@ const AboutUs = () => {
           className="bg-gradient-to-r from-black to-violet-950 rounded-lg p-8 flex flex-col md:flex-row items-center justify-between relative shadow-lg"
         >
           <div className="relative md:w-2/3">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white mt-4 tracking-wide">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white mt-16 tracking-wide">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500"> Our Mission </span>&<span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">Vision</span>
             </h2>
-            <p className="text-lg md:text-2xl mb-6 text-gray-300 leading-relaxed">
+            <div className="p-20">
+            <p className=" text-lg md:text-2xl mb-6 text-gray-300 leading-relaxed">
               Our mission is to empower retail traders with world-class research,
               state-of-the-art technology stack that enables them to create
               generational wealth. We want to democratize stock trading and investing for everyone.
             </p>
-            <div>
-              <p className="relative text-lg md:text-2xl text-white z-10">
+            
+              <p className=" relative text-lg md:text-2xl text-white z-10">
                 Our vision is to become Indias largest trading & investing platform, helping millions of users achieve financial freedom.
               </p>
             </div>
@@ -370,7 +371,7 @@ const AboutUs = () => {
       {/* Values Section */}
       {/* <section className="text-center" ref={valuesRef}>*/}
         {/* <motion.div initial={{ opacity: 0 }} animate={valuesControls}>  */}
-          <h2 className="text-5xl font-bold mt-4 mb-8 text-center">
+          <h2 className="text-5xl font-bold mt-6 mb-11 text-center">
           <span className="text-4xl md:text-6xl font-bold text-transparent text-white mb-8">Our</span>
           <span className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r  from-pink-500 via-purple-500 to-blue-500 mb-8">  Values </span>
           </h2>
