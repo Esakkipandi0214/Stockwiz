@@ -9,13 +9,9 @@ import { HeroHighlight, Highlight } from "../../Components/UI/hero-highlight";
 import { Meteors } from "../../Components/UI/meteors";
 import { CardSpotlight } from "../../Components/UI/card-spotlight";
 import { Button } from "../../Components/UI/moving-border";
+import { StickyScroll } from "../../Components/UI/sticky-scroll-reveal"
+import { WobbleCard } from "../../Components/UI/wobble-card";
 
-
-
-
-import { GradientCard } from "../../Components/GradientCard";
-import { CheckIcon } from "lucide-react";
-import { title } from "process";
 // Define an interface for the IconWithGlow component's props
 interface IconWithGlowProps {
   Icon: React.ElementType;
@@ -34,6 +30,107 @@ const IconWithGlow: React.FC<IconWithGlowProps> = ({ Icon, color }) => (
     <Icon size={24} style={{ color }} />
   </div>
 );
+
+const content = [
+  {
+    title: (
+      <div className="flex items-center">
+        <IconWithGlow Icon={FaLightbulb} color="#ffffff" />
+        <h3 className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r  from-pink-500 via-purple-500 to-blue-500 ml-3">
+          Innovation
+        </h3>
+      </div>
+    ),
+    description: (
+      <div className="flex items-center text-justify">
+
+        <p className="mt-4 text-gray-400 ">
+          We are committed to revolutionize the financial markets by creating and developing innovative products and services to empower retail traders.
+          Technology & research are two building blocks of our innovation efforts and we aim to develop, implement and execute every possible solution to stay ahead of the curve and empower our users to achieve their financial goals.
+        </p>
+      </div>
+    ),
+    content: (
+
+      <div className="h-full w-full  flex items-center justify-center bg-gradient-to-r  from-pink-500 via-purple-500 to-blue-500">
+        <IconWithGlow Icon={FaLightbulb} color="#ffffff" />
+
+        <p className="p-3">Innovation</p>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <div className="flex items-center">
+        <IconWithGlow Icon={FaHandshake} color="#ffffff" />
+        <h3 className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r  from-pink-500 via-purple-500 to-blue-500 ml-3">
+          Partnership
+        </h3>
+      </div>
+    ),
+    description: (
+      <div className="flex items-center text-justify">
+
+        <p className="mt-4 text-gray-400">
+          We are a platform built for traders, by traders and hence, traders mean everything to us. We proactively listen and take feedback from our clients to build a better product every day by collaborating with the finest partners in the world, ensuring a world-class experience. Your success is our success, and we are proud to be your trusted wealth partner in your journey to achieve financial freedom.
+        </p>
+      </div>
+    ), content: (
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <IconWithGlow Icon={FaHandshake} color="#ffffff" />
+        <p className="p-3">Partnership</p>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <div className="flex items-center">
+        <IconWithGlow Icon={FaShieldAlt} color="#ffffff" />
+        <h3 className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r  from-pink-500 via-purple-500 to-blue-500 ml-3">
+          Transparency
+        </h3>
+      </div>
+    ),
+    description: (
+      <div className="flex items-center text-justify">
+
+        <p className="mt-4 text-gray-400">
+          We place trust as the fundamental value of all our relationships, and at Stockwiz we are committed to delivering the highest levels of transparency in all our operations, ensuring that our clients are well informed about our services, fees, policies and past performance.
+        </p>
+      </div>
+    ),
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+
+        <IconWithGlow Icon={FaShieldAlt} color="#ffffff" />
+        <p className="p-3">Transparency</p>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <div className="flex items-center">
+        <IconWithGlow Icon={FaChartLine} color="#ffffff" />
+        <h3 className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r  from-pink-500 via-purple-500 to-blue-500 ml-3">
+          Growth
+        </h3>
+      </div>
+    ),
+    description: (
+      <div className="flex items-center text-justify">
+
+        <p className="mt-4 text-gray-400">
+          We are disruptors and we are here to create, build and start the biggest retail trading revolution in the history of financial markets. Stockwiz is and will be synonymous with growth for our clients, partners, investors, and all our community members. We believe in fast-paced sustainable growth, inculcating a culture of trust, reliability, and consistency in our entire ecosystem.
+        </p>
+      </div>
+    ), content: (
+      <div className="h-full w-full bg-gradient-to-r  from-pink-500 via-purple-500 to-blue-500 flex items-center justify-center text-white">
+        <IconWithGlow Icon={FaChartLine} color="#ffffff" />
+      <p className="p-4">Growth</p> 
+      </div>
+    ),
+  },
+];
 
 const AboutUs = () => {
   const { ref: disruptingRef, inView: disruptingInView } = useInView({
@@ -87,6 +184,8 @@ const AboutUs = () => {
         </span>
 
       </div>
+
+
       <HeroHighlight className="mb-2 md:mb-16 pt-8 pr-8 pl-4">
         <motion.h1
           initial={{
@@ -101,12 +200,11 @@ const AboutUs = () => {
             duration: 0.5,
             ease: [0.4, 0.0, 0.2, 1],
           }}
-          className=" text-lg px-4 md:text-xl lg:text-2xl font-semibold  dark:text-white max-w-5xl leading-relaxed lg:leading-snug text-center mx-auto "
+          className="text-2xl px-2 md:text-4xl lg:text-4xl font-bold text-white dark:text-white max-w-7xl leading-relaxed lg:leading-snug text-center mx-auto "
         >
-          Welcome to Zentra Wealth,
-          Our smart AI trading robots and  {" "}
+          Unlock smarter trading with  {" "}
           <Highlight className="text-black dark:text-white">
-            expert signals for Crypto, US stocks, and Indian stocks  guide you to better decisions Plus, our fast and secure USDT transactions, with easy options like face-to-face deals and bank deposits.   </Highlight>
+            AI-driven insights for Crypto, US, and Indian stocks. Secure USDT deals, hassle-free!</Highlight>
         </motion.h1>
       </HeroHighlight>
 
@@ -119,15 +217,70 @@ const AboutUs = () => {
         >
           <div className="container mx-auto">
             <h2 className="text-center text-5xl font-bold mb-7 ">
-              <span className=" text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500"> We Are Disrupting</span>
+              <span className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text text-white mb-8"> We Are</span><span className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r  from-pink-500 via-purple-500 to-blue-500 mb-8"> Disrupting</span>
             </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+              <WobbleCard
+                containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
+                className=""
+              >
+                <div className="max-w-xs">
+                  <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                    <span className="text-white">1.</span> Financial Market Education
+                  </h2>
+                  <p className="text-gray-300">
+                    We aim to become India #1 trading, investing, and personal finance education platform by
+                    providing our users with institutional professional grade courses, workshops, and seminars.
+                  </p>
+                </div>
+                {/* <Image
+                  src="/linear.webp"
+                  width={500}
+                  height={500}
+                  alt="linear demo image"
+                  className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
+                /> */}
+              </WobbleCard>
+              <WobbleCard containerClassName="col-span-1 min-h-[300px]">
+                <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                  <span className="text-white">2.</span> Research & Advisory
+                </h2>
+                <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+
+                  Through our discretionary and quantitative proprietary trading and investing strategies, models, and methods,
+                  we aim to provide our users with powerful research and insights assisting them in their wealth creation journey.
+                </p>
+              </WobbleCard>
+              <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+                <div className="max-w-sm">
+                  <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                  <span className="text-white">3.</span> 
+                  Technology
+                  </h2>
+                  <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+                  We strive to be the fastest trading platform in the country powered by partnerships with India top brokers,
+                    financial institutions, and data vendors to enhance the trading and investing experience of all our users.
+                    Our mission is to revolutionize retail trading through technology.
+                  </p>
+                </div>
+                {/* <Image
+                  src="/linear.webp"
+                  width={500}
+                  height={500}
+                  alt="linear demo image"
+                  className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
+                /> */}
+              </WobbleCard>
+            </div>
+
+
             {/* Financial Market Education */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
+            {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
               <div className="lg:order-1">
-                
+
                 <CardSpotlight className="h-52 w-full">
                   <h3 className="text-2xl md:text-3xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">
-                  <span className="text-white">1.</span> Financial Market Education
+                    <span className="text-white">1.</span> Financial Market Education
                   </h3>
                   <p className="text-gray-300">
                     We aim to become India #1 trading, investing, and personal finance education platform by
@@ -136,12 +289,12 @@ const AboutUs = () => {
                 </CardSpotlight>
 
               </div>
-            </div>
+            </div> */}
 
             {/* Research & Advisory */}
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 mt-4">
-              <div className="hidden lg:block"></div> {/* Empty div to push the content down */}
+            {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 mt-4">
+              <div className="hidden lg:block"></div> 
               <div className="lg:order-2 lg:text-left">
                 <CardSpotlight className="h-52 w-full">
                   <h3 className="text-2xl md:text-3xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">
@@ -153,19 +306,19 @@ const AboutUs = () => {
                   </p>
                 </CardSpotlight>
               </div>
-            </div>
+            </div> */}
 
 
 
 
 
             {/* Technology */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 mt-4 mb-7 md:mb-20">
+            {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 mt-4 mb-7 md:mb-20">
               <div className="lg:order-1">
                 <CardSpotlight className="h-60 w-full">
                   <h3 className="text-2xl md:text-3xl font-bold mb-2 ">
-                  <span className="text-white">3.</span> <span className="text-2xl md:text-3xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">
-                    Technology</span>
+                    <span className="text-white">3.</span> <span className="text-2xl md:text-3xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">
+                      Technology</span>
                   </h3>
                   <p className="text-gray-300">
                     We strive to be the fastest trading platform in the country powered by partnerships with India top brokers,
@@ -176,7 +329,7 @@ const AboutUs = () => {
                 </CardSpotlight>
 
               </div>
-            </div>
+            </div> */}
           </div>
         </motion.div>
       </section>
@@ -215,14 +368,17 @@ const AboutUs = () => {
         </motion.div>
       </section>
       {/* Values Section */}
-      <section className="text-center" ref={valuesRef}>
-        <motion.div initial={{ opacity: 0 }} animate={valuesControls}>
-          <h2 className="text-5xl font-bold mt-4 mb-8">
-            <span className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 mt-2 mb-10">Our Values </span>
+      {/* <section className="text-center" ref={valuesRef}>*/}
+        {/* <motion.div initial={{ opacity: 0 }} animate={valuesControls}>  */}
+          <h2 className="text-5xl font-bold mt-4 mb-8 text-center">
+          <span className="text-4xl md:text-6xl font-bold text-transparent text-white mb-8">Our</span>
+          <span className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r  from-pink-500 via-purple-500 to-blue-500 mb-8">  Values </span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {/* Innovation Card */}
-            <motion.div
+
+          <StickyScroll content={content} />
+
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4"> */}
+            {/*<motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
@@ -232,7 +388,7 @@ const AboutUs = () => {
                 borderRadius: "20px",
               }}
             >
-              <div className="flex flex-col h-full text-left transform hover:scale-105 transition-transform">
+               <div className="flex flex-col h-full text-left transform hover:scale-105 transition-transform">
                 <div className="flex items-center">
                   <IconWithGlow Icon={FaLightbulb} color="#ffffff" />
                   <h3 className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r  from-pink-500 via-purple-500 to-blue-500 ml-3">
@@ -243,7 +399,7 @@ const AboutUs = () => {
                   We are committed to revolutionize the financial markets by creating and developing innovative products and services to empower retail traders.
                   Technology & research are two building blocks of our innovation efforts and we aim to develop, implement and execute every possible solution to stay ahead of the curve and empower our users to achieve their financial goals.
                 </p>
-              </div>
+              </div> 
               <div
                 className="absolute inset-0 rounded-lg"
                 style={{
@@ -252,10 +408,9 @@ const AboutUs = () => {
                   borderRadius: "20px",
                 }}
               ></div>
-            </motion.div>
+            </motion.div>*/}
 
-            {/* Transparency Card */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
@@ -284,10 +439,9 @@ const AboutUs = () => {
                   borderRadius: "20px",
                 }}
               ></div>
-            </motion.div>
+            </motion.div> */}
 
-            {/* Partnership Card */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
@@ -316,10 +470,9 @@ const AboutUs = () => {
                   borderRadius: "20px",
                 }}
               ></div>
-            </motion.div>
+            </motion.div> */}
 
-            {/* Growth Card */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
@@ -348,10 +501,10 @@ const AboutUs = () => {
                   borderRadius: "20px",
                 }}
               ></div>
-            </motion.div>
-          </div>
-        </motion.div>
-      </section>
+            </motion.div> */}
+           {/* </div> */}
+       {/* </motion.div>
+      </section> */}
       <div className="bg-[#061a4800] py-20"> {/* Background color similar to the footer */}
         <h2 className="text-5xl font-bold text-center text-white mb-12">Why choose us?</h2>
         <div className="flex justify-center items-start space-x-8">
