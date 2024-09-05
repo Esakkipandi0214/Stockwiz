@@ -145,7 +145,7 @@ const ContactPage = () => {
      
         <button
           type="submit"
-          className="w-full py-3 rounded bg-blue-400 hover:bg-gradient-to-b from-blue-500 via-violet-500 to-pink-500 text-white font-semibold text-lg transition duration-300">
+          className="w-full relative py-3 rounded bg-blue-400 hover:bg-gradient-to-b from-blue-500 via-violet-500 to-pink-500 text-white font-semibold text-lg transition duration-300">
           Send Message
         </button>
       </form>
