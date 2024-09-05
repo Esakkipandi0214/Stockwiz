@@ -128,7 +128,7 @@ const ExampleComponent = () => {
   }, [controls, inView]);
 
   return (
-    <section className="bg-gradient-to-r from-black to-blue-900 px-4 py-6 md:px-6 md:py-12 lg:px-8 lg:py-16 h-auto">
+    <section className="bg-gradient-to-r from-black to-blue-900 px-4 pt-5 pb-10 md:px-6 md:py-10 lg:px-8 lg:py-16 h-auto">
       <div className="container flex flex-col items-center mx-auto space-y-6">
         <motion.h4
           ref={ref}
@@ -158,7 +158,7 @@ const ExampleComponent = () => {
             style={{ fontSize: '2em', display: 'inline-block' }}
             repeat={Infinity}
           />
-          <div className="w-1 h-12 bg-gradient-to-b from-blue-500 to-teal-400 ml-2 inline-block" />
+          <div className="w-1 h-12 bg-gradient-to-b  from-blue-500 via-violet-500 to-pink-500 ml-2 inline-block" />
         </motion.h3>
         <motion.p
           ref={ref}
@@ -170,7 +170,7 @@ const ExampleComponent = () => {
           {/* Your content here */}
         </motion.p>
       </div>
-      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12">
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 pt-5">
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
     {dataItems.map((item, index) => (
       <div

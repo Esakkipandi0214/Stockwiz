@@ -32,14 +32,14 @@ const Header: React.FC = () => {
           </Link>
         </div>
         <div className="items-center hidden lg:flex gap-7">
-      <Link href="/" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+      <Link href="/" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#00d9ff] py-2 px-4 font-semibold text-lg rounded-[25px]">
         Home
       </Link> 
       
       <div className="relative inline-block text-left">
         <button
           onClick={toggleServicedown}
-          className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px] flex items-center"
+          className="text-[#adb5bd] hover:bg-white/10 hover:text-[#00d9ff] py-2 px-4 font-semibold text-lg rounded-[25px] flex items-center"
         >
           Services
           <svg
@@ -62,27 +62,27 @@ const Header: React.FC = () => {
           <div className="z-10 absolute right-0 mt-2 w-44 bg-black divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600">
             <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
               <li>
-                <Link href="#" className="block px-4 py-2 hover:bg-lime-500  text-white hover:text-black">
+                <Link href="#" className="block px-4 py-2 hover:bg-gradient-to-r from-blue-500 via-violet-500 to-pink-500  text-white hover:text-black">
                 Zentra AI BOT
                 </Link>
               </li>
               <li>
-                <Link href="#" className="block px-4 py-2 hover:bg-lime-500  text-white hover:text-black">
+                <Link href="#" className="block px-4 py-2 hover:bg-gradient-to-r from-blue-500 via-violet-500 to-pink-500  text-white hover:text-black">
                 Zentra Indian Stocks
                 </Link>
               </li>
               <li>
-                <Link href="#" className="block px-4 py-2 hover:bg-lime-500  text-white hover:text-black">
+                <Link href="#" className="block px-4 py-2 hover:bg-gradient-to-r from-blue-500 via-violet-500 to-pink-500  text-white hover:text-black">
                 Zentra US Stocks
                 </Link>
               </li>
               <li>
-                <Link href="#" className="block px-4 py-2 hover:bg-lime-500  text-white hover:text-black">
+                <Link href="#" className="block px-4 py-2 hover:bg-gradient-to-r from-blue-500 via-violet-500 to-pink-500  text-white hover:text-black">
                 Tether Trade
                 </Link>
               </li>
               <li>
-                <Link href="#" className="block px-4 py-2 hover:bg-lime-500  text-white hover:text-black">
+                <Link href="#" className="block px-4 py-2 hover:bg-gradient-to-r from-blue-500 via-violet-500 to-pink-500  text-white hover:text-black">
                 Zentra Crypto
                 </Link>
               </li>
@@ -91,17 +91,17 @@ const Header: React.FC = () => {
           </div>
         )}
       </div>
-      <Link href="/about" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+      <Link href="/about" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#00d9ff] py-2 px-4 font-semibold text-lg rounded-[25px]">
       About us
       </Link>
-      <Link href="/contact" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+      <Link href="/contact" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#00d9ff] py-2 px-4 font-semibold text-lg rounded-[25px]">
       Contact </Link>
     </div>
         <div className="items-center hidden  gap-4 lg:flex">
-          <button className="px-6 py-2 text-lg font-medium text-[#f8f9fa] hover:text-[#16FF00] hover:border-[#16FF00]/50 rounded-[25px] border-2 backdrop-blur-lg hover:bg-white/10 border-[#f8f9fa]">
+          <button className="px-6 py-2 text-lg font-medium text-[#f8f9fa] hover:text-[#00d9ff] hover:border-[#5d00ff]/50 rounded-[25px] border-2 backdrop-blur-lg hover:bg-white/10 border-[#f8f9fa]">
             Sign up
           </button>
-          <button className="px-6 py-2 text-lg font-medium text-[#f8f9fa] hover:text-[#16FF00] hover:border-[#16FF00]/50 rounded-[25px] border-2 backdrop-blur-lg hover:bg-white/10 border-[#f8f9fa]">
+          <button className="px-6 py-2 text-lg font-medium text-[#f8f9fa] hover:text-[#00d9ff] hover:border-[#5d00ff]/50 rounded-[25px] border-2 backdrop-blur-lg hover:bg-white/10 border-[#f8f9fa]">
           Log In
           </button>
         </div>
@@ -116,14 +116,14 @@ const Header: React.FC = () => {
       </div>
       {isMenuOpen && (
         <div className="lg:hidden absolute left-0 top-16 w-full min-h-[700px] bg-black/80 z-50 flex flex-col items-start space-y-4 p-7 mt-2">
-        <Link href="/" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+        <Link href="/" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#00d9ff] py-2 px-4 font-semibold text-lg rounded-[25px]">
           Home
         </Link> 
         {/* Services Section */}
         <div className="flex flex-col w-full">
           <button
             onClick={toggleServicedown}
-            className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px] flex items-center w-full text-left"
+            className="text-[#adb5bd] hover:bg-white/10 hover:text-[#00d9ff] py-2 px-4 font-semibold text-lg rounded-[25px] flex items-center w-full text-left"
           >
             Services
             <svg

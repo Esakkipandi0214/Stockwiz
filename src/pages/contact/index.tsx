@@ -50,7 +50,7 @@ const ContactPage = () => {
         </div>
       </div>
       <form onSubmit={handleSubmit} className="w-2/3 bg-gray-900 p-10 rounded-lg ml-8">
-      <h1 className="relative z-10 text-xl md:text-6xl  bg-clip-text text-transparent bg-gradient-to-b from-[#16FF00] to-black-400 font-sans font-bold mb-4">
+      <h1 className="relative z-10 text-xl md:text-6xl  bg-clip-text text-transparent bg-gradient-to-b from-blue-500 via-violet-500 to-pink-500 font-sans font-bold mb-4">
       Contact Us
       </h1>
         <div className="grid grid-cols-2 gap-6 mb-6">
@@ -145,7 +145,7 @@ const ContactPage = () => {
      
         <button
           type="submit"
-          className="w-full py-3 rounded bg-green-500 hover:bg-green-500 text-white font-semibold text-lg transition duration-300">
+          className="w-full py-3 rounded bg-blue-400 hover:bg-gradient-to-b from-blue-500 via-violet-500 to-pink-500 text-white font-semibold text-lg transition duration-300">
           Send Message
         </button>
       </form>
