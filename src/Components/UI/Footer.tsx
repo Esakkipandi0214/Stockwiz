@@ -26,13 +26,13 @@ const Footer: React.FC = () => {
     <span className="mb-4 flex flex-col gap-2 justify-start md:justify-start md:items-start items-start bg-white/5 p-3 rounded-xl sm:w-2/3 w-full mx-4 sm:mx-0 text-left sm:text-left"> {/* Right align for mobile */}
       <p className="text-white">Compliance Info</p>
       <p className="text-white/40">
-        Compliance Officer: <span className="text-white">Pandian</span>
+        Compliance Officer: <span className="text-white">Iyyappan</span>
       </p>
       <p className="text-white/40">
-        Number: <span className="text-white">+91 9856874545</span>
+        Number: <span className="text-white">+91 9962323022</span>
       </p>
       <p className="text-white/40">
-        Email: <span className="text-white">Zentra0101@gmail.com</span>
+        Email: <span className="text-white">Tethertrades10101@gmail.com</span>
       </p>
     </span>
 
@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
             fill="#28F2FF"/>          
             </svg>
         </Link>
-        <p className="text-white mt-2">+91 8859565859</p>
+        <p className="text-white mt-2">+91 8122511997</p>
       </span>
 
       <p className="text-white/30">Whatsapp Us:</p>
@@ -95,7 +95,7 @@ const Footer: React.FC = () => {
             fill="#29E337"/>          
             </svg>
         </Link>
-        <p className="text-white mt-2">+91 8956453245</p>
+        <p className="text-white mt-2">+91 9962323022</p>
       </span>
     </span>
   </nav>

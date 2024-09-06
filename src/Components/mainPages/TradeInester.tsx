@@ -179,24 +179,27 @@ const Testimonial: React.FC = () => {
 
     {/* ====================================-------------------------------------------====================================== */}
     <div className="grid justify-center items-center gap-10 px-4 sm:px-6 md:px-8 lg:px-16">
-  <span className="text-lg sm:text-xl md:text-2xl lg:text-4xl text-center text-white font-medium">
-  <Typewriter
-          options={{
-            strings: ['We are India`s Largest SEBI registered trading community. We help everyone become Super Traders.'],
-            autoStart: true,
-            loop: true,
-          }}
-        />
+  <span className="text-base sm:text-xl md:text-2xl mt-6 lg:text-4xl text-center text-white font-medium leading-relaxed sm:leading-normal">
+    <Typewriter
+      options={{
+        strings: [
+          "We are India`s Largest SEBI registered trading community.",
+          "We help everyone become Super Traders.",
+        ],
+        autoStart: true,
+        loop: true,
+      }}
+    />
   </span>
-  <button
-  type="button"
-  className="glitter-button p-4 w-full max-w-md rounded-2xl mx-auto bg-gradient-to-r from-[rgb(157,255,101)] text-black hover:text-white to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
->
-  <Link className="text-lg font-semibold text-black hover:text-white" href="#">
-    Join Now
-  </Link>
-</button>
 
+  <button
+    type="button"
+    className="glitter-button p-3 w-full max-w-xs sm:max-w-md rounded-xl mx-auto bg-gradient-to-r from-[rgb(157,255,101)] text-black hover:text-white to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
+  >
+    <Link className="text-base sm:text-lg font-semibold text-black hover:text-white" href="#">
+      Join Now
+    </Link>
+  </button>
 </div>
 
 
