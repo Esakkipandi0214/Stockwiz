@@ -28,7 +28,7 @@ const Testimonial: React.FC = () => {
     initial={{ opacity: 0, y: 50 }}
     animate={controls}
     transition={{ duration: 0.6, ease: 'easeOut' }}
-    className="px-4 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl lg:max-w-2xl xl:max-w-4xl text-white"
+    className="px-2 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl lg:max-w-2xl xl:max-w-4xl text-white"
   >
     Membership
     <motion.span
@@ -36,7 +36,7 @@ const Testimonial: React.FC = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={controls}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      className="bg-gradient-to-r  from-blue-500 via-violet-500 to-pink-500 bg-clip-text text-transparent px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-8xl lg:max-w-2xl xl:max-w-4xl"
+      className="bg-gradient-to-r  from-blue-500 via-violet-500 to-pink-500 bg-clip-text text-transparent px-4 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-8xl lg:max-w-2xl xl:max-w-4xl"
     >
       Plans
     </motion.span>

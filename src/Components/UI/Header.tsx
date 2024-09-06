@@ -146,27 +146,27 @@ const Header: React.FC = () => {
             <div className="bg-black/80 w-full divide-y divide-gray-100 rounded-lg shadow mt-2">
               <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
                 <li>
-                  <Link href="#" className="block px-4 py-2 hover:border hover:rounded-2xl text-base text-[#adb5bd] hover:bg-lime-500 hover:text-black">
+                  <Link href="#" className="block px-4 py-2 hover:border hover:rounded-2xl text-base text-[#adb5bd] hover:bg-blue-500 hover:text-black">
                     Zentra AI BOT
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="block px-4 py-2 hover:border hover:rounded-2xl text-base text-[#adb5bd] hover:bg-lime-500 hover:text-black">
+                  <Link href="#" className="block px-4 py-2 hover:border hover:rounded-2xl text-base text-[#adb5bd] hover:bg-blue-500 hover:text-black">
                     Zentra Indian Stocks
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="block px-4 py-2 hover:border hover:rounded-2xl text-base text-[#adb5bd] hover:bg-lime-500 hover:text-black">
+                  <Link href="#" className="block px-4 py-2 hover:border hover:rounded-2xl text-base text-[#adb5bd] hover:bg-blue-500 hover:text-black">
                     Zentra US Stocks
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="block px-4 py-2 hover:border hover:rounded-2xl text-base text-[#adb5bd] hover:bg-lime-500 hover:text-black">
+                  <Link href="#" className="block px-4 py-2 hover:border hover:rounded-2xl text-base text-[#adb5bd] hover:bg-blue-500 hover:text-black">
                     Tether Trade
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="block px-4 py-2 hover:border hover:rounded-2xl text-base text-[#adb5bd] hover:bg-lime-500 hover:text-black">
+                  <Link href="#" className="block px-4 py-2 hover:border hover:rounded-2xl text-base text-[#adb5bd] hover:bg-blue-500 hover:text-black">
                     Zentra Crypto
                   </Link>
                 </li>
@@ -174,13 +174,13 @@ const Header: React.FC = () => {
             </div>
           )}
         </div>
-        <Link href="/about" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+        <Link href="/about" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#00d9ff] py-2 px-4 font-semibold text-lg rounded-[25px]">
           About Us
         </Link>
-        <Link href="/contact" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#16FF00] py-2 px-4 font-semibold text-lg rounded-[25px]">
+        <Link href="/contact" className="text-[#adb5bd] hover:bg-white/10 hover:text-[#00d9ff] py-2 px-4 font-semibold text-lg rounded-[25px]">
           Contact Us
         </Link>
-        <button className="px-6 py-2 ml-4 text-lg font-medium text-[#16FF00] rounded-[25px] border-2 backdrop-blur-lg bg-[#16FF00]/5 border-[#16FF00]/5">
+        <button className="px-6 py-2 ml-4 text-lg font-medium text-[#00d9ff] rounded-[25px] border-2 backdrop-blur-lg bg-[#5d00ff]/5 border-[#5d00ff]/5">
           Sign up
         </button>
       </div>

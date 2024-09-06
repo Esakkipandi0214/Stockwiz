@@ -41,7 +41,7 @@ const Testimonial: React.FC = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
             className="text-5xl font-extrabold text-white sm:text-6xl md:text-5xl lg:text-7xl"
           >
-            Catch Institutional
+            Catch Everyday profit
           </motion.h2>
 
           <motion.h3
@@ -49,11 +49,10 @@ const Testimonial: React.FC = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={controls}
             transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-            className="text-4xl font-bold bg-gradient-to-r  from-blue-500 via-violet-500 to-pink-500 bg-clip-text text-transparent sm:text-5xl md:text-6xl lg:text-6xl"
+            className="text-xl font-bold bg-gradient-to-r  from-blue-500 via-violet-500 to-pink-500 bg-clip-text text-transparent sm:text-5xl md:text-6xl lg:text-6xl"
           >
-            Moves Everyday
-          </motion.h3>
-
+           Using Different  Services & Become Richer
+           </motion.h3>
           <motion.p
             ref={ref}
             initial={{ opacity: 0, y: 50 }}
