@@ -183,7 +183,7 @@ const AboutUs = () => {
 
 
 
-      <HeroHighlight className="mb-2 md:mb-16 pt-8 pr-8 pl-4">
+      <HeroHighlight className="mb-4 md:mb-16 pt-6 md:pt-8 pr-4 pl-4">
         <motion.h1
           initial={{
             opacity: 0,
@@ -197,8 +197,7 @@ const AboutUs = () => {
             duration: 0.5,
             ease: [0.4, 0.0, 0.2, 1],
           }}
-          className="text-2xl px-2 md:text-4xl lg:text-4xl font-bold text-white dark:text-white max-w-7xl leading-relaxed lg:leading-snug text-center mx-auto "
-        >
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white dark:text-white max-w-4xl lg:max-w-7xl leading-relaxed lg:leading-snug text-center mx-auto px-2">
           Unlock smarter trading with  {" "}
           <Highlight className="text-black dark:text-white">
             AI-driven insights for Crypto, US, and Indian stocks. Secure USDT deals, hassle-free!</Highlight>
@@ -213,9 +212,11 @@ const AboutUs = () => {
           animate={disruptingControls}
         >
           <div className="container mx-auto">
-            <h2 className="p-20 text-center text-5xl font-bold mb-7 ">
-              <span className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text text-white mb-8"> We Are</span><span className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r  from-pink-500 via-purple-500 to-blue-500 mb-8"> Disrupting</span>
+            <h2 className="p-4 md:p-20 text-center text-4xl md:text-5xl font-bold mb-7">
+              <span className="block text-3xl md:text-6xl font-bold text-transparent bg-clip-text text-white mb-4 md:mb-8">We Are</span>
+              <span className="block text-3xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 mb-4 md:mb-8">Disrupting</span>
             </h2>
+
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
               <WobbleCard
                 containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
@@ -577,7 +578,7 @@ const AboutUs = () => {
               </div>
 
               <h1 className="font-bold text-xl text-white mb-4 relative z-50">
-                Zentraa Tether Trades
+                Zentra Tether Trades
               </h1>
 
               <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
