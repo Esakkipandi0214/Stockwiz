@@ -37,8 +37,8 @@ const MobileTabletCarousel = () => {
                 <Image
                   src={image}
                   alt={`Slide ${index + 1}`}
-                  width={400}
-                  height={300}
+                  width={300}
+                  height={200}
                 />
               </div>
             ))}

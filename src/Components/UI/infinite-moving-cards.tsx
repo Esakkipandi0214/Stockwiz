@@ -2,8 +2,9 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
-import  Image  from "next/image";
+import Image from "next/image";
 import { StaticImageData } from "next/image";
+
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
@@ -15,7 +16,7 @@ export const InfiniteMovingCards = ({
     title: string;
     quote: string;
     name: string;
-    src: StaticImageData; // Include image in the items array
+    src: StaticImageData;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -28,7 +29,9 @@ export const InfiniteMovingCards = ({
   useEffect(() => {
     addAnimation();
   }, []);
+
   const [start, setStart] = useState(false);
+
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
@@ -45,6 +48,7 @@ export const InfiniteMovingCards = ({
       setStart(true);
     }
   }
+
   const getDirection = () => {
     if (containerRef.current) {
       if (direction === "left") {
@@ -60,6 +64,7 @@ export const InfiniteMovingCards = ({
       }
     }
   };
+
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
@@ -71,25 +76,30 @@ export const InfiniteMovingCards = ({
       }
     }
   };
+
   return (
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >
       <ul
         ref={scrollerRef}
         className={cn(
-          " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
-          start && "animate-scroll ",
+          "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
+          start && "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
         {items.map((item, idx) => (
           <li
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
+            className={cn(
+              "relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-6 py-4", // Common classes
+              "w-[300px] md:w-[350px] lg:w-[450px] max-w-full", // Responsiveness for card width
+              "md:px-8 md:py-6" // Padding for larger screens
+            )}
             style={{
               background:
                 "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
@@ -97,32 +107,31 @@ export const InfiniteMovingCards = ({
             key={item.name}
           >
             <blockquote>
-              <div
-                aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-              ></div>
-              {/* Add the image here */}
-              <div className="flex items-center space-x-2 mb-4">
-               <Image
-                 src={item.src.src}
-                 alt={item.name}
-                 className="w-12 h-12 rounded-full"
-                 width={100}
-                 height={100}
-               />
-              <span className="text-sm leading-[1.6] text-gray-400 font-normal">
-              {item.title}
-              </span>
-               </div>
-              <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
+              {/* Image and Title */}
+              <div className="flex items-center space-x-2 mb-2 md:mb-4">
+                <Image
+                  src={item.src.src}
+                  alt={item.name}
+                  className="w-10 h-10 rounded-full md:w-12 md:h-12"
+                  width={100}
+                  height={100}
+                />
+                <span className="text-xs md:text-sm leading-[1.6] text-gray-400 font-normal">
+                  {item.title}
+                </span>
+              </div>
+
+              {/* Quote */}
+              <span className="relative z-20 text-xs md:text-sm leading-[1.6] text-gray-100 font-normal">
                 {item.quote}
               </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
+
+              {/* Name */}
+              <div className="relative z-20 mt-4 md:mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+                  <span className="text-xs md:text-sm leading-[1.6] text-gray-400 font-normal">
                     {item.name}
                   </span>
-              
                 </span>
               </div>
             </blockquote>

@@ -38,25 +38,24 @@ const Testimonial: React.FC = () => {
   return (
     <section className="bg-gradient-to-r from-black to-blue-900 pt-11">
       <div className="container flex flex-col items-center mx-auto space-y-6 md:p-2">
-        <motion.h4
-          ref={ref}
-          initial={{ opacity: 0, y: 50 }}
-          animate={controls}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="px-6 text-3xl font-semibold flex text-center sm:font-bold sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-white"
-        >
-          Why
-          <motion.span
-            ref={ref}
-            initial={{ opacity: 0, y: 50 }}
-            animate={controls}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="bg-gradient-to-r  from-blue-500 via-violet-500 to-pink-500 bg-clip-text text-transparent px-6 text-3xl font-semibold text-center sm:font-bold sm:text-4xl md:text-8xl lg:max-w-2xl xl:max-w-4xl"
-          >
-            Zentra Wealth?
-          </motion.span>
-        </motion.h4>
-
+  <motion.h4
+    ref={ref}
+    initial={{ opacity: 0, y: 50 }}
+    animate={controls}
+    transition={{ duration: 0.6, ease: 'easeOut' }}
+    className="px-4 text-2xl font-semibold flex text-center sm:font-bold sm:text-3xl md:text-6xl lg:text-7xl xl:text-8xl text-white"
+  >
+    Why
+    <motion.span
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={controls}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="bg-gradient-to-r from-blue-500 via-violet-500 to-pink-500 bg-clip-text text-transparent px-4 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-6xl lg:text-7xl xl:text-8xl"
+    >
+      Zentra Wealth?
+    </motion.span>
+  </motion.h4>
         <motion.p
           ref={ref}
           initial={{ opacity: 0, y: 50 }}

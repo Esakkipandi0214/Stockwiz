@@ -26,26 +26,27 @@ const Testimonial: React.FC = () => {
 
   return (
     <section className="bg-gradient-to-r from-black to-violet-950 pt-10">
-      <div className="container flex flex-col items-center p-4 mx-auto space-y-6 md:p-2">
-        <motion.h4
-          ref={ref}
-          initial={{ opacity: 0, y: 50 }}
-          animate={controls}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-5xl lg:text-7xl lg:max-w-2xl xl:max-w-4xl text-white"
-        >
-          Meet Your 
-          <motion.span
-            ref={ref}
-            initial={{ opacity: 0, y: 50 }}
-            animate={controls}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="bg-gradient-to-r from-blue-500 via-violet-500 to-pink-500 bg-clip-text text-transparent px-6 text-2xl font-semibold text-center sm:font-bold sm:text-3xl md:text-7xl lg:max-w-2xl xl:max-w-4xl"
-          >
-             Mentor
-          </motion.span> 
-        </motion.h4>
-      </div>
+     <div className="container flex flex-col items-center p-4 mx-auto space-y-6 md:p-2">
+  <motion.h4
+    ref={ref}
+    initial={{ opacity: 0, y: 50 }}
+    animate={controls}
+    transition={{ duration: 0.6, ease: 'easeOut' }}
+    className="px-4 text-xl font-semibold text-center sm:text-2xl sm:font-bold md:text-5xl lg:text-7xl lg:max-w-2xl xl:max-w-4xl text-white"
+  >
+    Meet Your
+    <motion.span
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={controls}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="bg-gradient-to-r from-blue-500 via-violet-500 to-pink-500 bg-clip-text text-transparent px-4 text-xl font-semibold text-center sm:text-2xl sm:font-bold md:text-5xl lg:text-7xl lg:max-w-2xl xl:max-w-4xl"
+    >
+      Mentor
+    </motion.span>
+  </motion.h4>
+</div>
+
 
       {/* First section */}
       <div className="z-20 mx-4 sm:mx-8 lg:mx-28 mt-11 py-5 bg-black rounded-[50px] border border-slate-600 hover:border-yellow-700 text-white">
