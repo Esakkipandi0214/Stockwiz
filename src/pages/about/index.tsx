@@ -166,14 +166,11 @@ const AboutUs = () => {
       transition: { duration: 1 },
     });
   }
-  // const words = ` Welcome to Zentra Wealth,
-  //        Our smart AI trading robots and expert signals for Crypto, US stocks, and Indian stocks  guide you to better decisions.
-  //        Plus, our fast and secure USDT transactions, with easy options like face-to-face deals and bank deposits.`;
   return (
     <div className="bg-gradient-to-r from-black to-blue-900 text-white p-4 sm:p-6 md:p-8">
       <div className="text-center pt-8 px-4 md:pt-12 md:px-12">
         <h1 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 mb-8">
-          About Us
+          About Us 
         </h1>
         <span>
           {/* The text effect will go here */}
@@ -197,9 +194,9 @@ const AboutUs = () => {
             duration: 0.5,
             ease: [0.4, 0.0, 0.2, 1],
           }}
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white dark:text-white max-w-4xl lg:max-w-7xl leading-relaxed lg:leading-snug text-center mx-auto px-2">
+          className="text-xl sm:text-2xl md:text-3xl leading-relaxed lg:text-4xl font-bold text-white dark:text-white max-w-4xl lg:max-w-7xl lg:leading-loose text-center mx-auto px-2">
           Unlock smarter trading with  {" "}
-          <Highlight className="text-black dark:text-white">
+          <Highlight className="leading-none text-black dark:text-white">
             AI-driven insights for Crypto, US, and Indian stocks. Secure USDT deals, hassle-free!</Highlight>
         </motion.h1>
       </HeroHighlight>
@@ -209,12 +206,11 @@ const AboutUs = () => {
       <section ref={disruptingRef}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
-          animate={disruptingControls}
-        >
+          animate={disruptingControls}>
           <div className="container mx-auto">
             <h2 className="p-4 md:p-20 text-center text-4xl md:text-5xl font-bold mb-7">
               <span className="block text-3xl md:text-6xl font-bold text-transparent bg-clip-text text-white mb-4 md:mb-8">We Are</span>
-              <span className="block text-3xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 mb-4 md:mb-8">Disrupting</span>
+              <span className="block text-3xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 mb-2 md:mb-4 h-24">Disrupting</span>
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
