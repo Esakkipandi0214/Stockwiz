@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import imgsss from "../../../public/user1.png";
+import imgsss from "../../../public/User2.jpg";
+import imgs from "../../../public/user1.jpg";
+import imge from "../../../public/user4.jpg";
+
 import { InfiniteMovingCards } from "../UI/infinite-moving-cards";
 
 const Testimonial: React.FC = () => {
@@ -11,9 +14,9 @@ const Testimonial: React.FC = () => {
   });
 
   const images = [
-    { src: imgsss, alt: "Card Image 1", width: 600, height: 400, title: "Hardik Paliwal", name: "This Man Is An Inspiration! The Most Genuine Trader in India 🇮🇳", quote: 'Parang sir is an inspiration—his dedication to sharing knowledge has completely transformed my market approach. His understanding is incredible, and I’m grateful to have him as a mentor. Excited for a long, profitable journey ahead! 🔥🔥' },
-    { src: imgsss, alt: "Card Image 2", width: 600, height: 400, title: "Snigdha", name: "He is the Google of Financial Markets! Brilliant Mentor, Super Helpful Community ❤️", quote: 'Parang is the best mentor with immense market knowledge and a genuine willingness to share it. With his guidance, I improve every day. Grateful for his incredible approach to trading since the start of my journey. 🙌' },
-    { src: imgsss, alt: "Card Image 3", width: 600, height: 400, title: "Abhishek", name: "Mind Blowing! This Was The Best Trading Webinar I Have Ever Attended.", quote: '  Well I was blown with the way you explained things. What a perspective about trading and investing. The way you explain things shows the kind of time and energy you have spent in trading. I really was vibing with you man. Absolutely loved the Webinar. 🔥🙌' },
+    { src: imgsss, alt: "Card Image 1", width: 600, height: 400, title: "Sharan Devendra Donthi", name: "This Man Is An Inspiration! The Most Genuine Trader in India 🇮🇳", quote: 'Parang sir is an inspiration—his dedication to sharing knowledge has completely transformed my market approach. His understanding is incredible, and I’m grateful to have him as a mentor. Excited for a long, profitable journey ahead! 🔥🔥' },
+    { src: imge, alt: "Card Image 2", width: 600, height: 400, title: "Snigdha", name: "He is the Google of Financial Markets! Brilliant Mentor, Super Helpful Community ❤️", quote: 'Parang is the best mentor with immense market knowledge and a genuine willingness to share it. With his guidance, I improve every day. Grateful for his incredible approach to trading since the start of my journey. 🙌' },
+    { src: imgs, alt: "Card Image 3", width: 600, height: 400, title: "Hardik Paliwal", name: "Mind Blowing! This Was The Best Trading Webinar I Have Ever Attended.", quote: '  Well I was blown with the way you explained things. What a perspective about trading and investing. The way you explain things shows the kind of time and energy you have spent in trading. I really was vibing with you man. Absolutely loved the Webinar. 🔥🙌' },
   ];
   
 
