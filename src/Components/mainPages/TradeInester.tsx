@@ -196,7 +196,7 @@ const Testimonial: React.FC = () => {
     type="button"
     className="glitter-button p-3 w-full max-w-xs sm:max-w-md rounded-xl mx-auto bg-gradient-to-r from-[rgb(157,255,101)] text-black hover:text-white to-[#95f527] bg-[length:200%_300%] bg-right animate-gradient-flow"
   >
-    <Link className="text-base sm:text-lg font-semibold text-black hover:text-white" href="#">
+    <Link className="text-base sm:text-lg font-semibold text-black hover:text-white" href="https://api.whatsapp.com/send?phone=8870644386">
       Join Now
     </Link>
   </button>
