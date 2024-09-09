@@ -5,17 +5,6 @@
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "../../Components/UI/carousel";
-import { Card, CardContent } from "../../Components/UI/card";
-import Image from 'next/image';
-import Card1 from "../../../public/card1.png"
-import Card2 from "../../../public/card2.png"
-import Card3 from "../../../public/card3.png"
-import Card4 from "../../../public/card4.png"
-import Card5 from "../../../public/card5.png"
-import Card6 from "../../../public/card6.png"
-import Card7 from "../../../public/card7.png"
-import Link from 'next/link';
 
 
 const Testimonial: React.FC = () => {
@@ -24,17 +13,6 @@ const Testimonial: React.FC = () => {
     rootMargin: '0px 0px -20% 0px', // Adjust to trigger inView earlier/later from the top and bottom
   });
 
-  // Array of image data
-const images = [
-    { src: Card1, alt: "Card Image 1", width: 600, height: 400 },
-    { src: Card2, alt: "Card Image 2", width: 600, height: 400 },
-    { src: Card3, alt: "Card Image 3", width: 600, height: 400 },
-    { src: Card4, alt: "Card Image 4", width: 600, height: 400 },
-    { src: Card5, alt: "Card Image 5", width: 700, height: 700 },
-    { src: Card6, alt: "Card Image 6", width: 600, height: 400 },
-    { src: Card7, alt: "Card Image 6", width: 600, height: 400 }
-  ];
-  
 
   const controls = useAnimation();
 
@@ -82,50 +60,6 @@ const images = [
         >
         </motion.p>
         </div>
-        {/* =========================================cards carousal================================================= */}
-
-        <div className="flex justify-center items-center md:mt-16 px-4 md:px-28">
-  <div className="w-full min-h-[100px]">
-    <Carousel className="relative w-full">
-      <CarouselPrevious className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10" />
-      <CarouselNext className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10" />
-      <CarouselContent className="flex justify-between space-x-4">
-        {images.map((image, index) => (
-          <CarouselItem key={index} className="flex-1 min-w-[250px] sm:min-w-[300px] md:min-w-[400px]">
-            <Image
-              src={image.src}
-              alt={image.alt}
-              className="rounded-lg object-contain w-full h-full"
-              width={image.width}
-              height={image.height}
-              layout="responsive"
-            />
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-    </Carousel>
-  </div>
-</div>
-               
-        {/* ================================================= End Cards Carousal =================================== */}
-        {/* ==========================Button ================================================== */}
-        <div className="min-h-[100px] flex justify-center items-center text-center text-white md:mt-8 md:col-span-5">
-  <div className="w-full px-4 md:px-8 flex justify-center">
-    <button
-      type="button"
-      className="glitter-button p-2 w-3/4 sm:w-1/2 md:p-4 md:w-1/3 rounded-2xl text-black bg-[length:200%_300%] bg-right animate-gradient-flow"
-    >
-      <Link
-        className="text-sm sm:text-lg font-semibold text-black hover:text-white"
-        href="#"
-      >
-        Request Verified P&L
-      </Link>
-    </button>
-  </div>
-</div>
-
-      {/* ================================================================ */}
     </section>
   );
 };

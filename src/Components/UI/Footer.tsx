@@ -29,10 +29,11 @@ const Footer: React.FC = () => {
         Compliance Officer: <span className="text-white">Iyyappan</span>
       </p>
       <p className="text-white/40">
-        Number: <span className="text-white">+91 9962323022</span>
+        Number: <span className="text-white">+91 8870644386
+        </span>
       </p>
       <p className="text-white/40">
-        Email: <span className="text-white">Tethertrades10101@gmail.com</span>
+        Email:<span className="text-white">tethertrades10101@gmail.com</span>
       </p>
     </span>
 
@@ -82,12 +83,12 @@ const Footer: React.FC = () => {
             fill="#28F2FF"/>          
             </svg>
         </Link>
-        <p className="text-white mt-2">+91 8122511997</p>
+        <p className="text-white mt-1">+91 8870644386 , +91 8122511997</p>
       </span>
 
       <p className="text-white/30">Whatsapp Us:</p>
       <span className="flex items-center gap-2 justify-start">
-        <Link href="#" aria-label="Whatsapp">
+        <Link href="https://api.whatsapp.com/send?phone=8870644386" aria-label="Whatsapp">
           {/* Whatsapp icon */}
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="24" height="24" rx="12" fill="#29E337" fillOpacity="0.1" />
@@ -95,7 +96,8 @@ const Footer: React.FC = () => {
             fill="#29E337"/>          
             </svg>
         </Link>
-        <p className="text-white mt-2">+91 9962323022</p>
+        <p className="text-white mt-1">+91 8870644386
+        </p>
       </span>
     </span>
   </nav>

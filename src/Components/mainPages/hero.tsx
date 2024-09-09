@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Mobile1 from '../../../public/mobile1.png'
 import Mobile2 from '../../../public/mobile2.png'
+import T1 from '../../../public/T1.png'
 import Base from '../../../public/base.png'
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -46,7 +47,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-full p-4 md:p-12 lg:grid lg:gap-4 lg:grid-cols-12 grid-cols-1 bg-gradient-to-r from-black to-violet-950 ">
+    <div className="w-full p-4 md:p-12 lg:grid lg:gap-4 lg:grid-cols-12 grid-cols-1 bg-gradient-to-r from-black to-blue-900 ">
  <div className="lg:col-span-5 ml-4 md:ml-[40px] flex justify-center lg:justify-start items-center text-center lg:text-left text-white">
   <div className='mt-20'>
     <div className="flex flex-col gap-4 lg:gap-6 items-start">
@@ -77,16 +78,11 @@ const Hero: React.FC = () => {
       <div className="min-h-[100px] md:row-span-3  md:col-span-7 md:flex hidden items-center justify-center text-center text-white">
     <div className="w-full md:ml-20 flex flex-col gap-2">
       <div className="relative md:-translate-x-16">
-        <motion.div {...hangingAnimationLeft} className="relative md:ml-14 md:translate-y-8">
-          <Image src={Mobile1} width={300} height={200} alt="" />
+        <motion.div {...hangingAnimationLeft} className="relative md:ml-14 md:translate-y-8 ">
+          <Image src={T1} width={1000} height={700} alt=""  />
           {/* <Image src={Phone1} width={400} height={400} alt="" /> */}
         </motion.div>
-        <motion.div {...hangingAnimationRight} className="absolute md:top-1 md:right-44 md:-translate-y-11">
-          <Image src={Mobile2} width={400} height={400} alt="" />
-          {/* <Image src={Phone2} width={800} height={600} alt="" /> */}
-        </motion.div>
       </div>
-      <Image src={Base} className="md:translate-y-28 md:-ml-28" width={650} height={500} alt="" />
     </div>
   </div>
   {/* <div className="lg:col-span-7 flex items-center md:hidden justify-center text-center text-white">
