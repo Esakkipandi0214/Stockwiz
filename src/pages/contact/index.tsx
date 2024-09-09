@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaTwitter, FaInstagram, FaGamepad } from 'react-icons/fa';
+import { addDoc, collection } from 'firebase/firestore';
+import { db } from '../../../firebaseConfig';  // Import Firestore instance
 import { BackgroundBeams } from "../../Components/UI/background-beams";
 
 const ContactPage = () => {
@@ -23,10 +25,27 @@ const ContactPage = () => {
       subject: e.target.value,
     });
   };
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
+
+    try {
+      // Add document to Firestore
+      const docRef = await addDoc(collection(db, 'contacts'), formData);
+      console.log('Document written with ID: ', docRef.id);
+      alert('Message sent successfully!');
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phoneNumber: '',
+        subject: 'General enquiry',
+        message: '',
+      });
+    } catch (error) {
+      console.error('Error adding document: ', error);
+      alert('Failed to send message. Please try again later.');
+    }
+   
   };
 
   return (
@@ -36,13 +55,13 @@ const ContactPage = () => {
         <h2 className="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6">Contact Information</h2>
         <p className="mb-4 sm:mb-6">Say something to start a live chat!</p>
         <div className="mb-3 sm:mb-4 text-base sm:text-lg flex items-center">
-          <FaPhoneAlt className="mr-2" />+91 7904210874
+          <FaPhoneAlt className="mr-2" />+91 9962323022
         </div>
         <div className="mb-3 sm:mb-4 text-base sm:text-lg flex items-center">
-          <FaEnvelope className="mr-2" />info@digisailor.com
+          <FaEnvelope className="mr-2" />tethertrades10101@gmail.com
         </div>
         <div className="mb-3 sm:mb-4 text-base sm:text-lg flex items-center">
-          <FaMapMarkerAlt className="mr-2" />97G/4C,1st Floor, PSS Jayam Towers, Teachers Colony, Tuticorin
+          <FaMapMarkerAlt className="mr-2" />Thambuchetty street, Mannadi, Chennai, 600 001
         </div>
         <div className="mt-4 sm:mt-8 flex">
           <a href="#" className="text-xl sm:text-2xl mr-4"><FaTwitter /></a>
