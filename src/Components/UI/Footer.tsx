@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
       <span className="bg-gradient-to-r from-blue-500 via-violet-500 to-pink-500 text-transparent bg-clip-text font-bold text-5xl">Zentra</span>
       <span className="font-light text-4xl text-white ml-1">Wealth</span>
     </Link>
-    <span className="mb-4 flex flex-col gap-2 justify-start md:justify-start md:items-start items-start bg-white/5 p-3 rounded-xl sm:w-2/3 w-full mx-4 sm:mx-0 text-left sm:text-left"> {/* Right align for mobile */}
+    <span className="mb-4 flex flex-col gap-2 justify-start md:justify-start md:items-start items-start w-fit	 bg-white/5 p-3 rounded-xl  mx-4 sm:mx-0 text-left sm:text-left"> {/* Right align for mobile */}
       <p className="text-white">Compliance Info</p>
       <p className="text-white/40">
         Compliance Officer: <span className="text-white">Iyyappan</span>
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
         </span>
       </p>
       <p className="text-white/40">
-        Email:<span className="text-white">tethertrades10101@gmail.com</span>
+        Email: <span className="text-white">tethertrades10101@gmail.com</span>
       </p>
     </span>
 

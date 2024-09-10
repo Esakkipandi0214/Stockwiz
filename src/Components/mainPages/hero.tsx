@@ -78,10 +78,11 @@ const Hero: React.FC = () => {
       <div className="min-h-[100px] md:row-span-3  md:col-span-7 md:flex hidden items-center justify-center text-center text-white">
     <div className="w-full md:ml-20 flex flex-col gap-2">
       <div className="relative md:-translate-x-16">
-        <motion.div {...hangingAnimationLeft} className="relative md:ml-14 md:translate-y-8 ">
-          <Image src={T1} width={1000} height={700} alt=""  />
-          {/* <Image src={Phone1} width={400} height={400} alt="" /> */}
-        </motion.div>
+      <video width="100%" className="border border-slate-600 rounded-xl bg-black" autoPlay loop muted>
+      <source src="/Tree.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
       </div>
     </div>
   </div>
@@ -114,7 +115,7 @@ const Hero: React.FC = () => {
 <div className="min-h-[100px] md:col-span-5 flex justify-start items-start text-left text-white">
   <div className="w-full flex justify-start items-start p-4 ml-4">
   <button className="glitter-button p-4 w-full md:w-2/4 rounded-2xl text-white  bg-[length:200%_300%] bg-right animate-gradient-flow text-center font-bold relative overflow-hidden">
-  <span>Hover me</span>
+  <span>Get Started</span>
     </button>
   </div>
 </div>
